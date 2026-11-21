@@ -8,6 +8,8 @@ O `Dockerfile` na raiz constrói a aplicação Flask a partir de `web-meditation
 
 Configure `SEREIN_ADMIN_PASSWORD` e `SEREIN_SECRET_KEY` como segredos da plataforma. Monte um volume persistente em `/data` para guardar SQLite e uploads. A imagem cria o catálogo inicial automaticamente. Para construir localmente, execute `docker build -t serein .`; as instruções completas de execução estão em [web-meditation/README.md](web-meditation/README.md#docker).
 
+Para narração natural em MP3, configure também `ELEVENLABS_API_KEY` no servidor e use **Áudios → Voz natural** no admin. A geração consome créditos ElevenLabs e cria um rascunho por idioma para escutar antes de ativar. O leitor usa ficheiros por padrão, sem fallback automático para a voz do navegador. Os MP3 ativados podem ser incluídos no Android offline durante a exportação dos assets.
+
 ## Versão web e Android com HTML local
 
 A aplicação web com Flask e SQLite, meditações em cinco idiomas, vídeos, histórias, sons de fundo e administração fica em [web-meditation/](web-meditation/README.md). O projeto Android Studio em [web-meditation/android/](web-meditation/android/README.md) incorpora o HTML e os conteúdos locais para utilização offline.
