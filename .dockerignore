@@ -1,4 +1,4 @@
-# Build the web app from main while excluding Flutter, local data and secrets.
+# Build only the web runtime and model setup sources.
 **
 !Dockerfile
 !.dockerignore
@@ -6,6 +6,12 @@
 !web-meditation/requirements.txt
 !web-meditation/app.py
 !web-meditation/natural_voice.py
+!web-meditation/kokoro_engine.py
+!web-meditation/scripts/
+!web-meditation/scripts/prepare_kokoro.py
+!web-meditation/licenses/
+!web-meditation/licenses/kokoro/
+!web-meditation/licenses/kokoro/**
 !web-meditation/exercise_seed.json
 !web-meditation/story_seed.json
 !web-meditation/static/
