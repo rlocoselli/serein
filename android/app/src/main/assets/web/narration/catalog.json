@@ -1,0 +1,2139 @@
+{
+  "version": 1,
+  "provider": "kokoro",
+  "model": "kokoro-v1.0-onnx",
+  "sessions": {
+    "respirar": {
+      "fr": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ff_siwis",
+        "source_hash": "f6cf28adea2a97ef7901c0a3b2384bd817ac9f57961f41b8c4baa7858c4607ad",
+        "segments": [
+          {
+            "audio_path": "/narration/fr/respirar-01-8401c3f6085a.mp3",
+            "duration": 23.012
+          }
+        ]
+      },
+      "pt": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "pf_dora",
+        "source_hash": "b4734851c1fa134e02105862899390c6f20e14ebc76bf6c1e195921826607bf5",
+        "segments": [
+          {
+            "audio_path": "/narration/pt/respirar-01-cc40c2c0913f.mp3",
+            "duration": 22.667
+          }
+        ]
+      },
+      "en": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "af_heart",
+        "source_hash": "af517305b0f5922f97df095eda6426697c61932bfb75d5ccf8b66ceb86832213",
+        "segments": [
+          {
+            "audio_path": "/narration/en/respirar-01-f3ba73cb3826.mp3",
+            "duration": 23.294
+          }
+        ]
+      },
+      "it": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "if_sara",
+        "source_hash": "275f2102455a2c66042b05385c783bf890f6ce513af1dc32711bca60c1167985",
+        "segments": [
+          {
+            "audio_path": "/narration/it/respirar-01-d7405f38c549.mp3",
+            "duration": 22.422
+          }
+        ]
+      },
+      "es": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ef_dora",
+        "source_hash": "8e85e1e8350d66c893ad62541826952589bc6146aeaf5448e898de3c610295a4",
+        "segments": [
+          {
+            "audio_path": "/narration/es/respirar-01-c2f311a236ef.mp3",
+            "duration": 22.816
+          }
+        ]
+      }
+    },
+    "soltar": {
+      "fr": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ff_siwis",
+        "source_hash": "8f63198b09a571a3f8f5726d51fa108a21631c03a01905eaea3c5cbbea7b9772",
+        "segments": [
+          {
+            "audio_path": "/narration/fr/soltar-01-5924f978aad1.mp3",
+            "duration": 22.35
+          }
+        ]
+      },
+      "pt": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "pf_dora",
+        "source_hash": "fed70d19244172fd52f07c0e041a6e589db781f2b1e3feeabcb56d3860386cc8",
+        "segments": [
+          {
+            "audio_path": "/narration/pt/soltar-01-089257a1b4bf.mp3",
+            "duration": 22.142
+          }
+        ]
+      },
+      "en": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "af_heart",
+        "source_hash": "be4b2ddc61fa400368429d03d9dd520d59a66712a4d3035597d26c70e1010296",
+        "segments": [
+          {
+            "audio_path": "/narration/en/soltar-01-3b11b6ad83ab.mp3",
+            "duration": 20.966
+          }
+        ]
+      },
+      "it": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "if_sara",
+        "source_hash": "c9cb24d0bede08e522466a0bdfb771351c8003127cf5f98d550fa3243cb0c13c",
+        "segments": [
+          {
+            "audio_path": "/narration/it/soltar-01-7834f80f471c.mp3",
+            "duration": 20.443
+          }
+        ]
+      },
+      "es": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ef_dora",
+        "source_hash": "bd355065a88f2537cc514e4c6a00b6154f5c0cda738b9f9ec67d65fd86c028d4",
+        "segments": [
+          {
+            "audio_path": "/narration/es/soltar-01-808836f72d57.mp3",
+            "duration": 22.181
+          }
+        ]
+      }
+    },
+    "sono": {
+      "fr": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ff_siwis",
+        "source_hash": "41a9fdf6facb31e408fe8cea871da6ba8c423a02a481fc357ddc85a579f82384",
+        "segments": [
+          {
+            "audio_path": "/narration/fr/sono-01-dfe46bc7be54.mp3",
+            "duration": 24.0
+          }
+        ]
+      },
+      "pt": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "pf_dora",
+        "source_hash": "b83da45d3649fc521cabcee2820cf008b1679c031ff07f0d4547a83608ac28ac",
+        "segments": [
+          {
+            "audio_path": "/narration/pt/sono-01-e768f7f5c945.mp3",
+            "duration": 23.531
+          }
+        ]
+      },
+      "en": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "af_heart",
+        "source_hash": "309649b3051c19e0a71241364e7d7f0b9534b74279aed26b21c6bd8a9be4cf0a",
+        "segments": [
+          {
+            "audio_path": "/narration/en/sono-01-927bdbf5cbf9.mp3",
+            "duration": 23.276
+          }
+        ]
+      },
+      "it": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "if_sara",
+        "source_hash": "7f96c77a6ddae2dea4101f01d93b86ce6313245e1d29e7835dd0163022659e36",
+        "segments": [
+          {
+            "audio_path": "/narration/it/sono-01-948982fcb217.mp3",
+            "duration": 21.737
+          }
+        ]
+      },
+      "es": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ef_dora",
+        "source_hash": "e5bde260d155a5b4b77ebb701c527edeebea9b8355ba5d53a02493e6ed1a6c9b",
+        "segments": [
+          {
+            "audio_path": "/narration/es/sono-01-d713bc6fef0c.mp3",
+            "duration": 23.861
+          }
+        ]
+      }
+    },
+    "respiracao-suave": {
+      "fr": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ff_siwis",
+        "source_hash": "04fe32b506286080fa32c5b4aa90fc2203cf24f9ccbfb61c4f6264de147af308",
+        "segments": [
+          {
+            "audio_path": "/narration/fr/respiracao-suave-01-478a4f90c9d7.mp3",
+            "duration": 6.121
+          },
+          {
+            "audio_path": "/narration/fr/respiracao-suave-02-f9b4741317cf.mp3",
+            "duration": 12.756
+          },
+          {
+            "audio_path": "/narration/fr/respiracao-suave-03-384c43a00fd1.mp3",
+            "duration": 9.921
+          },
+          {
+            "audio_path": "/narration/fr/respiracao-suave-04-223402228628.mp3",
+            "duration": 6.09
+          }
+        ]
+      },
+      "pt": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "pf_dora",
+        "source_hash": "62c2c44e6d43baaca71e8974b46fbe39b225539344ecee21bc40c7904650e813",
+        "segments": [
+          {
+            "audio_path": "/narration/pt/respiracao-suave-01-3f392ba7948a.mp3",
+            "duration": 6.551
+          },
+          {
+            "audio_path": "/narration/pt/respiracao-suave-02-0ee1a6d4427d.mp3",
+            "duration": 11.903
+          },
+          {
+            "audio_path": "/narration/pt/respiracao-suave-03-897f9e4b728a.mp3",
+            "duration": 9.957
+          },
+          {
+            "audio_path": "/narration/pt/respiracao-suave-04-519127d89f5d.mp3",
+            "duration": 6.441
+          }
+        ]
+      },
+      "en": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "af_heart",
+        "source_hash": "427a16e6d954ff9f22a51690084725a0e0eb9d1c83720b74b5e72c477fec6932",
+        "segments": [
+          {
+            "audio_path": "/narration/en/respiracao-suave-01-bfc6ce1e3aaa.mp3",
+            "duration": 5.435
+          },
+          {
+            "audio_path": "/narration/en/respiracao-suave-02-89ab045e1e91.mp3",
+            "duration": 11.013
+          },
+          {
+            "audio_path": "/narration/en/respiracao-suave-03-bdbb5ba2bcb4.mp3",
+            "duration": 9.329
+          },
+          {
+            "audio_path": "/narration/en/respiracao-suave-04-eeb60757a589.mp3",
+            "duration": 6.005
+          }
+        ]
+      },
+      "it": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "if_sara",
+        "source_hash": "adeeaca8c79699d21bb7bf55bfda407a4ffe51cec74a326df989f19208e191e5",
+        "segments": [
+          {
+            "audio_path": "/narration/it/respiracao-suave-01-0b9764490e35.mp3",
+            "duration": 5.749
+          },
+          {
+            "audio_path": "/narration/it/respiracao-suave-02-bcc41c634f1f.mp3",
+            "duration": 10.653
+          },
+          {
+            "audio_path": "/narration/it/respiracao-suave-03-0e0bf8bb3d0a.mp3",
+            "duration": 9.685
+          },
+          {
+            "audio_path": "/narration/it/respiracao-suave-04-965928a95f19.mp3",
+            "duration": 6.578
+          }
+        ]
+      },
+      "es": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ef_dora",
+        "source_hash": "b58dbc9b5b4c7ead46e285d7355dec7abc88b2558e2b3eed3fdae2434265f277",
+        "segments": [
+          {
+            "audio_path": "/narration/es/respiracao-suave-01-7efe5236378e.mp3",
+            "duration": 5.286
+          },
+          {
+            "audio_path": "/narration/es/respiracao-suave-02-1d901f2c0723.mp3",
+            "duration": 10.406
+          },
+          {
+            "audio_path": "/narration/es/respiracao-suave-03-ff5e146ac31a.mp3",
+            "duration": 9.473
+          },
+          {
+            "audio_path": "/narration/es/respiracao-suave-04-197e3a6bc733.mp3",
+            "duration": 6.395
+          }
+        ]
+      }
+    },
+    "relaxamento-progressivo": {
+      "fr": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ff_siwis",
+        "source_hash": "4d1791f315c6da18237f326dc8f450c6031e18199e3ac9737041dedb8da2c404",
+        "segments": [
+          {
+            "audio_path": "/narration/fr/relaxamento-progressivo-01-cb1e65ee09e4.mp3",
+            "duration": 9.651
+          },
+          {
+            "audio_path": "/narration/fr/relaxamento-progressivo-02-161b031816e1.mp3",
+            "duration": 2.371
+          },
+          {
+            "audio_path": "/narration/fr/relaxamento-progressivo-03-d3cdac46c3b6.mp3",
+            "duration": 4.615
+          },
+          {
+            "audio_path": "/narration/fr/relaxamento-progressivo-04-45538793e364.mp3",
+            "duration": 3.245
+          },
+          {
+            "audio_path": "/narration/fr/relaxamento-progressivo-05-8ce31eccb305.mp3",
+            "duration": 5.127
+          },
+          {
+            "audio_path": "/narration/fr/relaxamento-progressivo-06-b640635e429a.mp3",
+            "duration": 3.149
+          },
+          {
+            "audio_path": "/narration/fr/relaxamento-progressivo-07-c3cf4527d65b.mp3",
+            "duration": 3.659
+          },
+          {
+            "audio_path": "/narration/fr/relaxamento-progressivo-08-45404680693b.mp3",
+            "duration": 4.397
+          },
+          {
+            "audio_path": "/narration/fr/relaxamento-progressivo-09-4ae4b02e81e1.mp3",
+            "duration": 5.77
+          },
+          {
+            "audio_path": "/narration/fr/relaxamento-progressivo-10-c7f6e0db17a5.mp3",
+            "duration": 5.843
+          }
+        ]
+      },
+      "pt": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "pf_dora",
+        "source_hash": "a9c6aa2c71843d203716ef797c0ea05110d2b7d75f5f01f3b6c81e8b476539db",
+        "segments": [
+          {
+            "audio_path": "/narration/pt/relaxamento-progressivo-01-694f3ff0c76b.mp3",
+            "duration": 10.735
+          },
+          {
+            "audio_path": "/narration/pt/relaxamento-progressivo-02-30c1a4a29467.mp3",
+            "duration": 2.823
+          },
+          {
+            "audio_path": "/narration/pt/relaxamento-progressivo-03-7814caf77ebc.mp3",
+            "duration": 4.892
+          },
+          {
+            "audio_path": "/narration/pt/relaxamento-progressivo-04-fec8c0f76957.mp3",
+            "duration": 4.179
+          },
+          {
+            "audio_path": "/narration/pt/relaxamento-progressivo-05-f94cd926368f.mp3",
+            "duration": 6.535
+          },
+          {
+            "audio_path": "/narration/pt/relaxamento-progressivo-06-2292945c44cc.mp3",
+            "duration": 3.708
+          },
+          {
+            "audio_path": "/narration/pt/relaxamento-progressivo-07-131f41e4035d.mp3",
+            "duration": 3.88
+          },
+          {
+            "audio_path": "/narration/pt/relaxamento-progressivo-08-365c11489533.mp3",
+            "duration": 4.589
+          },
+          {
+            "audio_path": "/narration/pt/relaxamento-progressivo-09-14c4544c7e1b.mp3",
+            "duration": 5.329
+          },
+          {
+            "audio_path": "/narration/pt/relaxamento-progressivo-10-ffcd052e7c7c.mp3",
+            "duration": 6.1
+          }
+        ]
+      },
+      "en": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "af_heart",
+        "source_hash": "76586c10d22c6b24a3a590373acad763f35375693cf0a57c7e6a7be50a97a778",
+        "segments": [
+          {
+            "audio_path": "/narration/en/relaxamento-progressivo-01-273927d44adb.mp3",
+            "duration": 9.272
+          },
+          {
+            "audio_path": "/narration/en/relaxamento-progressivo-02-9fe075908a3d.mp3",
+            "duration": 2.722
+          },
+          {
+            "audio_path": "/narration/en/relaxamento-progressivo-03-aa7fdd306372.mp3",
+            "duration": 4.879
+          },
+          {
+            "audio_path": "/narration/en/relaxamento-progressivo-04-51460789a27f.mp3",
+            "duration": 3.299
+          },
+          {
+            "audio_path": "/narration/en/relaxamento-progressivo-05-830c100637b4.mp3",
+            "duration": 6.668
+          },
+          {
+            "audio_path": "/narration/en/relaxamento-progressivo-06-9bd099c0379e.mp3",
+            "duration": 3.637
+          },
+          {
+            "audio_path": "/narration/en/relaxamento-progressivo-07-8669c8d94ad9.mp3",
+            "duration": 4.053
+          },
+          {
+            "audio_path": "/narration/en/relaxamento-progressivo-08-9a4bdbfb850e.mp3",
+            "duration": 3.967
+          },
+          {
+            "audio_path": "/narration/en/relaxamento-progressivo-09-789f9421c41e.mp3",
+            "duration": 4.949
+          },
+          {
+            "audio_path": "/narration/en/relaxamento-progressivo-10-1186b091b354.mp3",
+            "duration": 5.855
+          }
+        ]
+      },
+      "it": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "if_sara",
+        "source_hash": "30042c097d600bb834f1df964eba3f4af8d59c7055c858c0810c4c475dc77e4d",
+        "segments": [
+          {
+            "audio_path": "/narration/it/relaxamento-progressivo-01-62164011766f.mp3",
+            "duration": 9.356
+          },
+          {
+            "audio_path": "/narration/it/relaxamento-progressivo-02-9c383b2ac809.mp3",
+            "duration": 3.127
+          },
+          {
+            "audio_path": "/narration/it/relaxamento-progressivo-03-14b5958fea1b.mp3",
+            "duration": 4.791
+          },
+          {
+            "audio_path": "/narration/it/relaxamento-progressivo-04-12c9c3479a14.mp3",
+            "duration": 3.853
+          },
+          {
+            "audio_path": "/narration/it/relaxamento-progressivo-05-62e28f1bb700.mp3",
+            "duration": 5.867
+          },
+          {
+            "audio_path": "/narration/it/relaxamento-progressivo-06-8a4ff08d4ed0.mp3",
+            "duration": 3.712
+          },
+          {
+            "audio_path": "/narration/it/relaxamento-progressivo-07-927d6e0af292.mp3",
+            "duration": 4.159
+          },
+          {
+            "audio_path": "/narration/it/relaxamento-progressivo-08-4b6e67c278b0.mp3",
+            "duration": 3.573
+          },
+          {
+            "audio_path": "/narration/it/relaxamento-progressivo-09-60d44a4f29f5.mp3",
+            "duration": 4.447
+          },
+          {
+            "audio_path": "/narration/it/relaxamento-progressivo-10-76c0ff65347d.mp3",
+            "duration": 5.835
+          }
+        ]
+      },
+      "es": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ef_dora",
+        "source_hash": "042fde82a7601a3be37739e965c290c150844bc9fe9a20c15bd45a39d3bcc51f",
+        "segments": [
+          {
+            "audio_path": "/narration/es/relaxamento-progressivo-01-01fa6a654da3.mp3",
+            "duration": 9.035
+          },
+          {
+            "audio_path": "/narration/es/relaxamento-progressivo-02-9aa0b7c7262f.mp3",
+            "duration": 2.876
+          },
+          {
+            "audio_path": "/narration/es/relaxamento-progressivo-03-76f1cc442a3f.mp3",
+            "duration": 4.889
+          },
+          {
+            "audio_path": "/narration/es/relaxamento-progressivo-04-78fc6886b749.mp3",
+            "duration": 3.837
+          },
+          {
+            "audio_path": "/narration/es/relaxamento-progressivo-05-e9f0d988b630.mp3",
+            "duration": 5.299
+          },
+          {
+            "audio_path": "/narration/es/relaxamento-progressivo-06-76f06351677d.mp3",
+            "duration": 3.516
+          },
+          {
+            "audio_path": "/narration/es/relaxamento-progressivo-07-cc4ac4ba40b5.mp3",
+            "duration": 3.729
+          },
+          {
+            "audio_path": "/narration/es/relaxamento-progressivo-08-fb68fc4148ff.mp3",
+            "duration": 4.633
+          },
+          {
+            "audio_path": "/narration/es/relaxamento-progressivo-09-eb6755e9a9ef.mp3",
+            "duration": 6.204
+          },
+          {
+            "audio_path": "/narration/es/relaxamento-progressivo-10-5a7fb65e2fb5.mp3",
+            "duration": 5.651
+          }
+        ]
+      }
+    },
+    "atencao-presente": {
+      "fr": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ff_siwis",
+        "source_hash": "6c02337b7cd398ac4484a38d7d93ddfe11c3f27c90ff015fe5c8fc80b95e4860",
+        "segments": [
+          {
+            "audio_path": "/narration/fr/atencao-presente-01-73988ebbdf97.mp3",
+            "duration": 8.263
+          },
+          {
+            "audio_path": "/narration/fr/atencao-presente-02-6cbee5b12cf7.mp3",
+            "duration": 8.292
+          },
+          {
+            "audio_path": "/narration/fr/atencao-presente-03-042ea6f37f88.mp3",
+            "duration": 8.215
+          },
+          {
+            "audio_path": "/narration/fr/atencao-presente-04-2213c0d761fd.mp3",
+            "duration": 7.768
+          }
+        ]
+      },
+      "pt": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "pf_dora",
+        "source_hash": "a7c6adc451fe1832ad9aaf06aa38442cd25482343996601361148d274003c2cd",
+        "segments": [
+          {
+            "audio_path": "/narration/pt/atencao-presente-01-17a02d0ef9b3.mp3",
+            "duration": 8.269
+          },
+          {
+            "audio_path": "/narration/pt/atencao-presente-02-4b71490f47b9.mp3",
+            "duration": 9.402
+          },
+          {
+            "audio_path": "/narration/pt/atencao-presente-03-62ca147d2d47.mp3",
+            "duration": 8.91
+          },
+          {
+            "audio_path": "/narration/pt/atencao-presente-04-70eb7a17b67e.mp3",
+            "duration": 6.445
+          }
+        ]
+      },
+      "en": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "af_heart",
+        "source_hash": "5c19059e4f57b9360b7d2e042e9bb0495e711d44345ec1fc73ce3c031120cfc1",
+        "segments": [
+          {
+            "audio_path": "/narration/en/atencao-presente-01-33f7b278713f.mp3",
+            "duration": 7.103
+          },
+          {
+            "audio_path": "/narration/en/atencao-presente-02-c0b045bf315f.mp3",
+            "duration": 9.337
+          },
+          {
+            "audio_path": "/narration/en/atencao-presente-03-a769fd5ef17f.mp3",
+            "duration": 8.737
+          },
+          {
+            "audio_path": "/narration/en/atencao-presente-04-0966c3c31051.mp3",
+            "duration": 6.783
+          }
+        ]
+      },
+      "it": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "if_sara",
+        "source_hash": "e3e5cf2e2c448bd09956d92fa4353ab50924df91ec4c4c9ff569167d193a3152",
+        "segments": [
+          {
+            "audio_path": "/narration/it/atencao-presente-01-84dbb0388442.mp3",
+            "duration": 7.944
+          },
+          {
+            "audio_path": "/narration/it/atencao-presente-02-9cd5c223238a.mp3",
+            "duration": 7.161
+          },
+          {
+            "audio_path": "/narration/it/atencao-presente-03-9f974e5690c5.mp3",
+            "duration": 7.761
+          },
+          {
+            "audio_path": "/narration/it/atencao-presente-04-e6685b083755.mp3",
+            "duration": 6.894
+          }
+        ]
+      },
+      "es": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ef_dora",
+        "source_hash": "6820feaad2e6b8c1aa39a49c5ab1a4baa5edd05706879906185f18f6249758dd",
+        "segments": [
+          {
+            "audio_path": "/narration/es/atencao-presente-01-683b2a9965c5.mp3",
+            "duration": 8.009
+          },
+          {
+            "audio_path": "/narration/es/atencao-presente-02-5df5dccf1611.mp3",
+            "duration": 8.038
+          },
+          {
+            "audio_path": "/narration/es/atencao-presente-03-69da49b3a16e.mp3",
+            "duration": 8.137
+          },
+          {
+            "audio_path": "/narration/es/atencao-presente-04-603efbe650fd.mp3",
+            "duration": 6.903
+          }
+        ]
+      }
+    },
+    "comecar-dia": {
+      "fr": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ff_siwis",
+        "source_hash": "01877f791777a8b1dd55353c40456c832c3e2ef7a1b0813c0b8b708b4a830c99",
+        "segments": [
+          {
+            "audio_path": "/narration/fr/comecar-dia-01-586e93f9f1db.mp3",
+            "duration": 12.178
+          },
+          {
+            "audio_path": "/narration/fr/comecar-dia-02-76acf4e9b99d.mp3",
+            "duration": 10.306
+          },
+          {
+            "audio_path": "/narration/fr/comecar-dia-03-a85204d67fa0.mp3",
+            "duration": 11.227
+          },
+          {
+            "audio_path": "/narration/fr/comecar-dia-04-a6787b768825.mp3",
+            "duration": 9.021
+          },
+          {
+            "audio_path": "/narration/fr/comecar-dia-05-61c5bbdc7748.mp3",
+            "duration": 10.415
+          }
+        ]
+      },
+      "pt": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "pf_dora",
+        "source_hash": "4b027bc60603aacb49445f3b8f9c230e2bd65197bd900bef804566c9dfa8e598",
+        "segments": [
+          {
+            "audio_path": "/narration/pt/comecar-dia-01-7d3a9b16cfb8.mp3",
+            "duration": 12.49
+          },
+          {
+            "audio_path": "/narration/pt/comecar-dia-02-a5a14a6ae380.mp3",
+            "duration": 11.129
+          },
+          {
+            "audio_path": "/narration/pt/comecar-dia-03-bf87ff7af46d.mp3",
+            "duration": 12.129
+          },
+          {
+            "audio_path": "/narration/pt/comecar-dia-04-cf004a3bc3b8.mp3",
+            "duration": 10.783
+          },
+          {
+            "audio_path": "/narration/pt/comecar-dia-05-3e10fc305892.mp3",
+            "duration": 11.099
+          }
+        ]
+      },
+      "en": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "af_heart",
+        "source_hash": "b9c46f969f1f8d11dd9e3823bb398e13dd0b6d734cc692a22554bc59404ffc43",
+        "segments": [
+          {
+            "audio_path": "/narration/en/comecar-dia-01-fa7ce17f7ca8.mp3",
+            "duration": 11.255
+          },
+          {
+            "audio_path": "/narration/en/comecar-dia-02-76335e82b428.mp3",
+            "duration": 11.904
+          },
+          {
+            "audio_path": "/narration/en/comecar-dia-03-01e57d885a2e.mp3",
+            "duration": 11.612
+          },
+          {
+            "audio_path": "/narration/en/comecar-dia-04-57fc0487f2ab.mp3",
+            "duration": 10.307
+          },
+          {
+            "audio_path": "/narration/en/comecar-dia-05-94c9d4c5bb9d.mp3",
+            "duration": 10.035
+          }
+        ]
+      },
+      "it": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "if_sara",
+        "source_hash": "87cb2f6a69ae65f06780edbd258f8f22b3ca56d26796f05f79a2692b3dbfb961",
+        "segments": [
+          {
+            "audio_path": "/narration/it/comecar-dia-01-e9b1420529fb.mp3",
+            "duration": 11.085
+          },
+          {
+            "audio_path": "/narration/it/comecar-dia-02-c10a97b7819b.mp3",
+            "duration": 9.919
+          },
+          {
+            "audio_path": "/narration/it/comecar-dia-03-181d9b5507c9.mp3",
+            "duration": 10.511
+          },
+          {
+            "audio_path": "/narration/it/comecar-dia-04-ba13e2ba6cd0.mp3",
+            "duration": 9.356
+          },
+          {
+            "audio_path": "/narration/it/comecar-dia-05-48b0a1548f34.mp3",
+            "duration": 10.041
+          }
+        ]
+      },
+      "es": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ef_dora",
+        "source_hash": "d2ed32d005cd3c0cfce9a2787bdde5b952d4cae440fba3bd61cd090d50c56d08",
+        "segments": [
+          {
+            "audio_path": "/narration/es/comecar-dia-01-31c9359f6711.mp3",
+            "duration": 12.073
+          },
+          {
+            "audio_path": "/narration/es/comecar-dia-02-6ff843e2dca2.mp3",
+            "duration": 9.537
+          },
+          {
+            "audio_path": "/narration/es/comecar-dia-03-b22c18f979ed.mp3",
+            "duration": 10.373
+          },
+          {
+            "audio_path": "/narration/es/comecar-dia-04-54bbace3f645.mp3",
+            "duration": 8.574
+          },
+          {
+            "audio_path": "/narration/es/comecar-dia-05-23bf9b0e91ca.mp3",
+            "duration": 10.052
+          }
+        ]
+      }
+    },
+    "pausa-trabalho": {
+      "fr": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ff_siwis",
+        "source_hash": "0f66b154333f6d5ba9dddbaf7942a9db9b253d695ef50225b357a00634514f30",
+        "segments": [
+          {
+            "audio_path": "/narration/fr/pausa-trabalho-01-586e93f9f1db.mp3",
+            "duration": 12.178
+          },
+          {
+            "audio_path": "/narration/fr/pausa-trabalho-02-c584e4b73b02.mp3",
+            "duration": 9.426
+          },
+          {
+            "audio_path": "/narration/fr/pausa-trabalho-03-4dd9e3b48fb4.mp3",
+            "duration": 10.65
+          },
+          {
+            "audio_path": "/narration/fr/pausa-trabalho-04-a828e0ccbe10.mp3",
+            "duration": 8.928
+          },
+          {
+            "audio_path": "/narration/fr/pausa-trabalho-05-61c5bbdc7748.mp3",
+            "duration": 10.415
+          }
+        ]
+      },
+      "pt": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "pf_dora",
+        "source_hash": "e2613b275046c86649986250b60e890f908d16b44c35245816b87b0e346f55cd",
+        "segments": [
+          {
+            "audio_path": "/narration/pt/pausa-trabalho-01-7d3a9b16cfb8.mp3",
+            "duration": 12.49
+          },
+          {
+            "audio_path": "/narration/pt/pausa-trabalho-02-79fae9082dc1.mp3",
+            "duration": 10.884
+          },
+          {
+            "audio_path": "/narration/pt/pausa-trabalho-03-7516e2f2acc6.mp3",
+            "duration": 11.694
+          },
+          {
+            "audio_path": "/narration/pt/pausa-trabalho-04-5d85c064830d.mp3",
+            "duration": 11.685
+          },
+          {
+            "audio_path": "/narration/pt/pausa-trabalho-05-3e10fc305892.mp3",
+            "duration": 11.099
+          }
+        ]
+      },
+      "en": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "af_heart",
+        "source_hash": "f85b5394f2581858e516f526e86f770c6b399c986449786d8f2f4cd4a1bd4f9d",
+        "segments": [
+          {
+            "audio_path": "/narration/en/pausa-trabalho-01-fa7ce17f7ca8.mp3",
+            "duration": 11.255
+          },
+          {
+            "audio_path": "/narration/en/pausa-trabalho-02-44aa66d10942.mp3",
+            "duration": 10.221
+          },
+          {
+            "audio_path": "/narration/en/pausa-trabalho-03-8a585556941c.mp3",
+            "duration": 9.917
+          },
+          {
+            "audio_path": "/narration/en/pausa-trabalho-04-4a067df41f13.mp3",
+            "duration": 9.354
+          },
+          {
+            "audio_path": "/narration/en/pausa-trabalho-05-94c9d4c5bb9d.mp3",
+            "duration": 10.035
+          }
+        ]
+      },
+      "it": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "if_sara",
+        "source_hash": "9d5f36f9738bbf58f9ae9bc97a2f5f3f17e5bf13a0eecff949b792b94eb02221",
+        "segments": [
+          {
+            "audio_path": "/narration/it/pausa-trabalho-01-e9b1420529fb.mp3",
+            "duration": 11.085
+          },
+          {
+            "audio_path": "/narration/it/pausa-trabalho-02-8abd1ee1189b.mp3",
+            "duration": 10.375
+          },
+          {
+            "audio_path": "/narration/it/pausa-trabalho-03-3fd5b8b831ad.mp3",
+            "duration": 10.491
+          },
+          {
+            "audio_path": "/narration/it/pausa-trabalho-04-0b5e278fd705.mp3",
+            "duration": 9.655
+          },
+          {
+            "audio_path": "/narration/it/pausa-trabalho-05-48b0a1548f34.mp3",
+            "duration": 10.041
+          }
+        ]
+      },
+      "es": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ef_dora",
+        "source_hash": "47ae5b61031385bc5b3b8b486d16b8757cafa661881aedb9a016d2da7a76cf41",
+        "segments": [
+          {
+            "audio_path": "/narration/es/pausa-trabalho-01-31c9359f6711.mp3",
+            "duration": 12.073
+          },
+          {
+            "audio_path": "/narration/es/pausa-trabalho-02-bf22372d768d.mp3",
+            "duration": 9.437
+          },
+          {
+            "audio_path": "/narration/es/pausa-trabalho-03-3dd92b48be09.mp3",
+            "duration": 9.888
+          },
+          {
+            "audio_path": "/narration/es/pausa-trabalho-04-f7cbd2203875.mp3",
+            "duration": 10.215
+          },
+          {
+            "audio_path": "/narration/es/pausa-trabalho-05-23bf9b0e91ca.mp3",
+            "duration": 10.052
+          }
+        ]
+      }
+    },
+    "escuta-atenta": {
+      "fr": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ff_siwis",
+        "source_hash": "7e348d424eac10fc745d1a0f35c12ae79e1bfc1db5fc1894af33ac7d2e5806b0",
+        "segments": [
+          {
+            "audio_path": "/narration/fr/escuta-atenta-01-586e93f9f1db.mp3",
+            "duration": 12.178
+          },
+          {
+            "audio_path": "/narration/fr/escuta-atenta-02-51becad58860.mp3",
+            "duration": 8.558
+          },
+          {
+            "audio_path": "/narration/fr/escuta-atenta-03-594e7fd5230d.mp3",
+            "duration": 9.965
+          },
+          {
+            "audio_path": "/narration/fr/escuta-atenta-04-22b08a058979.mp3",
+            "duration": 10.251
+          },
+          {
+            "audio_path": "/narration/fr/escuta-atenta-05-61c5bbdc7748.mp3",
+            "duration": 10.415
+          }
+        ]
+      },
+      "pt": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "pf_dora",
+        "source_hash": "bed16d514b7fc631121d040a92fb6c4232bebd796024bd0885aebd6640d09dfe",
+        "segments": [
+          {
+            "audio_path": "/narration/pt/escuta-atenta-01-7d3a9b16cfb8.mp3",
+            "duration": 12.49
+          },
+          {
+            "audio_path": "/narration/pt/escuta-atenta-02-5d7f3f4f127f.mp3",
+            "duration": 11.513
+          },
+          {
+            "audio_path": "/narration/pt/escuta-atenta-03-c3405430df0d.mp3",
+            "duration": 11.768
+          },
+          {
+            "audio_path": "/narration/pt/escuta-atenta-04-1e1700dbf907.mp3",
+            "duration": 11.576
+          },
+          {
+            "audio_path": "/narration/pt/escuta-atenta-05-3e10fc305892.mp3",
+            "duration": 11.099
+          }
+        ]
+      },
+      "en": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "af_heart",
+        "source_hash": "739c9066c248cfd4b8ea95d180213d2b37ca6798a0501abbaf32837e035df172",
+        "segments": [
+          {
+            "audio_path": "/narration/en/escuta-atenta-01-fa7ce17f7ca8.mp3",
+            "duration": 11.255
+          },
+          {
+            "audio_path": "/narration/en/escuta-atenta-02-ddeeb245a019.mp3",
+            "duration": 10.579
+          },
+          {
+            "audio_path": "/narration/en/escuta-atenta-03-32a1e79b1d14.mp3",
+            "duration": 11.578
+          },
+          {
+            "audio_path": "/narration/en/escuta-atenta-04-73919442e672.mp3",
+            "duration": 11.599
+          },
+          {
+            "audio_path": "/narration/en/escuta-atenta-05-94c9d4c5bb9d.mp3",
+            "duration": 10.035
+          }
+        ]
+      },
+      "it": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "if_sara",
+        "source_hash": "ebef4b91672e5d061e94911562a445347d203354220940b2b26d6424dab016c1",
+        "segments": [
+          {
+            "audio_path": "/narration/it/escuta-atenta-01-e9b1420529fb.mp3",
+            "duration": 11.085
+          },
+          {
+            "audio_path": "/narration/it/escuta-atenta-02-f762b0fa472d.mp3",
+            "duration": 9.266
+          },
+          {
+            "audio_path": "/narration/it/escuta-atenta-03-fbc8a1ef9a1e.mp3",
+            "duration": 10.31
+          },
+          {
+            "audio_path": "/narration/it/escuta-atenta-04-6e1471b5a324.mp3",
+            "duration": 10.807
+          },
+          {
+            "audio_path": "/narration/it/escuta-atenta-05-48b0a1548f34.mp3",
+            "duration": 10.041
+          }
+        ]
+      },
+      "es": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ef_dora",
+        "source_hash": "53fc864dda8b4c4cac081367336b20a9750edcb780c83f3996f5c212c88b7586",
+        "segments": [
+          {
+            "audio_path": "/narration/es/escuta-atenta-01-31c9359f6711.mp3",
+            "duration": 12.073
+          },
+          {
+            "audio_path": "/narration/es/escuta-atenta-02-8bd85dead137.mp3",
+            "duration": 9.178
+          },
+          {
+            "audio_path": "/narration/es/escuta-atenta-03-49539ab2d838.mp3",
+            "duration": 10.319
+          },
+          {
+            "audio_path": "/narration/es/escuta-atenta-04-eb974d443a68.mp3",
+            "duration": 11.206
+          },
+          {
+            "audio_path": "/narration/es/escuta-atenta-05-23bf9b0e91ca.mp3",
+            "duration": 10.052
+          }
+        ]
+      }
+    },
+    "varredura-corporal": {
+      "fr": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ff_siwis",
+        "source_hash": "87ab115a55b83c79719cc959aa0582b053ccdb62f6564c81a107eadcbed59009",
+        "segments": [
+          {
+            "audio_path": "/narration/fr/varredura-corporal-01-586e93f9f1db.mp3",
+            "duration": 12.178
+          },
+          {
+            "audio_path": "/narration/fr/varredura-corporal-02-11ed6c764bed.mp3",
+            "duration": 11.664
+          },
+          {
+            "audio_path": "/narration/fr/varredura-corporal-03-199590b4501c.mp3",
+            "duration": 9.343
+          },
+          {
+            "audio_path": "/narration/fr/varredura-corporal-04-7fc3bfced9ec.mp3",
+            "duration": 8.277
+          },
+          {
+            "audio_path": "/narration/fr/varredura-corporal-05-61c5bbdc7748.mp3",
+            "duration": 10.415
+          }
+        ]
+      },
+      "pt": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "pf_dora",
+        "source_hash": "03c80a93cdf31d797ab5aa34ab728f01790cf269a5085084f99252be0350eaf1",
+        "segments": [
+          {
+            "audio_path": "/narration/pt/varredura-corporal-01-7d3a9b16cfb8.mp3",
+            "duration": 12.49
+          },
+          {
+            "audio_path": "/narration/pt/varredura-corporal-02-0798de7410af.mp3",
+            "duration": 13.231
+          },
+          {
+            "audio_path": "/narration/pt/varredura-corporal-03-9645dd153d99.mp3",
+            "duration": 12.711
+          },
+          {
+            "audio_path": "/narration/pt/varredura-corporal-04-8fa61f436d98.mp3",
+            "duration": 9.989
+          },
+          {
+            "audio_path": "/narration/pt/varredura-corporal-05-3e10fc305892.mp3",
+            "duration": 11.099
+          }
+        ]
+      },
+      "en": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "af_heart",
+        "source_hash": "ce800cc236f348d7ec31daa9daf2114adebb18ddb70ae80c996286860a31cc8b",
+        "segments": [
+          {
+            "audio_path": "/narration/en/varredura-corporal-01-fa7ce17f7ca8.mp3",
+            "duration": 11.255
+          },
+          {
+            "audio_path": "/narration/en/varredura-corporal-02-5d4b48a50b4a.mp3",
+            "duration": 12.803
+          },
+          {
+            "audio_path": "/narration/en/varredura-corporal-03-1026b07d40e9.mp3",
+            "duration": 12.411
+          },
+          {
+            "audio_path": "/narration/en/varredura-corporal-04-373ebfc0a18d.mp3",
+            "duration": 10.176
+          },
+          {
+            "audio_path": "/narration/en/varredura-corporal-05-94c9d4c5bb9d.mp3",
+            "duration": 10.035
+          }
+        ]
+      },
+      "it": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "if_sara",
+        "source_hash": "7e3c6384ec2178ecc3768158f72dc3c4429bc95efebb4bed0edb15580671f9a7",
+        "segments": [
+          {
+            "audio_path": "/narration/it/varredura-corporal-01-e9b1420529fb.mp3",
+            "duration": 11.085
+          },
+          {
+            "audio_path": "/narration/it/varredura-corporal-02-b6887f709371.mp3",
+            "duration": 12.113
+          },
+          {
+            "audio_path": "/narration/it/varredura-corporal-03-2f24b69373c3.mp3",
+            "duration": 9.456
+          },
+          {
+            "audio_path": "/narration/it/varredura-corporal-04-a379a4720f0e.mp3",
+            "duration": 8.625
+          },
+          {
+            "audio_path": "/narration/it/varredura-corporal-05-48b0a1548f34.mp3",
+            "duration": 10.041
+          }
+        ]
+      },
+      "es": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ef_dora",
+        "source_hash": "7fa6d30df63e37defa6f35569c8499bb170292c9c66f8e916c70716266df98ca",
+        "segments": [
+          {
+            "audio_path": "/narration/es/varredura-corporal-01-31c9359f6711.mp3",
+            "duration": 12.073
+          },
+          {
+            "audio_path": "/narration/es/varredura-corporal-02-9791ebcaaab6.mp3",
+            "duration": 12.061
+          },
+          {
+            "audio_path": "/narration/es/varredura-corporal-03-80ab67506a31.mp3",
+            "duration": 9.132
+          },
+          {
+            "audio_path": "/narration/es/varredura-corporal-04-61a4969b3406.mp3",
+            "duration": 9.231
+          },
+          {
+            "audio_path": "/narration/es/varredura-corporal-05-23bf9b0e91ca.mp3",
+            "duration": 10.052
+          }
+        ]
+      }
+    },
+    "gentileza-consigo": {
+      "fr": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ff_siwis",
+        "source_hash": "2cca3776ec33a81d3cdeda8e939423c41e4c5efc7b96b488dfb13b49b4be36fa",
+        "segments": [
+          {
+            "audio_path": "/narration/fr/gentileza-consigo-01-586e93f9f1db.mp3",
+            "duration": 12.178
+          },
+          {
+            "audio_path": "/narration/fr/gentileza-consigo-02-3ad5b709933b.mp3",
+            "duration": 10.444
+          },
+          {
+            "audio_path": "/narration/fr/gentileza-consigo-03-c22f16f3e4ae.mp3",
+            "duration": 8.895
+          },
+          {
+            "audio_path": "/narration/fr/gentileza-consigo-04-4e362d7e1bc5.mp3",
+            "duration": 10.09
+          },
+          {
+            "audio_path": "/narration/fr/gentileza-consigo-05-61c5bbdc7748.mp3",
+            "duration": 10.415
+          }
+        ]
+      },
+      "pt": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "pf_dora",
+        "source_hash": "b05f0caf135a7babf2a52e1988da3ff07704fc4a31c05a3cb256ed8263d96de1",
+        "segments": [
+          {
+            "audio_path": "/narration/pt/gentileza-consigo-01-7d3a9b16cfb8.mp3",
+            "duration": 12.49
+          },
+          {
+            "audio_path": "/narration/pt/gentileza-consigo-02-9cae0fc98261.mp3",
+            "duration": 10.761
+          },
+          {
+            "audio_path": "/narration/pt/gentileza-consigo-03-71f2bd6c7899.mp3",
+            "duration": 10.835
+          },
+          {
+            "audio_path": "/narration/pt/gentileza-consigo-04-2fb516ef7922.mp3",
+            "duration": 12.359
+          },
+          {
+            "audio_path": "/narration/pt/gentileza-consigo-05-3e10fc305892.mp3",
+            "duration": 11.099
+          }
+        ]
+      },
+      "en": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "af_heart",
+        "source_hash": "481814cdbf55c3f400acec7cff9ac2998f9180e1084b27e86741e4a8553a8f9a",
+        "segments": [
+          {
+            "audio_path": "/narration/en/gentileza-consigo-01-fa7ce17f7ca8.mp3",
+            "duration": 11.255
+          },
+          {
+            "audio_path": "/narration/en/gentileza-consigo-02-dd4d49344abd.mp3",
+            "duration": 10.254
+          },
+          {
+            "audio_path": "/narration/en/gentileza-consigo-03-55f2e338f25a.mp3",
+            "duration": 8.936
+          },
+          {
+            "audio_path": "/narration/en/gentileza-consigo-04-84754ec5f34d.mp3",
+            "duration": 11.185
+          },
+          {
+            "audio_path": "/narration/en/gentileza-consigo-05-94c9d4c5bb9d.mp3",
+            "duration": 10.035
+          }
+        ]
+      },
+      "it": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "if_sara",
+        "source_hash": "83878ea2732e803d000730348a0e4d5ddb1aa770200ab2cc68d185d373b10934",
+        "segments": [
+          {
+            "audio_path": "/narration/it/gentileza-consigo-01-e9b1420529fb.mp3",
+            "duration": 11.085
+          },
+          {
+            "audio_path": "/narration/it/gentileza-consigo-02-2dbd9fc0054e.mp3",
+            "duration": 9.769
+          },
+          {
+            "audio_path": "/narration/it/gentileza-consigo-03-61f3d2351934.mp3",
+            "duration": 9.301
+          },
+          {
+            "audio_path": "/narration/it/gentileza-consigo-04-532cdd944a4a.mp3",
+            "duration": 11.163
+          },
+          {
+            "audio_path": "/narration/it/gentileza-consigo-05-48b0a1548f34.mp3",
+            "duration": 10.041
+          }
+        ]
+      },
+      "es": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ef_dora",
+        "source_hash": "e82d63917f1dd58c2f078a6a51eeb381f7fea6388c80619faeb15d513b081bf8",
+        "segments": [
+          {
+            "audio_path": "/narration/es/gentileza-consigo-01-31c9359f6711.mp3",
+            "duration": 12.073
+          },
+          {
+            "audio_path": "/narration/es/gentileza-consigo-02-1d41cea409e1.mp3",
+            "duration": 9.909
+          },
+          {
+            "audio_path": "/narration/es/gentileza-consigo-03-f90cf22c977c.mp3",
+            "duration": 9.004
+          },
+          {
+            "audio_path": "/narration/es/gentileza-consigo-04-fa0fd7eb482e.mp3",
+            "duration": 11.389
+          },
+          {
+            "audio_path": "/narration/es/gentileza-consigo-05-23bf9b0e91ca.mp3",
+            "duration": 10.052
+          }
+        ]
+      }
+    },
+    "acolher-emocoes": {
+      "fr": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ff_siwis",
+        "source_hash": "09b5ebde8895efc916aa3903aed5c6792666df7ce7b152b5f99871d4270ca6a3",
+        "segments": [
+          {
+            "audio_path": "/narration/fr/acolher-emocoes-01-586e93f9f1db.mp3",
+            "duration": 12.178
+          },
+          {
+            "audio_path": "/narration/fr/acolher-emocoes-02-b4dba1a29735.mp3",
+            "duration": 9.191
+          },
+          {
+            "audio_path": "/narration/fr/acolher-emocoes-03-5d9b6e390738.mp3",
+            "duration": 11.173
+          },
+          {
+            "audio_path": "/narration/fr/acolher-emocoes-04-fdbb8a9fe97a.mp3",
+            "duration": 10.145
+          },
+          {
+            "audio_path": "/narration/fr/acolher-emocoes-05-61c5bbdc7748.mp3",
+            "duration": 10.415
+          }
+        ]
+      },
+      "pt": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "pf_dora",
+        "source_hash": "8b5d843e61e3bb3009acfe4049f9a96b273dd05060aada76504c76735adb5d14",
+        "segments": [
+          {
+            "audio_path": "/narration/pt/acolher-emocoes-01-7d3a9b16cfb8.mp3",
+            "duration": 12.49
+          },
+          {
+            "audio_path": "/narration/pt/acolher-emocoes-02-73618a1e9c50.mp3",
+            "duration": 12.149
+          },
+          {
+            "audio_path": "/narration/pt/acolher-emocoes-03-390688cf47b5.mp3",
+            "duration": 12.621
+          },
+          {
+            "audio_path": "/narration/pt/acolher-emocoes-04-83344d7c2297.mp3",
+            "duration": 12.04
+          },
+          {
+            "audio_path": "/narration/pt/acolher-emocoes-05-3e10fc305892.mp3",
+            "duration": 11.099
+          }
+        ]
+      },
+      "en": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "af_heart",
+        "source_hash": "29d306f1762648d29a1568511dd7e1d60c569c3b5ff2eea09f5c544abd065732",
+        "segments": [
+          {
+            "audio_path": "/narration/en/acolher-emocoes-01-fa7ce17f7ca8.mp3",
+            "duration": 11.255
+          },
+          {
+            "audio_path": "/narration/en/acolher-emocoes-02-be9f5b667efb.mp3",
+            "duration": 10.707
+          },
+          {
+            "audio_path": "/narration/en/acolher-emocoes-03-c2d40c34a45e.mp3",
+            "duration": 11.851
+          },
+          {
+            "audio_path": "/narration/en/acolher-emocoes-04-b5c0d8064d13.mp3",
+            "duration": 10.842
+          },
+          {
+            "audio_path": "/narration/en/acolher-emocoes-05-94c9d4c5bb9d.mp3",
+            "duration": 10.035
+          }
+        ]
+      },
+      "it": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "if_sara",
+        "source_hash": "888aad90f8901147c747a6b4e5a604a5fd8cede4fb4f6fa794fd184a36ed3779",
+        "segments": [
+          {
+            "audio_path": "/narration/it/acolher-emocoes-01-e9b1420529fb.mp3",
+            "duration": 11.085
+          },
+          {
+            "audio_path": "/narration/it/acolher-emocoes-02-e5eebee7a6bf.mp3",
+            "duration": 9.209
+          },
+          {
+            "audio_path": "/narration/it/acolher-emocoes-03-4e18972d285b.mp3",
+            "duration": 11.539
+          },
+          {
+            "audio_path": "/narration/it/acolher-emocoes-04-3e213104c2e9.mp3",
+            "duration": 10.41
+          },
+          {
+            "audio_path": "/narration/it/acolher-emocoes-05-48b0a1548f34.mp3",
+            "duration": 10.041
+          }
+        ]
+      },
+      "es": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ef_dora",
+        "source_hash": "02962e11994764d757fdc096e1897eec09804fa5a0919be86a66cd9930a442d1",
+        "segments": [
+          {
+            "audio_path": "/narration/es/acolher-emocoes-01-31c9359f6711.mp3",
+            "duration": 12.073
+          },
+          {
+            "audio_path": "/narration/es/acolher-emocoes-02-96520131d2d6.mp3",
+            "duration": 9.734
+          },
+          {
+            "audio_path": "/narration/es/acolher-emocoes-03-52a13290e004.mp3",
+            "duration": 10.568
+          },
+          {
+            "audio_path": "/narration/es/acolher-emocoes-04-7d2b2483a33b.mp3",
+            "duration": 11.015
+          },
+          {
+            "audio_path": "/narration/es/acolher-emocoes-05-23bf9b0e91ca.mp3",
+            "duration": 10.052
+          }
+        ]
+      }
+    },
+    "desacelerar-noite": {
+      "fr": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ff_siwis",
+        "source_hash": "39bcc1c97d958bf09608cc3703fafcdb9444d3fdb80a0776272149990f15c2ed",
+        "segments": [
+          {
+            "audio_path": "/narration/fr/desacelerar-noite-01-586e93f9f1db.mp3",
+            "duration": 12.178
+          },
+          {
+            "audio_path": "/narration/fr/desacelerar-noite-02-a3b83a22aa86.mp3",
+            "duration": 10.471
+          },
+          {
+            "audio_path": "/narration/fr/desacelerar-noite-03-23c4d9f85a60.mp3",
+            "duration": 10.04
+          },
+          {
+            "audio_path": "/narration/fr/desacelerar-noite-04-5b1989765e29.mp3",
+            "duration": 11.108
+          },
+          {
+            "audio_path": "/narration/fr/desacelerar-noite-05-216578f01570.mp3",
+            "duration": 9.183
+          }
+        ]
+      },
+      "pt": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "pf_dora",
+        "source_hash": "6faed91613c0df9d4f58b14b13bcff85fb0b1e72e566b17cfa7e0edec85d98e4",
+        "segments": [
+          {
+            "audio_path": "/narration/pt/desacelerar-noite-01-7d3a9b16cfb8.mp3",
+            "duration": 12.49
+          },
+          {
+            "audio_path": "/narration/pt/desacelerar-noite-02-5d6ef360a8b7.mp3",
+            "duration": 11.141
+          },
+          {
+            "audio_path": "/narration/pt/desacelerar-noite-03-178eb53d9455.mp3",
+            "duration": 11.328
+          },
+          {
+            "audio_path": "/narration/pt/desacelerar-noite-04-b84193dd7aaa.mp3",
+            "duration": 12.231
+          },
+          {
+            "audio_path": "/narration/pt/desacelerar-noite-05-fe4c15c49946.mp3",
+            "duration": 10.607
+          }
+        ]
+      },
+      "en": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "af_heart",
+        "source_hash": "52528bef8b1fd3743560b2c445764ae37b46edbe23147f0f6f4139174690da8e",
+        "segments": [
+          {
+            "audio_path": "/narration/en/desacelerar-noite-01-fa7ce17f7ca8.mp3",
+            "duration": 11.255
+          },
+          {
+            "audio_path": "/narration/en/desacelerar-noite-02-cba947c61e99.mp3",
+            "duration": 10.652
+          },
+          {
+            "audio_path": "/narration/en/desacelerar-noite-03-f582e91201c6.mp3",
+            "duration": 11.127
+          },
+          {
+            "audio_path": "/narration/en/desacelerar-noite-04-5ab0048a3255.mp3",
+            "duration": 11.995
+          },
+          {
+            "audio_path": "/narration/en/desacelerar-noite-05-75dfdd0a2b94.mp3",
+            "duration": 8.575
+          }
+        ]
+      },
+      "it": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "if_sara",
+        "source_hash": "7c5cc865a5edd0cc1f2b6587bda715b917a592794b7d0d6f1e858b806b4b848c",
+        "segments": [
+          {
+            "audio_path": "/narration/it/desacelerar-noite-01-e9b1420529fb.mp3",
+            "duration": 11.085
+          },
+          {
+            "audio_path": "/narration/it/desacelerar-noite-02-26f45aeb13d9.mp3",
+            "duration": 10.329
+          },
+          {
+            "audio_path": "/narration/it/desacelerar-noite-03-9b42f26e5714.mp3",
+            "duration": 9.907
+          },
+          {
+            "audio_path": "/narration/it/desacelerar-noite-04-7b3bdacd53e9.mp3",
+            "duration": 11.295
+          },
+          {
+            "audio_path": "/narration/it/desacelerar-noite-05-6c75e4f8d33d.mp3",
+            "duration": 9.064
+          }
+        ]
+      },
+      "es": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ef_dora",
+        "source_hash": "6779fff7187cc69cf507f8c4d08b60f7cdab890b054697f804e15e601481dbf6",
+        "segments": [
+          {
+            "audio_path": "/narration/es/desacelerar-noite-01-31c9359f6711.mp3",
+            "duration": 12.073
+          },
+          {
+            "audio_path": "/narration/es/desacelerar-noite-02-30e70bc6294a.mp3",
+            "duration": 10.225
+          },
+          {
+            "audio_path": "/narration/es/desacelerar-noite-03-0a95d51777d8.mp3",
+            "duration": 9.561
+          },
+          {
+            "audio_path": "/narration/es/desacelerar-noite-04-2ac07ea0552a.mp3",
+            "duration": 10.49
+          },
+          {
+            "audio_path": "/narration/es/desacelerar-noite-05-325324b8448d.mp3",
+            "duration": 8.754
+          }
+        ]
+      }
+    },
+    "caminhada-consciente": {
+      "fr": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ff_siwis",
+        "source_hash": "b6836705dffb2c99fd0798e1e6ad965e65d834b45c90a2ed4961dd4edde1de93",
+        "segments": [
+          {
+            "audio_path": "/narration/fr/caminhada-consciente-01-79ffa8678f8f.mp3",
+            "duration": 12.145
+          },
+          {
+            "audio_path": "/narration/fr/caminhada-consciente-02-3183f3758339.mp3",
+            "duration": 11.508
+          },
+          {
+            "audio_path": "/narration/fr/caminhada-consciente-03-8fbae089fd97.mp3",
+            "duration": 10.921
+          },
+          {
+            "audio_path": "/narration/fr/caminhada-consciente-04-77c1e0215e9b.mp3",
+            "duration": 8.638
+          },
+          {
+            "audio_path": "/narration/fr/caminhada-consciente-05-8e4d0396a067.mp3",
+            "duration": 9.461
+          }
+        ]
+      },
+      "pt": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "pf_dora",
+        "source_hash": "c6c88ee0794ffd39dfbacc222a026b90ff3c35cf683db8b72ecba644ee32aed1",
+        "segments": [
+          {
+            "audio_path": "/narration/pt/caminhada-consciente-01-3427cacff2f6.mp3",
+            "duration": 13.04
+          },
+          {
+            "audio_path": "/narration/pt/caminhada-consciente-02-4d53925924b7.mp3",
+            "duration": 11.563
+          },
+          {
+            "audio_path": "/narration/pt/caminhada-consciente-03-6e04abe7f257.mp3",
+            "duration": 11.694
+          },
+          {
+            "audio_path": "/narration/pt/caminhada-consciente-04-1cbfdba34456.mp3",
+            "duration": 10.651
+          },
+          {
+            "audio_path": "/narration/pt/caminhada-consciente-05-471e9f110862.mp3",
+            "duration": 9.673
+          }
+        ]
+      },
+      "en": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "af_heart",
+        "source_hash": "531add201be71eec038ef720b17f63f2b44e2fe8b7ad93c43e221b297d7a6e7c",
+        "segments": [
+          {
+            "audio_path": "/narration/en/caminhada-consciente-01-5b4d1ad1e983.mp3",
+            "duration": 12.043
+          },
+          {
+            "audio_path": "/narration/en/caminhada-consciente-02-72ef19aba885.mp3",
+            "duration": 10.756
+          },
+          {
+            "audio_path": "/narration/en/caminhada-consciente-03-3667b8408bc7.mp3",
+            "duration": 11.584
+          },
+          {
+            "audio_path": "/narration/en/caminhada-consciente-04-ec080c56afa0.mp3",
+            "duration": 10.072
+          },
+          {
+            "audio_path": "/narration/en/caminhada-consciente-05-96135798d25b.mp3",
+            "duration": 9.087
+          }
+        ]
+      },
+      "it": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "if_sara",
+        "source_hash": "ac6305913cfc04189558ea26e879505f0218112f630afe95df747c46074d9c3e",
+        "segments": [
+          {
+            "audio_path": "/narration/it/caminhada-consciente-01-2d2c1f838bce.mp3",
+            "duration": 11.492
+          },
+          {
+            "audio_path": "/narration/it/caminhada-consciente-02-f5fa74f9181d.mp3",
+            "duration": 11.027
+          },
+          {
+            "audio_path": "/narration/it/caminhada-consciente-03-05e8894218a8.mp3",
+            "duration": 10.073
+          },
+          {
+            "audio_path": "/narration/it/caminhada-consciente-04-0212ccfba2d1.mp3",
+            "duration": 8.392
+          },
+          {
+            "audio_path": "/narration/it/caminhada-consciente-05-25e7fc532ba5.mp3",
+            "duration": 9.771
+          }
+        ]
+      },
+      "es": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ef_dora",
+        "source_hash": "644be26c427e4d537bdaa2b6d8314d587e015c2e92e98099841ee66c2a333955",
+        "segments": [
+          {
+            "audio_path": "/narration/es/caminhada-consciente-01-b26f1ea81e21.mp3",
+            "duration": 11.669
+          },
+          {
+            "audio_path": "/narration/es/caminhada-consciente-02-1dd606472021.mp3",
+            "duration": 10.471
+          },
+          {
+            "audio_path": "/narration/es/caminhada-consciente-03-e73af046df62.mp3",
+            "duration": 10.769
+          },
+          {
+            "audio_path": "/narration/es/caminhada-consciente-04-f977be20d9ab.mp3",
+            "duration": 8.661
+          },
+          {
+            "audio_path": "/narration/es/caminhada-consciente-05-01019a60eee9.mp3",
+            "duration": 9.159
+          }
+        ]
+      }
+    },
+    "historia-mar": {
+      "fr": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ff_siwis",
+        "source_hash": "149cd3c08c73cfc3feb128924aade10113c65be58af210ca80c1b6c972a178ad",
+        "segments": [
+          {
+            "audio_path": "/narration/fr/historia-mar-01-471371878ab7.mp3",
+            "duration": 13.552
+          },
+          {
+            "audio_path": "/narration/fr/historia-mar-02-daf934513b4f.mp3",
+            "duration": 12.585
+          },
+          {
+            "audio_path": "/narration/fr/historia-mar-03-fde1a3173329.mp3",
+            "duration": 12.858
+          },
+          {
+            "audio_path": "/narration/fr/historia-mar-04-d55e1a27b1aa.mp3",
+            "duration": 12.179
+          },
+          {
+            "audio_path": "/narration/fr/historia-mar-05-dd0b8b543ef8.mp3",
+            "duration": 13.749
+          },
+          {
+            "audio_path": "/narration/fr/historia-mar-06-019b4897d40b.mp3",
+            "duration": 13.301
+          }
+        ]
+      },
+      "pt": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "pf_dora",
+        "source_hash": "63c3b4dcb7f926524f7b0aa4645f45180c56881ebef3d44ccb47b700ae40f0a0",
+        "segments": [
+          {
+            "audio_path": "/narration/pt/historia-mar-01-6d81b9fd726b.mp3",
+            "duration": 13.538
+          },
+          {
+            "audio_path": "/narration/pt/historia-mar-02-973b26006589.mp3",
+            "duration": 13.913
+          },
+          {
+            "audio_path": "/narration/pt/historia-mar-03-263226d593a6.mp3",
+            "duration": 13.902
+          },
+          {
+            "audio_path": "/narration/pt/historia-mar-04-3d7e86801f1d.mp3",
+            "duration": 13.346
+          },
+          {
+            "audio_path": "/narration/pt/historia-mar-05-0456fc189d7d.mp3",
+            "duration": 14.967
+          },
+          {
+            "audio_path": "/narration/pt/historia-mar-06-93771a5ff0be.mp3",
+            "duration": 13.347
+          }
+        ]
+      },
+      "en": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "af_heart",
+        "source_hash": "f79ffea5b722a3ab1c677daa97d4741a04a3dba4e7b4090cfae9980816438a1a",
+        "segments": [
+          {
+            "audio_path": "/narration/en/historia-mar-01-7d56d63fde93.mp3",
+            "duration": 13.343
+          },
+          {
+            "audio_path": "/narration/en/historia-mar-02-048bc8793500.mp3",
+            "duration": 13.345
+          },
+          {
+            "audio_path": "/narration/en/historia-mar-03-813a9a741143.mp3",
+            "duration": 14.143
+          },
+          {
+            "audio_path": "/narration/en/historia-mar-04-52f1c90e050a.mp3",
+            "duration": 12.389
+          },
+          {
+            "audio_path": "/narration/en/historia-mar-05-ab406728f99c.mp3",
+            "duration": 13.592
+          },
+          {
+            "audio_path": "/narration/en/historia-mar-06-8378f362ba79.mp3",
+            "duration": 13.122
+          }
+        ]
+      },
+      "it": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "if_sara",
+        "source_hash": "6e2342932b8ea72f8a350b54228571fbb7325c21aad9a4b5213b98e04249e668",
+        "segments": [
+          {
+            "audio_path": "/narration/it/historia-mar-01-7eeedf5acf54.mp3",
+            "duration": 13.206
+          },
+          {
+            "audio_path": "/narration/it/historia-mar-02-2fd905bcf933.mp3",
+            "duration": 12.06
+          },
+          {
+            "audio_path": "/narration/it/historia-mar-03-b23a89c4515e.mp3",
+            "duration": 12.305
+          },
+          {
+            "audio_path": "/narration/it/historia-mar-04-16e52f05705e.mp3",
+            "duration": 12.225
+          },
+          {
+            "audio_path": "/narration/it/historia-mar-05-b59d4d46700f.mp3",
+            "duration": 13.277
+          },
+          {
+            "audio_path": "/narration/it/historia-mar-06-66e638fa2dbb.mp3",
+            "duration": 11.656
+          }
+        ]
+      },
+      "es": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ef_dora",
+        "source_hash": "f6c67b91a1989abed69e6b6704dd4e54896b5f982e54c3fe6da60c0e7afb2263",
+        "segments": [
+          {
+            "audio_path": "/narration/es/historia-mar-01-09cd5cfba480.mp3",
+            "duration": 12.993
+          },
+          {
+            "audio_path": "/narration/es/historia-mar-02-9bf9ec0bc36c.mp3",
+            "duration": 12.843
+          },
+          {
+            "audio_path": "/narration/es/historia-mar-03-4c9ebc3ab137.mp3",
+            "duration": 12.479
+          },
+          {
+            "audio_path": "/narration/es/historia-mar-04-5fa81aa079b6.mp3",
+            "duration": 12.479
+          },
+          {
+            "audio_path": "/narration/es/historia-mar-05-d0092defb347.mp3",
+            "duration": 13.246
+          },
+          {
+            "audio_path": "/narration/es/historia-mar-06-d88c63b5294d.mp3",
+            "duration": 12.019
+          }
+        ]
+      }
+    },
+    "historia-jardim": {
+      "fr": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ff_siwis",
+        "source_hash": "0da78b00ac58aae65f10992bc1db1578a89a8f39dbfc819ebc94b75e03ff8662",
+        "segments": [
+          {
+            "audio_path": "/narration/fr/historia-jardim-01-11725420efd2.mp3",
+            "duration": 13.403
+          },
+          {
+            "audio_path": "/narration/fr/historia-jardim-02-bde10383f2ed.mp3",
+            "duration": 10.636
+          },
+          {
+            "audio_path": "/narration/fr/historia-jardim-03-3289feb66e7f.mp3",
+            "duration": 12.312
+          },
+          {
+            "audio_path": "/narration/fr/historia-jardim-04-3132bda1c82a.mp3",
+            "duration": 13.207
+          },
+          {
+            "audio_path": "/narration/fr/historia-jardim-05-1ee795cdf1f7.mp3",
+            "duration": 10.798
+          },
+          {
+            "audio_path": "/narration/fr/historia-jardim-06-15bd53fbf1b9.mp3",
+            "duration": 12.312
+          }
+        ]
+      },
+      "pt": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "pf_dora",
+        "source_hash": "8df5ff3d0851de9a11a1e31c7e679a0fb70c72c7b39c5d8bb841676a0a39e038",
+        "segments": [
+          {
+            "audio_path": "/narration/pt/historia-jardim-01-539b0b23c7ab.mp3",
+            "duration": 13.786
+          },
+          {
+            "audio_path": "/narration/pt/historia-jardim-02-4fe0735da570.mp3",
+            "duration": 12.331
+          },
+          {
+            "audio_path": "/narration/pt/historia-jardim-03-90e3112b310d.mp3",
+            "duration": 14.205
+          },
+          {
+            "audio_path": "/narration/pt/historia-jardim-04-bfa70e68c47f.mp3",
+            "duration": 14.041
+          },
+          {
+            "audio_path": "/narration/pt/historia-jardim-05-30bd7c88eff8.mp3",
+            "duration": 13.233
+          },
+          {
+            "audio_path": "/narration/pt/historia-jardim-06-b004c2bb1d46.mp3",
+            "duration": 12.747
+          }
+        ]
+      },
+      "en": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "af_heart",
+        "source_hash": "d17367d880ce3cc6a6c061e37c8ff1dc306c8def408974d1d9ef46bade109ed4",
+        "segments": [
+          {
+            "audio_path": "/narration/en/historia-jardim-01-133a6cbf4cdf.mp3",
+            "duration": 13.742
+          },
+          {
+            "audio_path": "/narration/en/historia-jardim-02-35e4ee704c0f.mp3",
+            "duration": 11.194
+          },
+          {
+            "audio_path": "/narration/en/historia-jardim-03-f6cb7d3af05f.mp3",
+            "duration": 12.759
+          },
+          {
+            "audio_path": "/narration/en/historia-jardim-04-d928e212cd7e.mp3",
+            "duration": 13.58
+          },
+          {
+            "audio_path": "/narration/en/historia-jardim-05-75f0018b50f6.mp3",
+            "duration": 11.438
+          },
+          {
+            "audio_path": "/narration/en/historia-jardim-06-2743ed37d97a.mp3",
+            "duration": 11.689
+          }
+        ]
+      },
+      "it": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "if_sara",
+        "source_hash": "43f1ad71a0d9996cd4b2c5463c671e1a296a7df82f3359d5e3cf959b0d2c9375",
+        "segments": [
+          {
+            "audio_path": "/narration/it/historia-jardim-01-78f1e69f2d4d.mp3",
+            "duration": 12.919
+          },
+          {
+            "audio_path": "/narration/it/historia-jardim-02-baaf7d186702.mp3",
+            "duration": 10.453
+          },
+          {
+            "audio_path": "/narration/it/historia-jardim-03-0e1c5ca41347.mp3",
+            "duration": 13.187
+          },
+          {
+            "audio_path": "/narration/it/historia-jardim-04-9cf472870afd.mp3",
+            "duration": 12.618
+          },
+          {
+            "audio_path": "/narration/it/historia-jardim-05-495b5fc89c94.mp3",
+            "duration": 10.797
+          },
+          {
+            "audio_path": "/narration/it/historia-jardim-06-a5348b067637.mp3",
+            "duration": 12.042
+          }
+        ]
+      },
+      "es": {
+        "provider": "kokoro",
+        "model": "kokoro-v1.0-onnx",
+        "voice": "ef_dora",
+        "source_hash": "18cf13c4ffeae012ae12d9a73897444a2a9232ad253bd1d153ca0769ec04dca3",
+        "segments": [
+          {
+            "audio_path": "/narration/es/historia-jardim-01-9d17991d8ebf.mp3",
+            "duration": 12.865
+          },
+          {
+            "audio_path": "/narration/es/historia-jardim-02-d7bec278e6ae.mp3",
+            "duration": 10.52
+          },
+          {
+            "audio_path": "/narration/es/historia-jardim-03-e78d62b42197.mp3",
+            "duration": 12.811
+          },
+          {
+            "audio_path": "/narration/es/historia-jardim-04-cdf56f84f517.mp3",
+            "duration": 12.665
+          },
+          {
+            "audio_path": "/narration/es/historia-jardim-05-9889567c0804.mp3",
+            "duration": 10.701
+          },
+          {
+            "audio_path": "/narration/es/historia-jardim-06-09a4629cf489.mp3",
+            "duration": 12.219
+          }
+        ]
+      }
+    }
+  }
+}
