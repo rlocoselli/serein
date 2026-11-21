@@ -1,0 +1,3 @@
+<resources><style name="AppTheme" parent="android:style/Theme.Material.Light.NoActionBar">
+<item name="android:windowSplashScreenBackground">#E7EDDF</item><item name="android:windowSplashScreenAnimatedIcon">@drawable/lumi_icon</item><item name="android:windowLightStatusBar">true</item><item name="android:statusBarColor">#F8F7F2</item><item name="android:navigationBarColor">#FFFFFF</item><item name="android:windowBackground">#E7EDDF</item><item name="android:colorAccent">#355D4A</item>
+</style></resources>
