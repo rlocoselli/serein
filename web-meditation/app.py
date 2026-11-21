@@ -215,4 +215,6 @@ init()
 seed_exercises()
 seed_stories()
 setup_natural_voice(app,conn,UPLOADS,admin_required,csrf_required)
+from seo import setup_seo
+setup_seo(app,conn)
 if __name__=='__main__':app.run(host='127.0.0.1',port=int(os.getenv('PORT',5000)),debug=False)

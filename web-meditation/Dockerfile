@@ -24,7 +24,8 @@ COPY scripts/prepare_kokoro.py ./scripts/
 COPY licenses/kokoro/ ./licenses/kokoro/
 RUN python scripts/prepare_kokoro.py
 
-COPY app.py natural_voice.py kokoro_engine.py exercise_seed.json story_seed.json ./
+COPY app.py seo.py natural_voice.py kokoro_engine.py exercise_seed.json story_seed.json ./
+COPY templates/ ./templates/
 COPY static/ ./static/
 
 USER serein

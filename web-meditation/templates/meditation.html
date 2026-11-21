@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f7f6f1">
+  {{ seo_head|safe }}
+  <link rel="icon" href="/assets/lumi.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="meditation-page">
+  <header class="meditation-header"><a class="brand" href="{{ home }}">✳ serein.</a>{{ languages|safe }}</header>
+  <main class="meditation-detail">
+    <nav class="meditation-breadcrumb" aria-label="{{ labels[4] }}"><a href="{{ home }}">{{ labels[2] }}</a><span aria-hidden="true"> / </span>{{ item.title }}</nav>
+    <article>
+      <div class="meditation-intro">
+        <div><p class="overline">{{ copy[item.category] }} · {{ item.duration }} min</p><h1>{{ item.title }}</h1><p class="meditation-subtitle">{{ item.subtitle }}</p><a class="primary" href="{{ home }}?session={{ item.slug }}#home">{{ labels[3] }}</a></div>
+        <img src="/assets/lumi.svg" width="180" height="180" alt="Lumi">
+      </div>
+      <section class="meditation-instructions"><h2>{{ labels[5] }}</h2>
+        {% if protocol %}
+        <ol>{% for step in protocol.steps %}<li><p>{{ step.text }}</p><small>{{ step.seconds }} s</small></li>{% endfor %}</ol>
+        {% else %}<p>{{ item.script }}</p>{% endif %}
+      </section>
+      {% if protocol %}
+      <section class="meditation-evidence"><h2>{{ labels[6] }}</h2><p>{{ protocol.safety }}</p><p>{{ protocol.evidence }}</p>{% if protocol.source %}<a href="{{ protocol.source.url }}" rel="noopener noreferrer">{{ labels[7] }}: {{ protocol.source.name }}</a>{% endif %}</section>
+      {% endif %}
+      <p><a href="{{ home }}#practice-library">{{ labels[4] }}</a></p>
+    </article>
+    <footer><span>✳ serein.</span><span>{{ copy.footer }}</span></footer>
+  </main>
+</body>
+</html>
