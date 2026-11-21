@@ -94,7 +94,47 @@ class NaturalVoiceTests(unittest.TestCase):
     def item(self, lang='pt'):
         with self.connect() as db:
             protocol = json.loads(db.execute('SELECT content FROM exercise_protocols WHERE lang=?', (lang,)).fetchone()[0])
-            return voice.enrich_narration(db, {'id': 1, 'audio_path': None, 'protocol': protocol}, lang)
+            return voice.enrich_narration(db, {'id': 1, 'slug': 'voice-test', 'audio_path': None, 'protocol': protocol}, lang)
+
+    def install_bundled_fixture(self):
+        static = Path(self.temp.name) / 'static'
+        folder = static / 'narration/pt'
+        folder.mkdir(parents=True)
+        (folder / 'seed.mp3').write_bytes(AUDIO)
+        with self.connect() as db:
+            source_hash = voice.digest(voice.source_for(db, 1, 'pt'))
+        entry = {'provider': 'kokoro', 'voice': 'pf_dora', 'source_hash': source_hash,
+                 'segments': [{'audio_path': '/narration/pt/seed.mp3', 'duration': 1}] * 2}
+        catalog = static / 'narration/catalog.json'
+        catalog.write_text(json.dumps({'sessions': {'voice-test': {'pt': entry}}}))
+        override = patch.object(voice, 'BUNDLED_CATALOG', catalog)
+        override.start()
+        self.addCleanup(override.stop)
+        return folder / 'seed.mp3'
+
+    def test_fresh_database_uses_bundled_audio_without_generation_or_admin(self):
+        self.install_bundled_fixture()
+        with patch.object(voice, 'synthesize_to_wav', side_effect=AssertionError('Must not synthesize')):
+            item = self.item()
+        self.assertEqual(item['narration']['provider'], 'kokoro')
+        self.assertTrue(all(s['audio_path'].startswith('/narration/') for s in item['protocol']['steps']))
+
+    def test_bundled_audio_never_narrates_modified_or_missing_content(self):
+        audio = self.install_bundled_fixture()
+        audio.unlink()
+        self.assertIsNone(self.item()['narration'])
+        audio.write_bytes(AUDIO)
+        with self.connect() as db:
+            db.execute('UPDATE exercise_protocols SET content=? WHERE lang=?',
+                       (json.dumps({'steps': [{'text': 'New editorial content.', 'seconds': 60}]}), 'pt'))
+        self.assertIsNone(self.item()['narration'])
+
+    def test_admin_recordings_take_priority_over_bundled_catalog(self):
+        self.install_bundled_fixture()
+        with patch.object(voice, 'synthesize_to_wav', side_effect=write_audio):
+            job = self.job(self.start())
+        self.publish(job)
+        self.assertTrue(self.item()['protocol']['steps'][0]['audio_path'].startswith('/media/'))
 
     def test_admin_and_csrf_protect_generation(self):
         with patch.object(voice, 'synthesize_to_wav') as provider:
