@@ -21,7 +21,7 @@ python3 scripts/build_apk.py
 
 Saída: `../dist/serein-variety-debug.apk`. É uma versão de desenvolvimento assinada com chave debug. Para distribuição em loja, configure uma chave de release própria. A chave usada nesta máquina fica em `../.local-signing/serein-debug.jks`, fora do projeto. Preserve sua chave se quiser instalar futuras atualizações sobre esta versão; o Gradle pode usar outra chave debug.
 
-A narração prioriza ficheiros de áudio incluídos no APK. A opção facultativa Voz do aparelho usa apenas vozes Android instaladas que não exigem rede. Se não houver gravação nem voz instalada, os textos continuam disponíveis. O aplicativo instalado não envia texto a serviços TTS na nuvem; a geração de MP3 descrita abaixo acontece no servidor, antes de exportar os conteúdos.
+A narração prioriza ficheiros de áudio incluídos no APK. A opção facultativa Voz do aparelho usa apenas vozes Android instaladas que não exigem rede. Se não houver gravação nem voz instalada, os textos continuam disponíveis. O aplicativo instalado não envia texto a serviços TTS na nuvem; a geração Kokoro descrita abaixo acontece no servidor, antes de exportar os conteúdos.
 
 As vibrações estão desativadas inicialmente. Quando habilitadas pelo usuário, emitem pulsos curtos na sessão e cessam ao pausar, concluir ou sair de primeiro plano. Não oferecem estimulação médica do nervo vago. Respeite as preferências e o conforto do usuário; suporte e intensidade dependem do aparelho.
 
@@ -43,4 +43,4 @@ Validações desta versão: testes do sequenciador e do catálogo, integridade/R
 
 ## Narração natural pré-gravada
 
-O leitor agora prioriza os ficheiros de narração, sem fallback automático para TTS. Gere e ative cada idioma no admin Flask, ou envie uma narração própria, antes de exportar os assets. `scripts/export_android_assets.py` copia também os MP3 de cada etapa do protocolo para o APK. A geração ElevenLabs acontece somente no servidor; o aplicativo continua sem permissão de internet e não contém a chave do serviço. A voz do aparelho permanece uma opção explícita. Consulte a configuração em [../README.md](../README.md#narração-natural-em-áudio-sem-voz-do-navegador).
+O leitor agora prioriza os ficheiros de narração, sem fallback automático para TTS. Gere e ative cada idioma no admin Flask, ou envie uma narração própria, antes de exportar os assets. `scripts/export_android_assets.py` copia também os WAV de cada etapa do protocolo para o APK. A geração Kokoro acontece localmente no servidor, sem conta ou chave API; o aplicativo continua sem permissão de internet e não inclui o motor nem os modelos. A voz do aparelho permanece uma opção explícita. Consulte a configuração em [../README.md](../README.md#narração-natural-gratuita-com-kokoro).

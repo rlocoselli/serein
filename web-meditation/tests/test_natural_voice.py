@@ -7,7 +7,7 @@ import sys
 import tempfile
 import unittest
 from unittest.mock import patch
-import urllib.error
+import wave
 
 from flask import Flask, jsonify, session
 
@@ -21,7 +21,19 @@ if 'app' not in sys.modules:
 from app import admin_required, csrf_required
 import natural_voice as voice
 
-MP3 = (b'\xff\xfb\x90\x64' + bytes(413)) * 40
+def wav_bytes():
+    buffer = io.BytesIO()
+    with wave.open(buffer, 'wb') as output:
+        output.setnchannels(1); output.setsampwidth(2); output.setframerate(24000)
+        output.writeframes(bytes(48000))
+    return buffer.getvalue()
+
+
+AUDIO = wav_bytes()
+
+
+def write_audio(destination, *args):
+    Path(destination).write_bytes(AUDIO)
 
 
 class InlineThread:
@@ -59,9 +71,9 @@ class NaturalVoiceTests(unittest.TestCase):
         self.app.secret_key = 'test-only'
         voice.setup_natural_voice(self.app, connect, self.uploads, admin_required, csrf_required)
         self.client = self.app.test_client()
-        self.key = patch.dict(os.environ, {'ELEVENLABS_API_KEY': 'test-only-provider-key'})
-        self.key.start()
-        self.addCleanup(self.key.stop)
+        self.ready = patch.object(voice, 'readiness', return_value={'ready': True, 'error': None})
+        self.ready.start()
+        self.addCleanup(self.ready.stop)
         threads = patch.object(voice.threading, 'Thread', InlineThread)
         threads.start()
         self.addCleanup(threads.stop)
@@ -70,7 +82,7 @@ class NaturalVoiceTests(unittest.TestCase):
 
     def start(self, **changes):
         return self.client.post('/api/admin/narration',
-            json={'session_id': 1, 'lang': 'pt', 'voice': 'testvoice', 'speed': .9, **changes},
+            json={'session_id': 1, 'lang': 'pt', 'voice': 'pf_dora', 'speed': .9, **changes},
             headers={'X-CSRF-Token': 'test-csrf'})
 
     def job(self, response):
@@ -84,8 +96,8 @@ class NaturalVoiceTests(unittest.TestCase):
             protocol = json.loads(db.execute('SELECT content FROM exercise_protocols WHERE lang=?', (lang,)).fetchone()[0])
             return voice.enrich_narration(db, {'id': 1, 'audio_path': None, 'protocol': protocol}, lang)
 
-    def test_admin_and_csrf_protect_paid_generation(self):
-        with patch.object(voice, 'provider_request') as provider:
+    def test_admin_and_csrf_protect_generation(self):
+        with patch.object(voice, 'synthesize_to_wav') as provider:
             self.assertEqual(self.client.post('/api/admin/narration', json={}).status_code, 403)
             with self.client.session_transaction() as s:
                 s.clear()
@@ -93,16 +105,25 @@ class NaturalVoiceTests(unittest.TestCase):
             self.assertEqual(self.client.get('/api/admin/narration/options').status_code, 401)
             provider.assert_not_called()
 
-    def test_missing_key_and_invalid_inputs_make_no_provider_calls(self):
-        with patch.dict(os.environ, {'ELEVENLABS_API_KEY': ''}), patch.object(voice, 'provider_request') as provider:
-            self.assertFalse(self.client.get('/api/admin/narration/options').json['configured'])
+    def test_missing_models_and_invalid_inputs_do_not_synthesize(self):
+        with patch.object(voice, 'readiness', return_value={'ready': False, 'error': 'models_missing'}), patch.object(voice, 'synthesize_to_wav') as provider:
+            options = self.client.get('/api/admin/narration/options').json
+            self.assertFalse(options['configured'])
+            self.assertEqual(options['provider'], 'kokoro')
             self.assertEqual(self.start().status_code, 503)
             provider.assert_not_called()
-        for changes in ({'lang': []}, {'voice': '../../bad'}, {'speed': 'nan'}, {'speed': .2}, {'session_id': 'bad'}):
+        for changes in ({'lang': []}, {'voice': '../../bad'}, {'voice': 'ff_siwis'}, {'speed': 'nan'}, {'speed': .2}, {'session_id': 'bad'}):
             self.assertEqual(self.start(**changes).status_code, 400)
 
+    def test_options_are_local_and_cover_the_five_languages(self):
+        with patch('urllib.request.urlopen', side_effect=AssertionError('No HTTP allowed')):
+            options = self.client.get('/api/admin/narration/options').json
+        self.assertTrue(options['configured'])
+        self.assertEqual({v['lang'] for v in options['voices']}, {'pt', 'en', 'fr', 'it', 'es'})
+        self.assertTrue(all(v['locale']=='pt-br' for v in options['voices'] if v['lang']=='pt'))
+
     def test_draft_is_not_public_until_review_and_repeated_requests_are_cached(self):
-        with patch.object(voice, 'provider_request', return_value=MP3) as provider:
+        with patch.object(voice, 'synthesize_to_wav', side_effect=write_audio) as provider:
             response = self.start()
             self.assertEqual(response.status_code, 202)
             job = self.job(response)
@@ -116,23 +137,28 @@ class NaturalVoiceTests(unittest.TestCase):
             self.assertEqual(provider.call_count, 2)
 
     def test_failure_preserves_active_voice_and_retry_reuses_saved_clips(self):
-        with patch.object(voice, 'provider_request', return_value=MP3):
+        with patch.object(voice, 'synthesize_to_wav', side_effect=write_audio):
             first = self.job(self.start())
             self.publish(first)
         old = self.item()['protocol']['steps'][0]['audio_path']
-        with patch.object(voice, 'provider_request', side_effect=[MP3, voice.VoiceError('provider_quota')]) as provider:
+        calls = []
+        def fail_second(destination, *args):
+            calls.append(destination)
+            if len(calls) == 2: raise voice.VoiceError('generation_failed')
+            write_audio(destination)
+        with patch.object(voice, 'synthesize_to_wav', side_effect=fail_second) as provider:
             failed = self.job(self.start(speed=1))
             self.assertEqual(failed['status'], 'failed')
-            self.assertEqual(failed['error'], 'provider_quota')
+            self.assertEqual(failed['error'], 'generation_failed')
             self.assertEqual(self.item()['protocol']['steps'][0]['audio_path'], old)
             self.assertEqual(self.publish(failed).status_code, 409)
-        with patch.object(voice, 'provider_request', return_value=MP3) as provider:
+        with patch.object(voice, 'synthesize_to_wav', side_effect=write_audio) as provider:
             ready = self.job(self.start(speed=1))
             self.assertEqual(ready['status'], 'ready')
             self.assertEqual(provider.call_count, 1)
 
     def test_changed_text_requires_new_recording(self):
-        with patch.object(voice, 'provider_request', return_value=MP3):
+        with patch.object(voice, 'synthesize_to_wav', side_effect=write_audio):
             job = self.job(self.start())
         with self.connect() as db:
             protocol = {'steps': [{'text': 'Different guidance.', 'seconds': 30}]}
@@ -143,36 +169,43 @@ class NaturalVoiceTests(unittest.TestCase):
     def test_overlong_or_invalid_audio_cannot_be_published(self):
         with self.connect() as db:
             db.execute('UPDATE exercise_protocols SET content=?', (json.dumps({'steps': [{'text': 'Breathe.', 'seconds': .1}]}),))
-        with patch.object(voice, 'provider_request', return_value=MP3):
+        with patch.object(voice, 'synthesize_to_wav', side_effect=write_audio):
             job = self.job(self.start())
         self.assertEqual(job['error'], 'audio_too_long')
         self.assertEqual(self.publish(job).status_code, 409)
-        with patch.object(voice, 'provider_request', return_value=b'not an mp3'):
+        with patch.object(voice, 'synthesize_to_wav', side_effect=lambda path, *args: Path(path).write_bytes(b'not wav')):
             bad = self.job(self.start(speed=1))
         self.assertEqual(bad['error'], 'invalid_audio')
         self.assertFalse(list(self.uploads.glob('*.tmp')))
 
     def test_lost_media_can_be_regenerated(self):
-        with patch.object(voice, 'provider_request', return_value=MP3):
+        with patch.object(voice, 'synthesize_to_wav', side_effect=write_audio):
             job = self.job(self.start())
         (self.uploads / Path(job['manifest']['segments'][0]['audio_path']).name).unlink()
         self.assertEqual(self.publish(job).json['error'], 'missing_audio')
-        with patch.object(voice, 'provider_request', return_value=MP3) as provider:
+        with patch.object(voice, 'synthesize_to_wav', side_effect=write_audio) as provider:
             recovered = self.job(self.start())
             self.assertEqual(recovered['status'], 'ready')
             self.assertEqual(provider.call_count, 1)
 
-    def test_provider_errors_do_not_expose_account_details_or_key(self):
-        error = urllib.error.HTTPError('https://api.elevenlabs.io', 401, 'secret account details', {}, io.BytesIO(b'private'))
-        with patch.object(voice.urllib.request, 'urlopen', side_effect=error):
-            response = self.client.get('/api/admin/narration/options')
-        self.assertEqual(response.status_code, 502)
-        self.assertEqual(response.json, {'error': 'provider_auth'})
+    def test_generation_errors_do_not_expose_local_server_details(self):
+        with patch.object(voice, 'synthesize_to_wav', side_effect=RuntimeError('private server details')):
+            job = self.job(self.start())
+        self.assertEqual(job['status'], 'failed')
+        self.assertEqual(job['error'], 'generation_failed')
+        self.assertNotIn('private server details', json.dumps(job))
 
-    def test_only_one_paid_job_can_run_at_a_time(self):
+    def test_kokoro_publication_sets_accurate_provenance(self):
+        with patch.object(voice, 'synthesize_to_wav', side_effect=write_audio):
+            job = self.job(self.start())
+        self.publish(job)
+        self.assertEqual(self.item()['narration']['provider'], 'kokoro')
+        self.assertTrue(self.item()['protocol']['steps'][0]['audio_path'].endswith('.wav'))
+
+    def test_only_one_generation_job_can_run_at_a_time(self):
         with self.connect() as db:
             db.execute("INSERT INTO narration_jobs(id,session_id,lang,signature,source_hash,status) VALUES('busy',1,'fr','other','other','running')")
-        with patch.object(voice, 'provider_request') as provider:
+        with patch.object(voice, 'synthesize_to_wav') as provider:
             response = self.start()
             self.assertEqual(response.status_code, 409)
             self.assertEqual(response.json['error'], 'generation_busy')

@@ -13,6 +13,7 @@ __pycache__/
 .venv/
 .pytest_cache/
 node_modules/
+models/
 dist/
 android/.gradle/
 android/build/

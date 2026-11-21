@@ -91,18 +91,36 @@ Teste do sequenciador: `node --test tests/test_audio_core.cjs`. Testes de catál
 
 APK de desenvolvimento atualizado: `dist/serein-calm-audio-debug.apk`. Mantém a chave debug persistida da versão 1.1.0 (catálogo ampliado), permitindo atualização sobre aquela compilação. Não há garantia de compatibilidade com o primeiro APK, que usou outra chave temporária.
 
-## Narração natural em áudio, sem voz do navegador
+## Narração natural gratuita com Kokoro
 
-O leitor usa **Narração natural gravada** por padrão: reproduz ficheiros MP3 gerados previamente ou uma narração enviada pelo admin. Não muda automaticamente para a voz do navegador se faltar uma gravação. Nesse caso, o texto, o temporizador e os sons de fundo continuam disponíveis. A opção **Voz do aparelho** permanece facultativa e deve ser selecionada explicitamente.
+O leitor usa **Narração natural gravada** por padrão: reproduz ficheiros WAV gerados localmente com Kokoro ou uma narração enviada pelo admin (MP3, M4A, OGG ou WAV). Não muda automaticamente para a voz do navegador se faltar uma gravação. Nesse caso, o texto, o temporizador e os sons de fundo continuam disponíveis. A opção **Voz do aparelho** permanece facultativa e deve ser selecionada explicitamente.
 
-Para gerar as vozes, configure `ELEVENLABS_API_KEY` nos segredos do servidor, juntamente com `SEREIN_ADMIN_PASSWORD` e `SEREIN_SECRET_KEY`, e reinicie. No Docker, adicione `-e ELEVENLABS_API_KEY` ao comando de execução depois de exportar a variável, ou use `--env-file .env`. A chave é usada exclusivamente no servidor; não vai para o HTML, catálogo ou APK.
+Kokoro não exige conta, chave API, créditos ou assinatura. A geração usa o processador e a memória da máquina que executa o servidor. O modelo e as vozes são baixados uma vez; os textos não são enviados a um serviço de síntese. São suportados francês, inglês americano/britânico, italiano, espanhol e português **brasileiro**. A lista do admin mostra apenas vozes compatíveis com o idioma escolhido.
 
-Na administração, abra **Áudios → Voz natural**, escolha a meditação, idioma, voz disponível e ritmo, e clique em **Gerar rascunho de voz**. A geração usa o modelo ElevenLabs Multilingual v2 e consome créditos da sua conta. Cada etapa ou capítulo recebe um MP3 separado, permitindo manter o ritmo do exercício. A tarefa decorre em segundo plano; pode voltar à página para retomar o último rascunho. Escute os trechos e clique em **Usar esta narração** para ativar apenas esse idioma. O upload de narração humana continua disponível como alternativa.
+### Preparar localmente
 
-Os MP3 ficam em `SEREIN_UPLOADS` e os rascunhos/metadados no SQLite. Repetir a mesma geração reutiliza os ficheiros guardados, inclusive os trechos concluídos antes de uma falha. Ouvir não faz pedidos ao serviço de voz. Uma geração com erro não substitui a voz ativa; textos alterados exigem nova geração. O sistema recusa gravações que ultrapassem o tempo de uma etapa. Ajuste o ritmo ou o texto e revise novamente. Qualidade, sotaque e naturalidade precisam de avaliação auditiva por idioma antes da publicação. A interface identifica as vozes de IA.
+```bash
+pip install -r requirements.txt
+python3 scripts/prepare_kokoro.py
+python3 app.py
+```
 
-Para o Android sem internet, gere e ative os áudios no banco usado na exportação, depois execute `python3 scripts/export_android_assets.py` e recompile o APK. O exportador inclui os MP3 de cada etapa; o aplicativo instalado só lê os ficheiros locais. Se os dados estiverem no servidor de hospedagem, transfira a base e os uploads para o ambiente de compilação antes de exportar. Os ficheiros gerados não são automaticamente enviados ao Git.
+Os modelos ficam em `models/kokoro/`, excluídos do Git. O script verifica o SHA256 dos dois ficheiros publicados pelo projeto kokoro-onnx antes de os instalar. É seguro repetir a preparação: ficheiros válidos não são baixados novamente. Defina `KOKORO_MODEL_DIR` para usar outro diretório e `KOKORO_THREADS` para limitar os núcleos de CPU (padrão: 2; intervalo: 1–8).
 
-Execute apenas um processo Gunicorn, conforme o Dockerfile (com quatro threads), para coordenar as tarefas e o seed SQLite. Reiniciar o servidor durante uma geração marca a tarefa como interrompida; ao tentar novamente, os trechos guardados são reutilizados. Sem uma chave válida, o admin apresenta instruções de configuração e não gera áudio. Os testes usam respostas simuladas, sem custos nem validação auditiva das vozes reais.
+### Docker e administração
 
-Referências da integração: [API de geração](https://elevenlabs.io/docs/api-reference/text-to-speech/convert), [modelo e idiomas](https://elevenlabs.io/docs/overview/models#multilingual-v2).
+O Dockerfile instala o motor CPU e prepara os modelos **durante a construção da imagem**. Basta reconstruir e fazer o deploy; não é necessária nenhuma chave vocal. Os modelos ficam em `/opt/kokoro`, e SQLite/uploads permanecem no volume `/data`. A geração funciona sem conexão depois de a imagem estar preparada. O primeiro carregamento do modelo acontece na tarefa em segundo plano, preservando o arranque e o healthcheck HTTP.
+
+O modelo e as vozes ocupam cerca de 354 MB. Na verificação local com dois threads, o processo atingiu aproximadamente 630 MiB de RAM; reserve pelo menos 1 GiB para o servidor durante a geração. Isso é uso da sua máquina, sem cobrança por caracteres ou minutos. Reproduzir os áudios prontos dispensa o motor.
+
+Na administração, abra **Áudios → Voz natural**, escolha a meditação, idioma, voz Kokoro e ritmo, e clique em **Gerar rascunho de voz**. Cada etapa ou capítulo recebe um WAV mono de 24 kHz separado, mantendo o ritmo do exercício. Escute os trechos e clique em **Usar esta narração** para ativar apenas esse idioma. O upload de narração própria continua disponível.
+
+Os ficheiros ficam em `SEREIN_UPLOADS` e os rascunhos/metadados no SQLite. A mesma geração reutiliza os ficheiros guardados, inclusive os trechos concluídos antes de uma falha. Uma geração com erro não substitui a voz ativa; textos alterados exigem nova geração. Gravações que ultrapassem a duração da etapa não podem ser ativadas: ajuste o ritmo ou o texto e revise novamente. As gravações antigas continuam reproduzíveis; a mudança do motor não apaga áudios nem conteúdos.
+
+Execute apenas um processo Gunicorn, conforme o Dockerfile (com quatro threads), para coordenar as tarefas e o seed SQLite. Reiniciar durante uma geração marca a tarefa como interrompida; tentar novamente reutiliza os trechos guardados. O admin informa se faltam dependências ou modelos. Os testes automáticos usam áudio simulado para cobrir erros e exportação; os exemplos reais em `dist/kokoro-previews/` permitem avaliar o timbre, o sotaque e a naturalidade por idioma antes de publicar.
+
+### Android offline e créditos
+
+Gere e ative os áudios no banco usado na exportação, execute `python3 scripts/export_android_assets.py` e recompile o APK. O exportador inclui os WAV de cada etapa e as informações de licença; o aplicativo instalado apenas reproduz ficheiros locais. O motor e os modelos Kokoro ficam no servidor e não aumentam o APK. Se os dados estiverem hospedados, transfira a base e os uploads para o ambiente de compilação antes de exportar. Os áudios gerados não são enviados automaticamente ao Git.
+
+O modelo Kokoro-82M usa licença Apache 2.0 e o motor kokoro-onnx usa MIT. Os créditos incluem o conjunto SIWIS para a voz francesa. Consulte `licenses/kokoro/` e os créditos do leitor. Referências: [modelo e vozes](https://huggingface.co/hexgrad/Kokoro-82M), [motor ONNX](https://github.com/thewh1teagle/kokoro-onnx).
