@@ -1,0 +1,254 @@
+{
+  "reviewed_on": "2026-11-17",
+  "graphics": [
+    {
+      "file": "graphics/feature-en-US-1024x500.png",
+      "size": [
+        1024,
+        500
+      ],
+      "mode": "RGB",
+      "bytes": 55345
+    },
+    {
+      "file": "graphics/feature-fr-FR-1024x500.png",
+      "size": [
+        1024,
+        500
+      ],
+      "mode": "RGB",
+      "bytes": 54357
+    },
+    {
+      "file": "graphics/feature-pt-BR-1024x500.png",
+      "size": [
+        1024,
+        500
+      ],
+      "mode": "RGB",
+      "bytes": 55623
+    },
+    {
+      "file": "graphics/feature-es-ES-1024x500.png",
+      "size": [
+        1024,
+        500
+      ],
+      "mode": "RGB",
+      "bytes": 55113
+    },
+    {
+      "file": "graphics/icon-512.png",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "bytes": 46459
+    },
+    {
+      "file": "graphics/feature-it-IT-1024x500.png",
+      "size": [
+        1024,
+        500
+      ],
+      "mode": "RGB",
+      "bytes": 54859
+    }
+  ],
+  "listings": [
+    {
+      "locale": "pt-BR",
+      "title": 29,
+      "short_description": 70,
+      "full_description": 1976
+    },
+    {
+      "locale": "en-US",
+      "title": 30,
+      "short_description": 71,
+      "full_description": 1804
+    },
+    {
+      "locale": "fr-FR",
+      "title": 29,
+      "short_description": 76,
+      "full_description": 2041
+    },
+    {
+      "locale": "it-IT",
+      "title": 28,
+      "short_description": 69,
+      "full_description": 1920
+    },
+    {
+      "locale": "es-ES",
+      "title": 30,
+      "short_description": 71,
+      "full_description": 1964
+    }
+  ],
+  "previews": [
+    {
+      "file": "previews/en-US/01-home.jpg",
+      "size": [
+        417,
+        741
+      ],
+      "origin": "browser capture of shared HTML, not Android device capture"
+    },
+    {
+      "file": "previews/en-US/02-guided-practice.jpg",
+      "size": [
+        432,
+        768
+      ],
+      "origin": "browser capture of shared HTML, not Android device capture"
+    },
+    {
+      "file": "previews/en-US/03-stories.jpg",
+      "size": [
+        417,
+        741
+      ],
+      "origin": "browser capture of shared HTML, not Android device capture"
+    },
+    {
+      "file": "previews/en-US/04-sounds.jpg",
+      "size": [
+        417,
+        741
+      ],
+      "origin": "browser capture of shared HTML, not Android device capture"
+    },
+    {
+      "file": "previews/es-ES/01-home.jpg",
+      "size": [
+        417,
+        741
+      ],
+      "origin": "browser capture of shared HTML, not Android device capture"
+    },
+    {
+      "file": "previews/es-ES/02-guided-practice.jpg",
+      "size": [
+        432,
+        768
+      ],
+      "origin": "browser capture of shared HTML, not Android device capture"
+    },
+    {
+      "file": "previews/es-ES/03-stories.jpg",
+      "size": [
+        417,
+        741
+      ],
+      "origin": "browser capture of shared HTML, not Android device capture"
+    },
+    {
+      "file": "previews/es-ES/04-sounds.jpg",
+      "size": [
+        417,
+        741
+      ],
+      "origin": "browser capture of shared HTML, not Android device capture"
+    },
+    {
+      "file": "previews/fr-FR/01-home.jpg",
+      "size": [
+        417,
+        741
+      ],
+      "origin": "browser capture of shared HTML, not Android device capture"
+    },
+    {
+      "file": "previews/fr-FR/02-guided-practice.jpg",
+      "size": [
+        432,
+        768
+      ],
+      "origin": "browser capture of shared HTML, not Android device capture"
+    },
+    {
+      "file": "previews/fr-FR/03-stories.jpg",
+      "size": [
+        417,
+        741
+      ],
+      "origin": "browser capture of shared HTML, not Android device capture"
+    },
+    {
+      "file": "previews/fr-FR/04-sounds.jpg",
+      "size": [
+        417,
+        741
+      ],
+      "origin": "browser capture of shared HTML, not Android device capture"
+    },
+    {
+      "file": "previews/it-IT/01-home.jpg",
+      "size": [
+        417,
+        741
+      ],
+      "origin": "browser capture of shared HTML, not Android device capture"
+    },
+    {
+      "file": "previews/it-IT/02-guided-practice.jpg",
+      "size": [
+        432,
+        768
+      ],
+      "origin": "browser capture of shared HTML, not Android device capture"
+    },
+    {
+      "file": "previews/it-IT/03-stories.jpg",
+      "size": [
+        417,
+        741
+      ],
+      "origin": "browser capture of shared HTML, not Android device capture"
+    },
+    {
+      "file": "previews/it-IT/04-sounds.jpg",
+      "size": [
+        417,
+        741
+      ],
+      "origin": "browser capture of shared HTML, not Android device capture"
+    },
+    {
+      "file": "previews/pt-BR/01-home.jpg",
+      "size": [
+        417,
+        741
+      ],
+      "origin": "browser capture of shared HTML, not Android device capture"
+    },
+    {
+      "file": "previews/pt-BR/02-guided-practice.jpg",
+      "size": [
+        432,
+        768
+      ],
+      "origin": "browser capture of shared HTML, not Android device capture"
+    },
+    {
+      "file": "previews/pt-BR/03-stories.jpg",
+      "size": [
+        417,
+        741
+      ],
+      "origin": "browser capture of shared HTML, not Android device capture"
+    },
+    {
+      "file": "previews/pt-BR/04-sounds.jpg",
+      "size": [
+        417,
+        741
+      ],
+      "origin": "browser capture of shared HTML, not Android device capture"
+    }
+  ],
+  "status": "store materials prepared; release and device screenshots pending"
+}

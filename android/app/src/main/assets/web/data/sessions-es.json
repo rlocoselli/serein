@@ -1,0 +1,693 @@
+[
+  {
+    "audio_path": null,
+    "category": "breathing",
+    "color": "sage",
+    "created_at": "2026-11-14 21:46:27",
+    "duration": 5,
+    "id": 1,
+    "protocol": null,
+    "published": 1,
+    "script": "Busca una posición cómoda. Siente el apoyo bajo tu cuerpo. Inhala lentamente por la nariz. Nota cómo entra el aire. Exhala sin prisa. Si la mente se distrae, simplemente obsérvalo y vuelve a la siguiente respiración. No hay nada que lograr ahora. Solo existe este momento. ¿Qué cambia cuando te permites una pausa?",
+    "slug": "respirar",
+    "subtitle": "Un espacio para volver al presente",
+    "title": "Respira con calma",
+    "video_path": "/videos/respirar.webm"
+  },
+  {
+    "audio_path": null,
+    "category": "relaxation",
+    "color": "peach",
+    "created_at": "2026-11-14 21:46:27",
+    "duration": 8,
+    "id": 2,
+    "protocol": null,
+    "published": 1,
+    "script": "Cierra los ojos si te resulta cómodo. Nota la frente y deja que se suavice. Relaja la mandíbula. Permite que los hombros bajen. Siente las manos descansando. Con cada exhalación, imagina que das un poco más de espacio al cuerpo. Puedes estar exactamente como estás. ¿Qué parte de ti necesita más amabilidad hoy?",
+    "slug": "soltar",
+    "subtitle": "Relájate, una parte a la vez",
+    "title": "Suelta el peso del día",
+    "video_path": "/videos/soltar.webm"
+  },
+  {
+    "audio_path": null,
+    "category": "sleep",
+    "color": "lavender",
+    "created_at": "2026-11-14 21:46:27",
+    "duration": 10,
+    "id": 3,
+    "protocol": null,
+    "published": 1,
+    "script": "Ha llegado la noche. Puedes dejar atrás las tareas de hoy. Siente la superficie que te sostiene. Respira con naturalidad. Al exhalar, suelta una pequeña tensión. Deja pasar los pensamientos como nubes en el cielo oscuro. No tienes que seguirlos. Tu única invitación ahora es descansar. ¿Cómo sería confiar en este momento de reposo?",
+    "slug": "sono",
+    "subtitle": "Un ritual para bajar el ritmo",
+    "title": "Descansa al dormir",
+    "video_path": "/videos/sono.webm"
+  },
+  {
+    "audio_path": null,
+    "category": "breathing",
+    "color": "sage",
+    "created_at": "2026-11-14 22:04:54",
+    "duration": 5,
+    "id": 4,
+    "protocol": {
+      "evidence": "Adaptación de las recomendaciones del NHS para el estrés. El ritmo visual es opcional; esta sesión no se ha probado clínicamente.",
+      "kind": "breathing",
+      "safety": "No fuerces la respiración. Si notas mareo o malestar, para y vuelve a tu ritmo natural.",
+      "source": {
+        "name": "NHS · Breathing exercises for stress",
+        "url": "https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/breathing-exercises-for-stress/"
+      },
+      "steps": [
+        {
+          "seconds": 30,
+          "text": "Siéntate con apoyo. Suelta los hombros y encuentra un ritmo cómodo."
+        },
+        {
+          "seconds": 90,
+          "text": "Inhala suavemente por la nariz y exhala por la boca si es cómodo. El círculo propone cinco segundos por fase, sin retenciones. Puedes ir más rápido."
+        },
+        {
+          "seconds": 150,
+          "text": "Continúa sin forzar respiraciones profundas. Si la mente se distrae, vuelve a la siguiente respiración. Tu comodidad guía el ritmo."
+        },
+        {
+          "seconds": 30,
+          "text": "Deja el conteo. Respira con naturalidad y nota el apoyo del cuerpo antes de terminar."
+        }
+      ],
+      "subtitle": "Un ritmo cómodo, sin retener el aire",
+      "title": "Respiración sin prisa",
+      "total_seconds": 300
+    },
+    "published": 1,
+    "script": "Siéntate con apoyo. Suelta los hombros y encuentra un ritmo cómodo. Inhala suavemente por la nariz y exhala por la boca si es cómodo. El círculo propone cinco segundos por fase, sin retenciones. Puedes ir más rápido. Continúa sin forzar respiraciones profundas. Si la mente se distrae, vuelve a la siguiente respiración. Tu comodidad guía el ritmo. Deja el conteo. Respira con naturalidad y nota el apoyo del cuerpo antes de terminar.",
+    "slug": "respiracao-suave",
+    "subtitle": "Un ritmo cómodo, sin retener el aire",
+    "title": "Respiración sin prisa",
+    "video_path": null
+  },
+  {
+    "audio_path": null,
+    "category": "relaxation",
+    "color": "peach",
+    "created_at": "2026-11-14 22:04:54",
+    "duration": 6,
+    "id": 5,
+    "protocol": {
+      "evidence": "La VA describe la técnica y la investigación sobre relajación. Esta adaptación de cuatro grupos no es el protocolo completo ni una sesión validada clínicamente.",
+      "kind": "pmr",
+      "safety": "Usa poca fuerza y respira normalmente. Evita zonas doloridas o lesionadas. Con lesiones importantes, espasmos o problemas de espalda, consulta antes de contraer.",
+      "source": {
+        "name": "VA Whole Health · Progressive Muscle Relaxation",
+        "url": "https://www.va.gov/WHOLEHEALTHLIBRARY/docs/Progressive-Muscle-Relaxation.pdf"
+      },
+      "steps": [
+        {
+          "seconds": 40,
+          "text": "Siéntate o túmbate cómodamente. Contrae suavemente y suelta, sin retener el aire. También puedes imaginar la relajación."
+        },
+        {
+          "seconds": 5,
+          "text": "Manos: cierra suavemente los dedos."
+        },
+        {
+          "seconds": 60,
+          "text": "Abre las manos. Nota la diferencia entre tensión y reposo."
+        },
+        {
+          "seconds": 5,
+          "text": "Brazos: dobla los codos y contrae suavemente."
+        },
+        {
+          "seconds": 60,
+          "text": "Suelta los brazos y apóyalos. Observa sin exigir relajación."
+        },
+        {
+          "seconds": 5,
+          "text": "Hombros: súbelos un poco, sin forzar el cuello."
+        },
+        {
+          "seconds": 60,
+          "text": "Deja caer los hombros y siente el apoyo del cuerpo."
+        },
+        {
+          "seconds": 5,
+          "text": "Pies: apunta suavemente los dedos, solo si resulta cómodo."
+        },
+        {
+          "seconds": 60,
+          "text": "Suelta los pies. Deja descansar las piernas. Respira con naturalidad."
+        },
+        {
+          "seconds": 60,
+          "text": "Observa todo el cuerpo. Tómate un tiempo para moverte y volver al entorno."
+        }
+      ],
+      "subtitle": "Relajación muscular progresiva, versión breve",
+      "title": "Soltar la tensión del cuerpo",
+      "total_seconds": 360
+    },
+    "published": 1,
+    "script": "Siéntate o túmbate cómodamente. Contrae suavemente y suelta, sin retener el aire. También puedes imaginar la relajación. Manos: cierra suavemente los dedos. Abre las manos. Nota la diferencia entre tensión y reposo. Brazos: dobla los codos y contrae suavemente. Suelta los brazos y apóyalos. Observa sin exigir relajación. Hombros: súbelos un poco, sin forzar el cuello. Deja caer los hombros y siente el apoyo del cuerpo. Pies: apunta suavemente los dedos, solo si resulta cómodo. Suelta los pies. Deja descansar las piernas. Respira con naturalidad. Observa todo el cuerpo. Tómate un tiempo para moverte y volver al entorno.",
+    "slug": "relaxamento-progressivo",
+    "subtitle": "Relajación muscular progresiva, versión breve",
+    "title": "Soltar la tensión del cuerpo",
+    "video_path": null
+  },
+  {
+    "audio_path": null,
+    "category": "focus",
+    "color": "lavender",
+    "created_at": "2026-11-14 22:04:54",
+    "duration": 5,
+    "id": 6,
+    "protocol": {
+      "evidence": "Hay estudios de programas de mindfulness con beneficios para algunos síntomas, pero los resultados y la calidad varían. Esta introducción no equivale a los programas estudiados.",
+      "kind": "mindfulness",
+      "safety": "Mantén los ojos abiertos si prefieres. Si la práctica aumenta el malestar, para y observa tu entorno.",
+      "source": {
+        "name": "NCCIH · Meditation and Mindfulness",
+        "url": "https://www.nccih.nih.gov/health/meditation-and-mindfulness-effectiveness-and-safety"
+      },
+      "steps": [
+        {
+          "seconds": 40,
+          "text": "Siéntate cómodamente. Nota los pies y el contacto con la silla. No hay una sensación correcta que encontrar."
+        },
+        {
+          "seconds": 80,
+          "text": "Observa la respiración tal como es. Elige el aire en la nariz o el movimiento del abdomen. No cambies el ritmo."
+        },
+        {
+          "seconds": 120,
+          "text": "Cuando notes un pensamiento, reconócelo y vuelve a la sensación elegida. Cada regreso forma parte de la práctica."
+        },
+        {
+          "seconds": 60,
+          "text": "Amplía la atención a los sonidos y al cuerpo. Mira alrededor y elige con calma tu siguiente acción."
+        }
+      ],
+      "subtitle": "Atención plena para empezar",
+      "title": "Volver al presente",
+      "total_seconds": 300
+    },
+    "published": 1,
+    "script": "Siéntate cómodamente. Nota los pies y el contacto con la silla. No hay una sensación correcta que encontrar. Observa la respiración tal como es. Elige el aire en la nariz o el movimiento del abdomen. No cambies el ritmo. Cuando notes un pensamiento, reconócelo y vuelve a la sensación elegida. Cada regreso forma parte de la práctica. Amplía la atención a los sonidos y al cuerpo. Mira alrededor y elige con calma tu siguiente acción.",
+    "slug": "atencao-presente",
+    "subtitle": "Atención plena para empezar",
+    "title": "Volver al presente",
+    "video_path": null
+  },
+  {
+    "audio_path": null,
+    "category": "relaxation",
+    "color": "sage",
+    "created_at": "2026-11-17 15:50:19",
+    "duration": 4,
+    "id": 7,
+    "protocol": {
+      "evidence": "Historia original inspirada en visualización guiada y relajación utilizadas en sofrología. No es un protocolo clínico validado.",
+      "kind": "story",
+      "safety": "Imagina solo lo que resulte cómodo. Puedes mantener los ojos abiertos. Si aparece malestar, para y observa tu entorno.",
+      "sound": "ocean",
+      "source": {
+        "name": "NCCIH · Relaxation techniques",
+        "url": "https://www.nccih.nih.gov/health/relaxation-techniques-what-you-need-to-know"
+      },
+      "steps": [
+        {
+          "seconds": 40,
+          "text": "Busca un apoyo cómodo. Nota dónde descansa el cuerpo. No necesitas cambiar la respiración. Imagina que Lumi ha encontrado un sendero junto al mar y te invita a conocerlo, sin prisa."
+        },
+        {
+          "seconds": 40,
+          "text": "El sendero llega a una cala. Elige la distancia al agua. La arena puede estar templada o fresca; deja que la escena tenga tus colores. Si prefieres, simplemente escucha."
+        },
+        {
+          "seconds": 40,
+          "text": "Una ola llega y se retira. No necesitas seguirla con el aire. Observa el movimiento y el espacio entre movimientos. Lumi se sienta a tu lado; ahora no hay nada que resolver."
+        },
+        {
+          "seconds": 40,
+          "text": "Imagina que los hombros descansan un poco más. Las manos reposan como piedras lisas sobre la arena. Puede aparecer un pensamiento. Déjalo estar y vuelve a un detalle del paisaje."
+        },
+        {
+          "seconds": 40,
+          "text": "El horizonte sigue ahí, sin pedir nada. Elige una palabra para llevar contigo: espacio, ligereza, pausa, u otra. No necesitas sentir nada especial. Este momento puede bastar."
+        },
+        {
+          "seconds": 40,
+          "text": "Lumi se levanta despacio. La cala puede quedarse en la imaginación mientras recuperas los apoyos reales. Mueve los dedos, observa dónde estás y vuelve a tu día a tu ritmo."
+        }
+      ],
+      "subtitle": "Un viaje imaginado con el sonido del mar",
+      "title": "La cala tranquila",
+      "total_seconds": 240
+    },
+    "published": 1,
+    "script": "Busca un apoyo cómodo. Nota dónde descansa el cuerpo. No necesitas cambiar la respiración. Imagina que Lumi ha encontrado un sendero junto al mar y te invita a conocerlo, sin prisa. El sendero llega a una cala. Elige la distancia al agua. La arena puede estar templada o fresca; deja que la escena tenga tus colores. Si prefieres, simplemente escucha. Una ola llega y se retira. No necesitas seguirla con el aire. Observa el movimiento y el espacio entre movimientos. Lumi se sienta a tu lado; ahora no hay nada que resolver. Imagina que los hombros descansan un poco más. Las manos reposan como piedras lisas sobre la arena. Puede aparecer un pensamiento. Déjalo estar y vuelve a un detalle del paisaje. El horizonte sigue ahí, sin pedir nada. Elige una palabra para llevar contigo: espacio, ligereza, pausa, u otra. No necesitas sentir nada especial. Este momento puede bastar. Lumi se levanta despacio. La cala puede quedarse en la imaginación mientras recuperas los apoyos reales. Mueve los dedos, observa dónde estás y vuelve a tu día a tu ritmo.",
+    "slug": "historia-mar",
+    "subtitle": "Un viaje imaginado con el sonido del mar",
+    "title": "La cala tranquila",
+    "video_path": null
+  },
+  {
+    "audio_path": null,
+    "category": "relaxation",
+    "color": "lavender",
+    "created_at": "2026-11-17 15:50:19",
+    "duration": 4,
+    "id": 8,
+    "protocol": {
+      "evidence": "Historia original inspirada en visualización guiada y relajación utilizadas en sofrología. No es un protocolo clínico validado.",
+      "kind": "story",
+      "safety": "Imagina solo lo que resulte cómodo. Puedes mantener los ojos abiertos. Si aparece malestar, para y observa tu entorno.",
+      "sound": "rain",
+      "source": {
+        "name": "NCCIH · Relaxation techniques",
+        "url": "https://www.nccih.nih.gov/health/relaxation-techniques-what-you-need-to-know"
+      },
+      "steps": [
+        {
+          "seconds": 40,
+          "text": "Acomoda el cuerpo y siente el apoyo de los pies. Imagina un jardín desde un porche cubierto. Puedes quedarte ahí. Lumi observa las hojas y la lluvia suave llena los espacios entre sonidos."
+        },
+        {
+          "seconds": 40,
+          "text": "Elige una hoja imaginada. Una gota reposa en la punta antes de caer. No hay una forma correcta de ver: puede ser una idea, un color o solo un sonido."
+        },
+        {
+          "seconds": 40,
+          "text": "Siente las manos apoyadas. Si quieres, suelta los dedos. Cada planta ocupa su lugar sin tener que crecer más deprisa. Tú también puedes permitirte unos instantes sin rendimiento."
+        },
+        {
+          "seconds": 40,
+          "text": "Lumi encuentra un banco protegido. Imagina la luz cambiando sobre las hojas. Respira naturalmente. Cuando notes distracción, vuelve a un sonido sin regañar a la mente por viajar."
+        },
+        {
+          "seconds": 40,
+          "text": "La lluvia imaginada se aleja. Elige una pequeña amabilidad para después: beber agua, estirarte con comodidad o dejar un espacio antes de la siguiente tarea."
+        },
+        {
+          "seconds": 40,
+          "text": "El jardín puede esperar otra visita. Nota el peso real del cuerpo y los sonidos de donde estás. Mueve manos y pies despacio. Lleva contigo solo lo que tenga sentido hoy."
+        }
+      ],
+      "subtitle": "Un paseo de atención con lluvia suave",
+      "title": "El jardín después de la lluvia",
+      "total_seconds": 240
+    },
+    "published": 1,
+    "script": "Acomoda el cuerpo y siente el apoyo de los pies. Imagina un jardín desde un porche cubierto. Puedes quedarte ahí. Lumi observa las hojas y la lluvia suave llena los espacios entre sonidos. Elige una hoja imaginada. Una gota reposa en la punta antes de caer. No hay una forma correcta de ver: puede ser una idea, un color o solo un sonido. Siente las manos apoyadas. Si quieres, suelta los dedos. Cada planta ocupa su lugar sin tener que crecer más deprisa. Tú también puedes permitirte unos instantes sin rendimiento. Lumi encuentra un banco protegido. Imagina la luz cambiando sobre las hojas. Respira naturalmente. Cuando notes distracción, vuelve a un sonido sin regañar a la mente por viajar. La lluvia imaginada se aleja. Elige una pequeña amabilidad para después: beber agua, estirarte con comodidad o dejar un espacio antes de la siguiente tarea. El jardín puede esperar otra visita. Nota el peso real del cuerpo y los sonidos de donde estás. Mueve manos y pies despacio. Lleva contigo solo lo que tenga sentido hoy.",
+    "slug": "historia-jardim",
+    "subtitle": "Un paseo de atención con lluvia suave",
+    "title": "El jardín después de la lluvia",
+    "video_path": null
+  },
+  {
+    "audio_path": null,
+    "category": "focus",
+    "color": "peach",
+    "created_at": "2026-11-20 22:32:39",
+    "duration": 3,
+    "id": 9,
+    "protocol": {
+      "evidence": "Guion original de bienestar inspirado en atención plena. La referencia aporta contexto general; esta sesión no se ha validado clínicamente ni sustituye la atención profesional.",
+      "kind": "mindfulness",
+      "safety": "Puedes mantener los ojos abiertos y cambiar de postura. Si sientes malestar, para y observa tu entorno.",
+      "source": {
+        "name": "NHS · Mindfulness (contexto geral / general context)",
+        "url": "https://www.nhs.uk/mental-health/self-help/tips-and-support/mindfulness/"
+      },
+      "steps": [
+        {
+          "seconds": 30,
+          "text": "Siéntate con apoyo y nota los pies. Deja que la respiración sea natural. Ajusta la postura cuando lo necesites. Durante las pausas de la voz, simplemente observa."
+        },
+        {
+          "seconds": 40,
+          "text": "Nota un color, una forma y un sonido. Ya estás aquí, antes de cualquier tarea. Deja llegar los detalles sin buscar algo bonito."
+        },
+        {
+          "seconds": 40,
+          "text": "¿Qué cualidad quieres llevar a las próximas horas? Quizá paciencia, atención o amabilidad. Elige una palabra posible, sin convertirla en obligación."
+        },
+        {
+          "seconds": 40,
+          "text": "Imagina un pequeño gesto: escuchar hasta el final, beber agua o pausar antes de responder. Un gesto basta para empezar."
+        },
+        {
+          "seconds": 30,
+          "text": "Vuelve a notar tu entorno. Mueve las manos despacio y elige cómo retomar la actividad. No necesitas haber alcanzado una sensación especial."
+        }
+      ],
+      "subtitle": "Una intención amable para la mañana",
+      "title": "Un comienzo más presente",
+      "total_seconds": 180
+    },
+    "published": 1,
+    "script": "Siéntate con apoyo y nota los pies. Deja que la respiración sea natural. Ajusta la postura cuando lo necesites. Durante las pausas de la voz, simplemente observa. Nota un color, una forma y un sonido. Ya estás aquí, antes de cualquier tarea. Deja llegar los detalles sin buscar algo bonito. ¿Qué cualidad quieres llevar a las próximas horas? Quizá paciencia, atención o amabilidad. Elige una palabra posible, sin convertirla en obligación. Imagina un pequeño gesto: escuchar hasta el final, beber agua o pausar antes de responder. Un gesto basta para empezar. Vuelve a notar tu entorno. Mueve las manos despacio y elige cómo retomar la actividad. No necesitas haber alcanzado una sensación especial.",
+    "slug": "comecar-dia",
+    "subtitle": "Una intención amable para la mañana",
+    "title": "Un comienzo más presente",
+    "video_path": null
+  },
+  {
+    "audio_path": null,
+    "category": "relaxation",
+    "color": "sage",
+    "created_at": "2026-11-20 22:32:39",
+    "duration": 3,
+    "id": 10,
+    "protocol": {
+      "evidence": "Guion original de bienestar inspirado en atención plena. La referencia aporta contexto general; esta sesión no se ha validado clínicamente ni sustituye la atención profesional.",
+      "kind": "mindfulness",
+      "safety": "Puedes mantener los ojos abiertos y cambiar de postura. Si sientes malestar, para y observa tu entorno.",
+      "source": {
+        "name": "NHS · Mindfulness (contexto geral / general context)",
+        "url": "https://www.nhs.uk/mental-health/self-help/tips-and-support/mindfulness/"
+      },
+      "steps": [
+        {
+          "seconds": 30,
+          "text": "Siéntate con apoyo y nota los pies. Deja que la respiración sea natural. Ajusta la postura cuando lo necesites. Durante las pausas de la voz, simplemente observa."
+        },
+        {
+          "seconds": 40,
+          "text": "Aparta las manos del teclado o teléfono si puedes. Nota los dedos y los hombros. Permite un pequeño ajuste sin forzar un estiramiento."
+        },
+        {
+          "seconds": 40,
+          "text": "Mira un punto cómodo lejos de la pantalla. Observa luz y formas. Deja que llegue la respiración; esta pausa no tiene que resolver el día."
+        },
+        {
+          "seconds": 40,
+          "text": "Elige solo la próxima tarea. Nota las ganas de hacer muchas cosas a la vez y vuelve al primer paso concreto. Puedes empezar de forma sencilla."
+        },
+        {
+          "seconds": 30,
+          "text": "Vuelve a notar tu entorno. Mueve las manos despacio y elige cómo retomar la actividad. No necesitas haber alcanzado una sensación especial."
+        }
+      ],
+      "subtitle": "Una pausa del piloto automático",
+      "title": "Entre una tarea y otra",
+      "total_seconds": 180
+    },
+    "published": 1,
+    "script": "Siéntate con apoyo y nota los pies. Deja que la respiración sea natural. Ajusta la postura cuando lo necesites. Durante las pausas de la voz, simplemente observa. Aparta las manos del teclado o teléfono si puedes. Nota los dedos y los hombros. Permite un pequeño ajuste sin forzar un estiramiento. Mira un punto cómodo lejos de la pantalla. Observa luz y formas. Deja que llegue la respiración; esta pausa no tiene que resolver el día. Elige solo la próxima tarea. Nota las ganas de hacer muchas cosas a la vez y vuelve al primer paso concreto. Puedes empezar de forma sencilla. Vuelve a notar tu entorno. Mueve las manos despacio y elige cómo retomar la actividad. No necesitas haber alcanzado una sensación especial.",
+    "slug": "pausa-trabalho",
+    "subtitle": "Una pausa del piloto automático",
+    "title": "Entre una tarea y otra",
+    "video_path": null
+  },
+  {
+    "audio_path": null,
+    "category": "focus",
+    "color": "sage",
+    "created_at": "2026-11-20 22:32:39",
+    "duration": 5,
+    "id": 11,
+    "protocol": {
+      "evidence": "Guion original de bienestar inspirado en atención plena. La referencia aporta contexto general; esta sesión no se ha validado clínicamente ni sustituye la atención profesional.",
+      "kind": "mindfulness",
+      "safety": "Puedes mantener los ojos abiertos y cambiar de postura. Si sientes malestar, para y observa tu entorno.",
+      "source": {
+        "name": "NHS · Mindfulness (contexto geral / general context)",
+        "url": "https://www.nhs.uk/mental-health/self-help/tips-and-support/mindfulness/"
+      },
+      "steps": [
+        {
+          "seconds": 30,
+          "text": "Siéntate con apoyo y nota los pies. Deja que la respiración sea natural. Ajusta la postura cuando lo necesites. Durante las pausas de la voz, simplemente observa."
+        },
+        {
+          "seconds": 80,
+          "text": "Escucha el sonido más cercano: la ropa o algo del entorno. No necesitas identificar su origen; nota su textura y duración."
+        },
+        {
+          "seconds": 80,
+          "text": "Amplía la escucha a sonidos lejanos. Aparecen y desaparecen. Si alguno te desagrada, nota la reacción sin tener que cambiarlo ni disfrutarlo."
+        },
+        {
+          "seconds": 80,
+          "text": "Escucha ahora el conjunto. Sonidos, pausas y silencio comparten espacio. Cuando un pensamiento te atraiga, reconócelo y vuelve a un sonido disponible."
+        },
+        {
+          "seconds": 30,
+          "text": "Vuelve a notar tu entorno. Mueve las manos despacio y elige cómo retomar la actividad. No necesitas haber alcanzado una sensación especial."
+        }
+      ],
+      "subtitle": "Una práctica de atención mediante la escucha",
+      "title": "El espacio entre los sonidos",
+      "total_seconds": 300
+    },
+    "published": 1,
+    "script": "Siéntate con apoyo y nota los pies. Deja que la respiración sea natural. Ajusta la postura cuando lo necesites. Durante las pausas de la voz, simplemente observa. Escucha el sonido más cercano: la ropa o algo del entorno. No necesitas identificar su origen; nota su textura y duración. Amplía la escucha a sonidos lejanos. Aparecen y desaparecen. Si alguno te desagrada, nota la reacción sin tener que cambiarlo ni disfrutarlo. Escucha ahora el conjunto. Sonidos, pausas y silencio comparten espacio. Cuando un pensamiento te atraiga, reconócelo y vuelve a un sonido disponible. Vuelve a notar tu entorno. Mueve las manos despacio y elige cómo retomar la actividad. No necesitas haber alcanzado una sensación especial.",
+    "slug": "escuta-atenta",
+    "subtitle": "Una práctica de atención mediante la escucha",
+    "title": "El espacio entre los sonidos",
+    "video_path": null
+  },
+  {
+    "audio_path": null,
+    "category": "relaxation",
+    "color": "peach",
+    "created_at": "2026-11-20 22:32:39",
+    "duration": 8,
+    "id": 12,
+    "protocol": {
+      "evidence": "Guion original de bienestar inspirado en atención plena. La referencia aporta contexto general; esta sesión no se ha validado clínicamente ni sustituye la atención profesional.",
+      "kind": "mindfulness",
+      "safety": "Puedes mantener los ojos abiertos y cambiar de postura. Si sientes malestar, para y observa tu entorno.",
+      "source": {
+        "name": "NHS · Mindfulness (contexto geral / general context)",
+        "url": "https://www.nhs.uk/mental-health/self-help/tips-and-support/mindfulness/"
+      },
+      "steps": [
+        {
+          "seconds": 30,
+          "text": "Siéntate con apoyo y nota los pies. Deja que la respiración sea natural. Ajusta la postura cuando lo necesites. Durante las pausas de la voz, simplemente observa."
+        },
+        {
+          "seconds": 140,
+          "text": "Lleva la atención a pies y piernas. Nota presión, temperatura o apoyo. No sentir nada claro también forma parte de la experiencia. No cambies las sensaciones."
+        },
+        {
+          "seconds": 140,
+          "text": "Pasa al tronco, luego a manos y brazos, una zona a la vez. Respira con naturalidad sin buscar relajación ni señales de algo malo."
+        },
+        {
+          "seconds": 140,
+          "text": "Nota hombros, rostro y todo el cuerpo apoyado. Si mirar hacia dentro incomoda, elige un sonido del entorno como punto de atención."
+        },
+        {
+          "seconds": 30,
+          "text": "Vuelve a notar tu entorno. Mueve las manos despacio y elige cómo retomar la actividad. No necesitas haber alcanzado una sensación especial."
+        }
+      ],
+      "subtitle": "Observar sin contraer los músculos",
+      "title": "Recorrer el cuerpo con atención",
+      "total_seconds": 480
+    },
+    "published": 1,
+    "script": "Siéntate con apoyo y nota los pies. Deja que la respiración sea natural. Ajusta la postura cuando lo necesites. Durante las pausas de la voz, simplemente observa. Lleva la atención a pies y piernas. Nota presión, temperatura o apoyo. No sentir nada claro también forma parte de la experiencia. No cambies las sensaciones. Pasa al tronco, luego a manos y brazos, una zona a la vez. Respira con naturalidad sin buscar relajación ni señales de algo malo. Nota hombros, rostro y todo el cuerpo apoyado. Si mirar hacia dentro incomoda, elige un sonido del entorno como punto de atención. Vuelve a notar tu entorno. Mueve las manos despacio y elige cómo retomar la actividad. No necesitas haber alcanzado una sensación especial.",
+    "slug": "varredura-corporal",
+    "subtitle": "Observar sin contraer los músculos",
+    "title": "Recorrer el cuerpo con atención",
+    "video_path": null
+  },
+  {
+    "audio_path": null,
+    "category": "relaxation",
+    "color": "peach",
+    "created_at": "2026-11-20 22:32:39",
+    "duration": 6,
+    "id": 13,
+    "protocol": {
+      "evidence": "Guion original de bienestar inspirado en atención plena. La referencia aporta contexto general; esta sesión no se ha validado clínicamente ni sustituye la atención profesional.",
+      "kind": "mindfulness",
+      "safety": "Puedes mantener los ojos abiertos y cambiar de postura. Si sientes malestar, para y observa tu entorno.",
+      "source": {
+        "name": "NHS · Mindfulness (contexto geral / general context)",
+        "url": "https://www.nhs.uk/mental-health/self-help/tips-and-support/mindfulness/"
+      },
+      "steps": [
+        {
+          "seconds": 30,
+          "text": "Siéntate con apoyo y nota los pies. Deja que la respiración sea natural. Ajusta la postura cuando lo necesites. Durante las pausas de la voz, simplemente observa."
+        },
+        {
+          "seconds": 100,
+          "text": "Nota el tono con que te hablas hoy. No busques recuerdos difíciles. Observa simplemente exigencia, prisa o cansancio en este momento."
+        },
+        {
+          "seconds": 100,
+          "text": "Prueba una frase honesta: puedo vivir este momento con un poco más de cuidado. Si las palabras no ayudan, vuelve al apoyo de los pies."
+        },
+        {
+          "seconds": 100,
+          "text": "Piensa en un cuidado pequeño: descansar, pedir ayuda o respetar un límite. No es una promesa. Deja espacio a una opción amable junto a las exigencias."
+        },
+        {
+          "seconds": 30,
+          "text": "Vuelve a notar tu entorno. Mueve las manos despacio y elige cómo retomar la actividad. No necesitas haber alcanzado una sensación especial."
+        }
+      ],
+      "subtitle": "Amabilidad sin exigir pensamientos positivos",
+      "title": "Un poco de amabilidad contigo",
+      "total_seconds": 360
+    },
+    "published": 1,
+    "script": "Siéntate con apoyo y nota los pies. Deja que la respiración sea natural. Ajusta la postura cuando lo necesites. Durante las pausas de la voz, simplemente observa. Nota el tono con que te hablas hoy. No busques recuerdos difíciles. Observa simplemente exigencia, prisa o cansancio en este momento. Prueba una frase honesta: puedo vivir este momento con un poco más de cuidado. Si las palabras no ayudan, vuelve al apoyo de los pies. Piensa en un cuidado pequeño: descansar, pedir ayuda o respetar un límite. No es una promesa. Deja espacio a una opción amable junto a las exigencias. Vuelve a notar tu entorno. Mueve las manos despacio y elige cómo retomar la actividad. No necesitas haber alcanzado una sensación especial.",
+    "slug": "gentileza-consigo",
+    "subtitle": "Amabilidad sin exigir pensamientos positivos",
+    "title": "Un poco de amabilidad contigo",
+    "video_path": null
+  },
+  {
+    "audio_path": null,
+    "category": "focus",
+    "color": "lavender",
+    "created_at": "2026-11-20 22:32:39",
+    "duration": 5,
+    "id": 14,
+    "protocol": {
+      "evidence": "Guion original de bienestar inspirado en atención plena. La referencia aporta contexto general; esta sesión no se ha validado clínicamente ni sustituye la atención profesional.",
+      "kind": "mindfulness",
+      "safety": "Puedes mantener los ojos abiertos y cambiar de postura. Si sientes malestar, para y observa tu entorno.",
+      "source": {
+        "name": "NHS · Mindfulness (contexto geral / general context)",
+        "url": "https://www.nhs.uk/mental-health/self-help/tips-and-support/mindfulness/"
+      },
+      "steps": [
+        {
+          "seconds": 30,
+          "text": "Siéntate con apoyo y nota los pies. Deja que la respiración sea natural. Ajusta la postura cuando lo necesites. Durante las pausas de la voz, simplemente observa."
+        },
+        {
+          "seconds": 80,
+          "text": "Elige una palabra: calma, inquietud, cansancio o indefinido. No necesitas explicar por qué ni volver a la historia que te trajo aquí."
+        },
+        {
+          "seconds": 80,
+          "text": "Mantén parte de la atención en los pies y algo visible. Tu estado no tiene que ocupar toda la atención. Puedes dejar la palabra y observar solo el entorno."
+        },
+        {
+          "seconds": 80,
+          "text": "¿Qué necesitas en los próximos minutos? Quizá espacio, compañía o una pausa. No tienes que cambiar la emoción ahora. Elige un cuidado posible."
+        },
+        {
+          "seconds": 30,
+          "text": "Vuelve a notar tu entorno. Mueve las manos despacio y elige cómo retomar la actividad. No necesitas haber alcanzado una sensación especial."
+        }
+      ],
+      "subtitle": "Reconocer el momento sin revivir experiencias",
+      "title": "Dar espacio a lo que sientes",
+      "total_seconds": 300
+    },
+    "published": 1,
+    "script": "Siéntate con apoyo y nota los pies. Deja que la respiración sea natural. Ajusta la postura cuando lo necesites. Durante las pausas de la voz, simplemente observa. Elige una palabra: calma, inquietud, cansancio o indefinido. No necesitas explicar por qué ni volver a la historia que te trajo aquí. Mantén parte de la atención en los pies y algo visible. Tu estado no tiene que ocupar toda la atención. Puedes dejar la palabra y observar solo el entorno. ¿Qué necesitas en los próximos minutos? Quizá espacio, compañía o una pausa. No tienes que cambiar la emoción ahora. Elige un cuidado posible. Vuelve a notar tu entorno. Mueve las manos despacio y elige cómo retomar la actividad. No necesitas haber alcanzado una sensación especial.",
+    "slug": "acolher-emocoes",
+    "subtitle": "Reconocer el momento sin revivir experiencias",
+    "title": "Dar espacio a lo que sientes",
+    "video_path": null
+  },
+  {
+    "audio_path": null,
+    "category": "sleep",
+    "color": "lavender",
+    "created_at": "2026-11-20 22:32:39",
+    "duration": 8,
+    "id": 15,
+    "protocol": {
+      "evidence": "Guion original de bienestar inspirado en atención plena. La referencia aporta contexto general; esta sesión no se ha validado clínicamente ni sustituye la atención profesional.",
+      "kind": "mindfulness",
+      "safety": "Puedes mantener los ojos abiertos y cambiar de postura. Si sientes malestar, para y observa tu entorno.",
+      "source": {
+        "name": "NHS · Mindfulness (contexto geral / general context)",
+        "url": "https://www.nhs.uk/mental-health/self-help/tips-and-support/mindfulness/"
+      },
+      "steps": [
+        {
+          "seconds": 30,
+          "text": "Siéntate con apoyo y nota los pies. Deja que la respiración sea natural. Ajusta la postura cuando lo necesites. Durante las pausas de la voz, simplemente observa."
+        },
+        {
+          "seconds": 140,
+          "text": "Siente la superficie que sostiene el cuerpo. Observa pies, manos y rostro sin contraer. Se trata de descansar la atención, no de obligarte a dormir."
+        },
+        {
+          "seconds": 140,
+          "text": "Si vuelve una tarea, reconoce que puede esperar. No hace falta organizar mañana ahora. Vuelve al contacto del cuerpo con el apoyo."
+        },
+        {
+          "seconds": 140,
+          "text": "Deja llegar los sonidos sin buscar silencio perfecto. La respiración sigue sola. Puedes descansar aunque no llegue el sueño; aquí no hay nada que medir."
+        },
+        {
+          "seconds": 30,
+          "text": "La práctica termina. Puedes seguir descansando sin mirar la pantalla o moverte despacio. Elige lo que sea cómodo ahora."
+        }
+      ],
+      "subtitle": "Una transición suave hacia el descanso",
+      "title": "Dejar descansar el día",
+      "total_seconds": 480
+    },
+    "published": 1,
+    "script": "Siéntate con apoyo y nota los pies. Deja que la respiración sea natural. Ajusta la postura cuando lo necesites. Durante las pausas de la voz, simplemente observa. Siente la superficie que sostiene el cuerpo. Observa pies, manos y rostro sin contraer. Se trata de descansar la atención, no de obligarte a dormir. Si vuelve una tarea, reconoce que puede esperar. No hace falta organizar mañana ahora. Vuelve al contacto del cuerpo con el apoyo. Deja llegar los sonidos sin buscar silencio perfecto. La respiración sigue sola. Puedes descansar aunque no llegue el sueño; aquí no hay nada que medir. La práctica termina. Puedes seguir descansando sin mirar la pantalla o moverte despacio. Elige lo que sea cómodo ahora.",
+    "slug": "desacelerar-noite",
+    "subtitle": "Una transición suave hacia el descanso",
+    "title": "Dejar descansar el día",
+    "video_path": null
+  },
+  {
+    "audio_path": null,
+    "category": "focus",
+    "color": "sage",
+    "created_at": "2026-11-20 22:32:39",
+    "duration": 5,
+    "id": 16,
+    "protocol": {
+      "evidence": "Guion original de bienestar inspirado en atención plena. La referencia aporta contexto general; esta sesión no se ha validado clínicamente ni sustituye la atención profesional.",
+      "kind": "mindfulness",
+      "safety": "Mantén ojos abiertos y atención al camino. No usar conduciendo, en tráfico, escaleras o cerca de obstáculos. Puedes practicar sentado.",
+      "source": {
+        "name": "NHS · Mindfulness (contexto geral / general context)",
+        "url": "https://www.nhs.uk/mental-health/self-help/tips-and-support/mindfulness/"
+      },
+      "steps": [
+        {
+          "seconds": 30,
+          "text": "Elige un recorrido llano, sin tráfico ni obstáculos. Mantén ojos abiertos, volumen bajo y atención al entorno. También puedes practicar sentado, observando los pies."
+        },
+        {
+          "seconds": 80,
+          "text": "Camina a un ritmo cómodo. Nota un pie tocando el suelo y luego el otro. No sincronices pasos y respiración ni cambies tu forma natural de caminar."
+        },
+        {
+          "seconds": 80,
+          "text": "Observa colores, sonidos y dirección. El entorno tiene prioridad. Si aparecen obstáculos o personas, pausa la práctica y presta atención al camino."
+        },
+        {
+          "seconds": 80,
+          "text": "Cuando la mente se distraiga, vuelve a un paso y al espacio delante. Puedes notar brazos y apoyos. Caminar basta."
+        },
+        {
+          "seconds": 30,
+          "text": "Detente en un lugar seguro. Nota los pies en reposo y mira alrededor. Después elige seguir el paseo o volver a tu actividad."
+        }
+      ],
+      "subtitle": "Caminar con atención en un lugar seguro",
+      "title": "Un paso a la vez",
+      "total_seconds": 300
+    },
+    "published": 1,
+    "script": "Elige un recorrido llano, sin tráfico ni obstáculos. Mantén ojos abiertos, volumen bajo y atención al entorno. También puedes practicar sentado, observando los pies. Camina a un ritmo cómodo. Nota un pie tocando el suelo y luego el otro. No sincronices pasos y respiración ni cambies tu forma natural de caminar. Observa colores, sonidos y dirección. El entorno tiene prioridad. Si aparecen obstáculos o personas, pausa la práctica y presta atención al camino. Cuando la mente se distraiga, vuelve a un paso y al espacio delante. Puedes notar brazos y apoyos. Caminar basta. Detente en un lugar seguro. Nota los pies en reposo y mira alrededor. Después elige seguir el paseo o volver a tu actividad.",
+    "slug": "caminhada-consciente",
+    "subtitle": "Caminar con atención en un lugar seguro",
+    "title": "Un paso a la vez",
+    "video_path": null
+  }
+]

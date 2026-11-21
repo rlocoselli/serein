@@ -1,0 +1,72 @@
+[
+  {
+    "key": "ocean",
+    "seconds": 32,
+    "rms": 0.07326020926302147,
+    "peak": 0.48,
+    "seam_delta": 0.0
+  },
+  {
+    "key": "rain",
+    "seconds": 32,
+    "rms": 0.08998103289980125,
+    "peak": 0.47090987262497347,
+    "seam_delta": 0.0
+  },
+  {
+    "key": "forest",
+    "seconds": 32,
+    "rms": 0.08998539618521158,
+    "peak": 0.4780577467857585,
+    "seam_delta": 0.0
+  },
+  {
+    "key": "stream",
+    "seconds": 32,
+    "rms": 0.08877670852363552,
+    "peak": 0.48,
+    "seam_delta": 0.0
+  },
+  {
+    "key": "fireplace",
+    "seconds": 32,
+    "rms": 0.0899848606178925,
+    "peak": 0.4476919681205134,
+    "seam_delta": 0.0
+  },
+  {
+    "key": "night",
+    "seconds": 32,
+    "rms": 0.08998460785323331,
+    "peak": 0.4139002259593744,
+    "seam_delta": 0.0
+  },
+  {
+    "key": "brown",
+    "seconds": 32,
+    "rms": 0.08998362712698815,
+    "peak": 0.4762040461852146,
+    "seam_delta": 0.0
+  },
+  {
+    "key": "piano",
+    "seconds": 32,
+    "rms": 0.08999946307810078,
+    "peak": 0.40699547279894877,
+    "seam_delta": 0.0
+  },
+  {
+    "key": "pad",
+    "seconds": 32,
+    "rms": 0.08998284663683785,
+    "peak": 0.3368660255069528,
+    "seam_delta": 0.0
+  },
+  {
+    "key": "beethoven-joy",
+    "seconds": 32,
+    "rms": 0.0899995805440213,
+    "peak": 0.30685571514424126,
+    "seam_delta": 0.0
+  }
+]
