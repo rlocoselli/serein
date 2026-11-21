@@ -2,6 +2,12 @@
 
 Aplicativo Flutter de meditação, sono e bem-estar. A versão inicial inclui sessões de respiração, textos guiados, vibrações suaves e uma biblioteca preparada para conteúdos privados.
 
+## Deploy da aplicação web
+
+O `Dockerfile` na raiz constrói a aplicação Flask a partir de `web-meditation/`. Na plataforma de hospedagem, selecione a branch `main`, contexto de construção `.` e Dockerfile `Dockerfile`; use o comando de arranque da imagem. O servidor e o healthcheck usam `PORT` (padrão `5000`).
+
+Configure `SEREIN_ADMIN_PASSWORD` e `SEREIN_SECRET_KEY` como segredos da plataforma. Monte um volume persistente em `/data` para guardar SQLite e uploads. A imagem cria o catálogo inicial automaticamente. Para construir localmente, execute `docker build -t serein .`; as instruções completas de execução estão em [web-meditation/README.md](web-meditation/README.md#docker).
+
 ## Versão web e Android com HTML local
 
 A aplicação web com Flask e SQLite, meditações em cinco idiomas, vídeos, histórias, sons de fundo e administração fica em [web-meditation/](web-meditation/README.md). O projeto Android Studio em [web-meditation/android/](web-meditation/android/README.md) incorpora o HTML e os conteúdos locais para utilização offline.

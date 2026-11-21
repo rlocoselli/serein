@@ -1,0 +1,11 @@
+# Build the web app from main while excluding Flutter, local data and secrets.
+**
+!Dockerfile
+!.dockerignore
+!web-meditation/
+!web-meditation/requirements.txt
+!web-meditation/app.py
+!web-meditation/exercise_seed.json
+!web-meditation/story_seed.json
+!web-meditation/static/
+!web-meditation/static/**
