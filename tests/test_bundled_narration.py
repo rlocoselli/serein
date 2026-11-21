@@ -14,7 +14,10 @@ class BundledNarrationTests(unittest.TestCase):
     def test_fresh_installation_has_playable_recordings_for_every_bundled_locale(self):
         catalog = json.loads((ROOT / 'static/narration/catalog.json').read_text())
         locales = sorted({locale for entry in catalog['sessions'].values() for locale in entry})
-        self.assertIn('fr', locales)
+        self.assertEqual(set(locales), {'fr', 'pt', 'en', 'it', 'es'})
+        self.assertEqual(len(catalog['sessions']), 16)
+        for translations in catalog['sessions'].values():
+            self.assertEqual(set(translations), set(locales))
         with tempfile.TemporaryDirectory(prefix='serein-bundled-voices-') as directory:
             env = {**os.environ, 'SEREIN_DB': str(Path(directory) / 'fresh.db'),
                    'SEREIN_UPLOADS': str(Path(directory) / 'uploads'),

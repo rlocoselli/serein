@@ -1,12 +1,16 @@
 [
   {
-    "audio_path": null,
+    "audio_path": "/narration/fr/respirar-01-8401c3f6085a.mp3",
     "category": "breathing",
     "color": "sage",
-    "created_at": "2026-11-14 21:46:27",
+    "created_at": "2026-11-21 14:58:20",
     "duration": 5,
     "id": 1,
-    "narration": null,
+    "narration": {
+      "kind": "ai",
+      "provider": "kokoro",
+      "voice": "ff_siwis"
+    },
     "protocol": null,
     "published": 1,
     "script": "Installez-vous confortablement. Sentez le soutien sous votre corps. Inspirez lentement par le nez. Remarquez l’air qui entre. Expirez sans vous presser. Si votre esprit s’égare, constatez-le simplement et revenez au souffle suivant. Il n’y a rien à accomplir maintenant. Il y a seulement cet instant. Que change une pause que vous vous accordez ?",
@@ -16,13 +20,17 @@
     "video_path": "/videos/respirar.webm"
   },
   {
-    "audio_path": null,
+    "audio_path": "/narration/fr/soltar-01-5924f978aad1.mp3",
     "category": "relaxation",
     "color": "peach",
-    "created_at": "2026-11-14 21:46:27",
+    "created_at": "2026-11-21 14:58:20",
     "duration": 8,
     "id": 2,
-    "narration": null,
+    "narration": {
+      "kind": "ai",
+      "provider": "kokoro",
+      "voice": "ff_siwis"
+    },
     "protocol": null,
     "published": 1,
     "script": "Fermez les yeux si cela vous convient. Observez votre front et laissez-le se détendre. Relâchez la mâchoire. Laissez descendre les épaules. Sentez vos mains au repos. À chaque expiration, offrez un peu plus d’espace à votre corps. Vous pouvez être exactement comme vous êtes. Quelle part de vous a besoin de douceur aujourd’hui ?",
@@ -32,13 +40,17 @@
     "video_path": "/videos/soltar.webm"
   },
   {
-    "audio_path": null,
+    "audio_path": "/narration/fr/sono-01-dfe46bc7be54.mp3",
     "category": "sleep",
     "color": "lavender",
-    "created_at": "2026-11-14 21:46:27",
+    "created_at": "2026-11-21 14:58:20",
     "duration": 10,
     "id": 3,
-    "narration": null,
+    "narration": {
+      "kind": "ai",
+      "provider": "kokoro",
+      "voice": "ff_siwis"
+    },
     "protocol": null,
     "published": 1,
     "script": "La nuit est arrivée. Vous pouvez laisser les tâches du jour derrière vous. Sentez la surface qui vous soutient. Respirez naturellement. À l’expiration, relâchez une petite tension. Laissez passer les pensées comme des nuages dans le ciel sombre. Vous n’avez pas à les suivre. Votre seule invitation est de vous reposer. Que serait-ce de faire confiance à ce repos ?",
@@ -51,10 +63,14 @@
     "audio_path": null,
     "category": "breathing",
     "color": "sage",
-    "created_at": "2026-11-14 22:04:54",
+    "created_at": "2026-11-21 14:58:20",
     "duration": 5,
     "id": 4,
-    "narration": null,
+    "narration": {
+      "kind": "ai",
+      "provider": "kokoro",
+      "voice": "ff_siwis"
+    },
     "protocol": {
       "evidence": "Adaptation des conseils du NHS pour le stress. Le rythme visuel est facultatif ; cette séance n’a pas été testée cliniquement.",
       "kind": "breathing",
@@ -65,18 +81,26 @@
       },
       "steps": [
         {
+          "audio_path": "/narration/fr/respiracao-suave-01-478a4f90c9d7.mp3",
+          "duration": 6.121,
           "seconds": 30,
           "text": "Asseyez-vous avec un appui. Relâchez les épaules et trouvez un souffle confortable."
         },
         {
+          "audio_path": "/narration/fr/respiracao-suave-02-f9b4741317cf.mp3",
+          "duration": 12.756,
           "seconds": 90,
           "text": "Inspirez doucement par le nez, expirez par la bouche si cela vous convient. Le cercle propose cinq secondes dans chaque sens, sans rétention. Un rythme plus rapide convient aussi."
         },
         {
+          "audio_path": "/narration/fr/respiracao-suave-03-384c43a00fd1.mp3",
+          "duration": 9.921,
           "seconds": 150,
           "text": "Continuez sans forcer une inspiration profonde. Si l’esprit s’égare, revenez au souffle suivant. Votre confort guide le rythme."
         },
         {
+          "audio_path": "/narration/fr/respiracao-suave-04-223402228628.mp3",
+          "duration": 6.09,
           "seconds": 30,
           "text": "Laissez le comptage. Respirez naturellement et sentez vos appuis avant de terminer."
         }
@@ -96,10 +120,14 @@
     "audio_path": null,
     "category": "relaxation",
     "color": "peach",
-    "created_at": "2026-11-14 22:04:54",
+    "created_at": "2026-11-21 14:58:20",
     "duration": 6,
     "id": 5,
-    "narration": null,
+    "narration": {
+      "kind": "ai",
+      "provider": "kokoro",
+      "voice": "ff_siwis"
+    },
     "protocol": {
       "evidence": "La VA décrit cette technique et les recherches sur la relaxation. Cette adaptation à quatre groupes n’est ni le protocole complet ni une séance validée cliniquement.",
       "kind": "pmr",
@@ -110,42 +138,62 @@
       },
       "steps": [
         {
+          "audio_path": "/narration/fr/relaxamento-progressivo-01-cb1e65ee09e4.mp3",
+          "duration": 9.651,
           "seconds": 40,
           "text": "Installez-vous assis ou allongé. Contractez doucement puis relâchez, sans retenir le souffle. Vous pouvez aussi imaginer le relâchement."
         },
         {
+          "audio_path": "/narration/fr/relaxamento-progressivo-02-161b031816e1.mp3",
+          "duration": 2.371,
           "seconds": 5,
           "text": "Mains : repliez doucement les doigts."
         },
         {
+          "audio_path": "/narration/fr/relaxamento-progressivo-03-d3cdac46c3b6.mp3",
+          "duration": 4.615,
           "seconds": 60,
           "text": "Ouvrez les mains. Notez la différence entre tension et repos."
         },
         {
+          "audio_path": "/narration/fr/relaxamento-progressivo-04-45538793e364.mp3",
+          "duration": 3.245,
           "seconds": 5,
           "text": "Bras : pliez les coudes et contractez doucement."
         },
         {
+          "audio_path": "/narration/fr/relaxamento-progressivo-05-8ce31eccb305.mp3",
+          "duration": 5.127,
           "seconds": 60,
           "text": "Relâchez les bras sur leur appui. Observez sans exiger la détente."
         },
         {
+          "audio_path": "/narration/fr/relaxamento-progressivo-06-b640635e429a.mp3",
+          "duration": 3.149,
           "seconds": 5,
           "text": "Épaules : soulevez-les un peu sans forcer le cou."
         },
         {
+          "audio_path": "/narration/fr/relaxamento-progressivo-07-c3cf4527d65b.mp3",
+          "duration": 3.659,
           "seconds": 60,
           "text": "Laissez descendre les épaules et sentez vos appuis."
         },
         {
+          "audio_path": "/narration/fr/relaxamento-progressivo-08-45404680693b.mp3",
+          "duration": 4.397,
           "seconds": 5,
           "text": "Pieds : pointez doucement les orteils, seulement si cela convient."
         },
         {
+          "audio_path": "/narration/fr/relaxamento-progressivo-09-4ae4b02e81e1.mp3",
+          "duration": 5.77,
           "seconds": 60,
           "text": "Relâchez les pieds. Laissez reposer les jambes. Respirez naturellement."
         },
         {
+          "audio_path": "/narration/fr/relaxamento-progressivo-10-c7f6e0db17a5.mp3",
+          "duration": 5.843,
           "seconds": 60,
           "text": "Observez tout le corps. Prenez le temps de bouger et de retrouver votre environnement."
         }
@@ -165,10 +213,14 @@
     "audio_path": null,
     "category": "focus",
     "color": "lavender",
-    "created_at": "2026-11-14 22:04:54",
+    "created_at": "2026-11-21 14:58:20",
     "duration": 5,
     "id": 6,
-    "narration": null,
+    "narration": {
+      "kind": "ai",
+      "provider": "kokoro",
+      "voice": "ff_siwis"
+    },
     "protocol": {
       "evidence": "Des programmes de pleine conscience montrent des bénéfices pour certains symptômes, avec des résultats et une qualité variables. Cette introduction ne correspond pas aux programmes étudiés.",
       "kind": "mindfulness",
@@ -179,18 +231,26 @@
       },
       "steps": [
         {
+          "audio_path": "/narration/fr/atencao-presente-01-73988ebbdf97.mp3",
+          "duration": 8.263,
           "seconds": 40,
           "text": "Asseyez-vous confortablement. Sentez les pieds et le contact de la chaise. Il n’y a pas de sensation à réussir."
         },
         {
+          "audio_path": "/narration/fr/atencao-presente-02-6cbee5b12cf7.mp3",
+          "duration": 8.292,
           "seconds": 80,
           "text": "Observez le souffle tel qu’il est. Choisissez l’air au nez ou le mouvement du ventre. Ne changez pas le rythme."
         },
         {
+          "audio_path": "/narration/fr/atencao-presente-03-042ea6f37f88.mp3",
+          "duration": 8.215,
           "seconds": 120,
           "text": "Quand vous remarquez une pensée, reconnaissez-la puis revenez à la sensation choisie. Chaque retour fait partie de la pratique."
         },
         {
+          "audio_path": "/narration/fr/atencao-presente-04-2213c0d761fd.mp3",
+          "duration": 7.768,
           "seconds": 60,
           "text": "Élargissez l’attention aux sons et au corps. Regardez autour de vous et choisissez votre prochain geste calmement."
         }
@@ -208,120 +268,16 @@
   },
   {
     "audio_path": null,
-    "category": "relaxation",
-    "color": "sage",
-    "created_at": "2026-11-17 15:50:19",
-    "duration": 4,
-    "id": 7,
-    "narration": null,
-    "protocol": {
-      "evidence": "Histoire originale inspirée de la visualisation guidée et de la relaxation utilisées en sophrologie. Ce n’est pas un protocole clinique validé.",
-      "kind": "story",
-      "safety": "Imaginez seulement ce qui vous convient. Vous pouvez garder les yeux ouverts. En cas de malaise, arrêtez et observez votre environnement.",
-      "sound": "ocean",
-      "source": {
-        "name": "NCCIH · Relaxation techniques",
-        "url": "https://www.nccih.nih.gov/health/relaxation-techniques-what-you-need-to-know"
-      },
-      "steps": [
-        {
-          "seconds": 40,
-          "text": "Installez-vous confortablement. Sentez les appuis du corps. Ne changez pas votre souffle. Imaginez que Lumi a trouvé un petit sentier près de la mer et vous invite à le découvrir, sans hâte."
-        },
-        {
-          "seconds": 40,
-          "text": "Le sentier arrive dans une crique. Choisissez votre distance à l’eau. Le sable peut être tiède ou frais ; laissez la scène prendre vos couleurs. Vous pouvez aussi simplement écouter."
-        },
-        {
-          "seconds": 40,
-          "text": "Une vague vient et repart. Inutile d’y accorder votre souffle. Observez le mouvement et l’espace entre les mouvements. Lumi s’assoit à côté de vous ; rien n’est à résoudre maintenant."
-        },
-        {
-          "seconds": 40,
-          "text": "Imaginez les épaules se poser un peu plus. Les mains reposent comme des galets lisses sur le sable. Une pensée peut venir. Laissez-la être et revenez à un détail du paysage."
-        },
-        {
-          "seconds": 40,
-          "text": "L’horizon reste là, sans rien demander. Choisissez un mot à emporter : espace, légèreté, pause, ou un autre. Aucune sensation particulière n’est nécessaire. Cet instant peut suffire."
-        },
-        {
-          "seconds": 40,
-          "text": "Lumi se lève doucement. La crique peut rester en imagination tandis que vous retrouvez les appuis réels. Bougez les doigts, regardez autour de vous et revenez à votre journée à votre rythme."
-        }
-      ],
-      "subtitle": "Un voyage imaginé au son de la mer",
-      "title": "La crique paisible",
-      "total_seconds": 240
-    },
-    "published": 1,
-    "script": "Installez-vous confortablement. Sentez les appuis du corps. Ne changez pas votre souffle. Imaginez que Lumi a trouvé un petit sentier près de la mer et vous invite à le découvrir, sans hâte. Le sentier arrive dans une crique. Choisissez votre distance à l’eau. Le sable peut être tiède ou frais ; laissez la scène prendre vos couleurs. Vous pouvez aussi simplement écouter. Une vague vient et repart. Inutile d’y accorder votre souffle. Observez le mouvement et l’espace entre les mouvements. Lumi s’assoit à côté de vous ; rien n’est à résoudre maintenant. Imaginez les épaules se poser un peu plus. Les mains reposent comme des galets lisses sur le sable. Une pensée peut venir. Laissez-la être et revenez à un détail du paysage. L’horizon reste là, sans rien demander. Choisissez un mot à emporter : espace, légèreté, pause, ou un autre. Aucune sensation particulière n’est nécessaire. Cet instant peut suffire. Lumi se lève doucement. La crique peut rester en imagination tandis que vous retrouvez les appuis réels. Bougez les doigts, regardez autour de vous et revenez à votre journée à votre rythme.",
-    "slug": "historia-mar",
-    "subtitle": "Un voyage imaginé au son de la mer",
-    "title": "La crique paisible",
-    "video_path": null
-  },
-  {
-    "audio_path": null,
-    "category": "relaxation",
-    "color": "lavender",
-    "created_at": "2026-11-17 15:50:19",
-    "duration": 4,
-    "id": 8,
-    "narration": null,
-    "protocol": {
-      "evidence": "Histoire originale inspirée de la visualisation guidée et de la relaxation utilisées en sophrologie. Ce n’est pas un protocole clinique validé.",
-      "kind": "story",
-      "safety": "Imaginez seulement ce qui vous convient. Vous pouvez garder les yeux ouverts. En cas de malaise, arrêtez et observez votre environnement.",
-      "sound": "rain",
-      "source": {
-        "name": "NCCIH · Relaxation techniques",
-        "url": "https://www.nccih.nih.gov/health/relaxation-techniques-what-you-need-to-know"
-      },
-      "steps": [
-        {
-          "seconds": 40,
-          "text": "Installez le corps et sentez les pieds. Imaginez un jardin depuis une terrasse couverte. Vous pouvez rester là. Lumi regarde les feuilles ; une pluie légère habite les espaces entre les sons."
-        },
-        {
-          "seconds": 40,
-          "text": "Choisissez une feuille imaginée. Une goutte attend à sa pointe puis tombe. Il n’y a pas de bonne manière de voir : une idée, une couleur ou un son suffisent."
-        },
-        {
-          "seconds": 40,
-          "text": "Sentez les mains posées. Si vous voulez, relâchez les doigts. Chaque plante garde sa place sans devoir grandir plus vite. Accordez-vous aussi quelques instants sans performance."
-        },
-        {
-          "seconds": 40,
-          "text": "Lumi trouve un banc abrité. Imaginez la lumière sur les feuilles. Respirez naturellement. Quand vous remarquez une distraction, revenez à un son sans reprocher à l’esprit son voyage."
-        },
-        {
-          "seconds": 40,
-          "text": "La pluie imaginée s’éloigne. Choisissez une petite douceur pour après : boire de l’eau, vous étirer confortablement ou garder un espace avant la prochaine tâche."
-        },
-        {
-          "seconds": 40,
-          "text": "Le jardin attendra une autre visite. Sentez le poids réel du corps et les sons autour de vous. Bougez doucement mains et pieds. Emportez seulement ce qui vous convient aujourd’hui."
-        }
-      ],
-      "subtitle": "Une promenade attentive sous une pluie douce",
-      "title": "Le jardin après la pluie",
-      "total_seconds": 240
-    },
-    "published": 1,
-    "script": "Installez le corps et sentez les pieds. Imaginez un jardin depuis une terrasse couverte. Vous pouvez rester là. Lumi regarde les feuilles ; une pluie légère habite les espaces entre les sons. Choisissez une feuille imaginée. Une goutte attend à sa pointe puis tombe. Il n’y a pas de bonne manière de voir : une idée, une couleur ou un son suffisent. Sentez les mains posées. Si vous voulez, relâchez les doigts. Chaque plante garde sa place sans devoir grandir plus vite. Accordez-vous aussi quelques instants sans performance. Lumi trouve un banc abrité. Imaginez la lumière sur les feuilles. Respirez naturellement. Quand vous remarquez une distraction, revenez à un son sans reprocher à l’esprit son voyage. La pluie imaginée s’éloigne. Choisissez une petite douceur pour après : boire de l’eau, vous étirer confortablement ou garder un espace avant la prochaine tâche. Le jardin attendra une autre visite. Sentez le poids réel du corps et les sons autour de vous. Bougez doucement mains et pieds. Emportez seulement ce qui vous convient aujourd’hui.",
-    "slug": "historia-jardim",
-    "subtitle": "Une promenade attentive sous une pluie douce",
-    "title": "Le jardin après la pluie",
-    "video_path": null
-  },
-  {
-    "audio_path": null,
     "category": "focus",
     "color": "peach",
-    "created_at": "2026-11-20 22:32:39",
+    "created_at": "2026-11-21 14:58:20",
     "duration": 3,
-    "id": 9,
-    "narration": null,
+    "id": 7,
+    "narration": {
+      "kind": "ai",
+      "provider": "kokoro",
+      "voice": "ff_siwis"
+    },
     "protocol": {
       "evidence": "Texte original de bien-être inspiré de la pleine conscience. La référence apporte un contexte général ; cette séance n’a pas été validée cliniquement et ne remplace pas les soins professionnels.",
       "kind": "mindfulness",
@@ -332,22 +288,32 @@
       },
       "steps": [
         {
+          "audio_path": "/narration/fr/comecar-dia-01-586e93f9f1db.mp3",
+          "duration": 12.178,
           "seconds": 30,
           "text": "Asseyez-vous avec un appui et sentez les pieds. Laissez le souffle naturel. Ajustez votre posture si nécessaire. Pendant les silences de la voix, observez simplement."
         },
         {
+          "audio_path": "/narration/fr/comecar-dia-02-76acf4e9b99d.mp3",
+          "duration": 10.306,
           "seconds": 40,
           "text": "Remarquez une couleur, une forme et un son. Vous êtes déjà ici, avant toute tâche. Laissez venir les détails sans chercher quelque chose de beau."
         },
         {
+          "audio_path": "/narration/fr/comecar-dia-03-a85204d67fa0.mp3",
+          "duration": 11.227,
           "seconds": 40,
           "text": "Quelle qualité souhaitez-vous apporter aux prochaines heures ? Patience, attention ou douceur, peut-être. Choisissez un mot possible, sans en faire une obligation."
         },
         {
+          "audio_path": "/narration/fr/comecar-dia-04-a6787b768825.mp3",
+          "duration": 9.021,
           "seconds": 40,
           "text": "Imaginez un petit geste : écouter jusqu’au bout, boire de l’eau ou marquer une pause avant de répondre. Un geste suffit pour commencer."
         },
         {
+          "audio_path": "/narration/fr/comecar-dia-05-61c5bbdc7748.mp3",
+          "duration": 10.415,
           "seconds": 30,
           "text": "Retrouvez votre environnement. Bougez doucement les mains et choisissez comment reprendre votre activité. Aucune sensation particulière n’est à atteindre."
         }
@@ -367,10 +333,14 @@
     "audio_path": null,
     "category": "relaxation",
     "color": "sage",
-    "created_at": "2026-11-20 22:32:39",
+    "created_at": "2026-11-21 14:58:20",
     "duration": 3,
-    "id": 10,
-    "narration": null,
+    "id": 8,
+    "narration": {
+      "kind": "ai",
+      "provider": "kokoro",
+      "voice": "ff_siwis"
+    },
     "protocol": {
       "evidence": "Texte original de bien-être inspiré de la pleine conscience. La référence apporte un contexte général ; cette séance n’a pas été validée cliniquement et ne remplace pas les soins professionnels.",
       "kind": "mindfulness",
@@ -381,22 +351,32 @@
       },
       "steps": [
         {
+          "audio_path": "/narration/fr/pausa-trabalho-01-586e93f9f1db.mp3",
+          "duration": 12.178,
           "seconds": 30,
           "text": "Asseyez-vous avec un appui et sentez les pieds. Laissez le souffle naturel. Ajustez votre posture si nécessaire. Pendant les silences de la voix, observez simplement."
         },
         {
+          "audio_path": "/narration/fr/pausa-trabalho-02-c584e4b73b02.mp3",
+          "duration": 9.426,
           "seconds": 40,
           "text": "Éloignez les mains du clavier ou du téléphone si possible. Sentez les doigts et les épaules. Ajustez doucement, sans étirement forcé."
         },
         {
+          "audio_path": "/narration/fr/pausa-trabalho-03-4dd9e3b48fb4.mp3",
+          "duration": 10.65,
           "seconds": 40,
           "text": "Regardez un point confortable loin de l’écran. Observez lumière et formes. Laissez le souffle venir ; cette pause n’a pas à résoudre toute la journée."
         },
         {
+          "audio_path": "/narration/fr/pausa-trabalho-04-a828e0ccbe10.mp3",
+          "duration": 8.928,
           "seconds": 40,
           "text": "Choisissez seulement la tâche suivante. Remarquez l’envie de tout faire et revenez au premier geste concret. Commencez simplement."
         },
         {
+          "audio_path": "/narration/fr/pausa-trabalho-05-61c5bbdc7748.mp3",
+          "duration": 10.415,
           "seconds": 30,
           "text": "Retrouvez votre environnement. Bougez doucement les mains et choisissez comment reprendre votre activité. Aucune sensation particulière n’est à atteindre."
         }
@@ -416,10 +396,14 @@
     "audio_path": null,
     "category": "focus",
     "color": "sage",
-    "created_at": "2026-11-20 22:32:39",
+    "created_at": "2026-11-21 14:58:20",
     "duration": 5,
-    "id": 11,
-    "narration": null,
+    "id": 9,
+    "narration": {
+      "kind": "ai",
+      "provider": "kokoro",
+      "voice": "ff_siwis"
+    },
     "protocol": {
       "evidence": "Texte original de bien-être inspiré de la pleine conscience. La référence apporte un contexte général ; cette séance n’a pas été validée cliniquement et ne remplace pas les soins professionnels.",
       "kind": "mindfulness",
@@ -430,22 +414,32 @@
       },
       "steps": [
         {
+          "audio_path": "/narration/fr/escuta-atenta-01-586e93f9f1db.mp3",
+          "duration": 12.178,
           "seconds": 30,
           "text": "Asseyez-vous avec un appui et sentez les pieds. Laissez le souffle naturel. Ajustez votre posture si nécessaire. Pendant les silences de la voix, observez simplement."
         },
         {
+          "audio_path": "/narration/fr/escuta-atenta-02-51becad58860.mp3",
+          "duration": 8.558,
           "seconds": 80,
           "text": "Écoutez le son le plus proche : un vêtement ou un bruit alentour. Sans chercher sa source, notez sa texture et sa durée."
         },
         {
+          "audio_path": "/narration/fr/escuta-atenta-03-594e7fd5230d.mp3",
+          "duration": 9.965,
           "seconds": 80,
           "text": "Élargissez l’écoute aux sons lointains. Ils viennent et repartent. Si un son déplaît, notez la réaction sans devoir le modifier ni l’apprécier."
         },
         {
+          "audio_path": "/narration/fr/escuta-atenta-04-22b08a058979.mp3",
+          "duration": 10.251,
           "seconds": 80,
           "text": "Écoutez maintenant l’ensemble. Sons, pauses et silence partagent un espace. Quand une pensée vous attire, reconnaissez-la et revenez à un son."
         },
         {
+          "audio_path": "/narration/fr/escuta-atenta-05-61c5bbdc7748.mp3",
+          "duration": 10.415,
           "seconds": 30,
           "text": "Retrouvez votre environnement. Bougez doucement les mains et choisissez comment reprendre votre activité. Aucune sensation particulière n’est à atteindre."
         }
@@ -465,10 +459,14 @@
     "audio_path": null,
     "category": "relaxation",
     "color": "peach",
-    "created_at": "2026-11-20 22:32:39",
+    "created_at": "2026-11-21 14:58:20",
     "duration": 8,
-    "id": 12,
-    "narration": null,
+    "id": 10,
+    "narration": {
+      "kind": "ai",
+      "provider": "kokoro",
+      "voice": "ff_siwis"
+    },
     "protocol": {
       "evidence": "Texte original de bien-être inspiré de la pleine conscience. La référence apporte un contexte général ; cette séance n’a pas été validée cliniquement et ne remplace pas les soins professionnels.",
       "kind": "mindfulness",
@@ -479,22 +477,32 @@
       },
       "steps": [
         {
+          "audio_path": "/narration/fr/varredura-corporal-01-586e93f9f1db.mp3",
+          "duration": 12.178,
           "seconds": 30,
           "text": "Asseyez-vous avec un appui et sentez les pieds. Laissez le souffle naturel. Ajustez votre posture si nécessaire. Pendant les silences de la voix, observez simplement."
         },
         {
+          "audio_path": "/narration/fr/varredura-corporal-02-11ed6c764bed.mp3",
+          "duration": 11.664,
           "seconds": 140,
           "text": "Portez l’attention aux pieds et aux jambes. Notez pression, température ou appuis. Ne rien sentir clairement fait aussi partie de l’expérience. Ne changez rien."
         },
         {
+          "audio_path": "/narration/fr/varredura-corporal-03-199590b4501c.mp3",
+          "duration": 9.343,
           "seconds": 140,
           "text": "Passez au tronc, puis aux mains et aux bras, une région à la fois. Gardez le souffle naturel, sans chercher la détente ni un signe de problème."
         },
         {
+          "audio_path": "/narration/fr/varredura-corporal-04-7fc3bfced9ec.mp3",
+          "duration": 8.277,
           "seconds": 140,
           "text": "Sentez épaules, visage et corps soutenu. Si l’attention intérieure gêne, choisissez plutôt un son de l’environnement."
         },
         {
+          "audio_path": "/narration/fr/varredura-corporal-05-61c5bbdc7748.mp3",
+          "duration": 10.415,
           "seconds": 30,
           "text": "Retrouvez votre environnement. Bougez doucement les mains et choisissez comment reprendre votre activité. Aucune sensation particulière n’est à atteindre."
         }
@@ -514,10 +522,14 @@
     "audio_path": null,
     "category": "relaxation",
     "color": "peach",
-    "created_at": "2026-11-20 22:32:39",
+    "created_at": "2026-11-21 14:58:20",
     "duration": 6,
-    "id": 13,
-    "narration": null,
+    "id": 11,
+    "narration": {
+      "kind": "ai",
+      "provider": "kokoro",
+      "voice": "ff_siwis"
+    },
     "protocol": {
       "evidence": "Texte original de bien-être inspiré de la pleine conscience. La référence apporte un contexte général ; cette séance n’a pas été validée cliniquement et ne remplace pas les soins professionnels.",
       "kind": "mindfulness",
@@ -528,22 +540,32 @@
       },
       "steps": [
         {
+          "audio_path": "/narration/fr/gentileza-consigo-01-586e93f9f1db.mp3",
+          "duration": 12.178,
           "seconds": 30,
           "text": "Asseyez-vous avec un appui et sentez les pieds. Laissez le souffle naturel. Ajustez votre posture si nécessaire. Pendant les silences de la voix, observez simplement."
         },
         {
+          "audio_path": "/narration/fr/gentileza-consigo-02-3ad5b709933b.mp3",
+          "duration": 10.444,
           "seconds": 100,
           "text": "Remarquez votre ton envers vous-même aujourd’hui. Ne cherchez pas de souvenir difficile. Notez simplement exigence, hâte ou fatigue dans l’instant."
         },
         {
+          "audio_path": "/narration/fr/gentileza-consigo-03-c22f16f3e4ae.mp3",
+          "duration": 8.895,
           "seconds": 100,
           "text": "Essayez une phrase sincère : je peux accueillir cet instant avec un peu plus de soin. Si les mots n’aident pas, retrouvez l’appui des pieds."
         },
         {
+          "audio_path": "/narration/fr/gentileza-consigo-04-4e362d7e1bc5.mp3",
+          "duration": 10.09,
           "seconds": 100,
           "text": "Pensez à un soin simple : se reposer, demander de l’aide ou respecter une limite. Sans promesse, laissez cette option côtoyer les exigences."
         },
         {
+          "audio_path": "/narration/fr/gentileza-consigo-05-61c5bbdc7748.mp3",
+          "duration": 10.415,
           "seconds": 30,
           "text": "Retrouvez votre environnement. Bougez doucement les mains et choisissez comment reprendre votre activité. Aucune sensation particulière n’est à atteindre."
         }
@@ -563,10 +585,14 @@
     "audio_path": null,
     "category": "focus",
     "color": "lavender",
-    "created_at": "2026-11-20 22:32:39",
+    "created_at": "2026-11-21 14:58:20",
     "duration": 5,
-    "id": 14,
-    "narration": null,
+    "id": 12,
+    "narration": {
+      "kind": "ai",
+      "provider": "kokoro",
+      "voice": "ff_siwis"
+    },
     "protocol": {
       "evidence": "Texte original de bien-être inspiré de la pleine conscience. La référence apporte un contexte général ; cette séance n’a pas été validée cliniquement et ne remplace pas les soins professionnels.",
       "kind": "mindfulness",
@@ -577,22 +603,32 @@
       },
       "steps": [
         {
+          "audio_path": "/narration/fr/acolher-emocoes-01-586e93f9f1db.mp3",
+          "duration": 12.178,
           "seconds": 30,
           "text": "Asseyez-vous avec un appui et sentez les pieds. Laissez le souffle naturel. Ajustez votre posture si nécessaire. Pendant les silences de la voix, observez simplement."
         },
         {
+          "audio_path": "/narration/fr/acolher-emocoes-02-b4dba1a29735.mp3",
+          "duration": 9.191,
           "seconds": 80,
           "text": "Choisissez un mot : calme, agité, fatigué ou indéfini. Sans expliquer pourquoi ni revenir à l’histoire qui vous a conduit ici."
         },
         {
+          "audio_path": "/narration/fr/acolher-emocoes-03-5d9b6e390738.mp3",
+          "duration": 11.173,
           "seconds": 80,
           "text": "Gardez une part d’attention sur les pieds et un objet visible. Votre état n’a pas à prendre toute la place. Vous pouvez aussi laisser le mot et regarder autour."
         },
         {
+          "audio_path": "/narration/fr/acolher-emocoes-04-fdbb8a9fe97a.mp3",
+          "duration": 10.145,
           "seconds": 80,
           "text": "De quoi avez-vous besoin pour les prochaines minutes ? D’espace, de compagnie ou d’une pause ? Sans changer l’émotion, choisissez un soin possible."
         },
         {
+          "audio_path": "/narration/fr/acolher-emocoes-05-61c5bbdc7748.mp3",
+          "duration": 10.415,
           "seconds": 30,
           "text": "Retrouvez votre environnement. Bougez doucement les mains et choisissez comment reprendre votre activité. Aucune sensation particulière n’est à atteindre."
         }
@@ -612,10 +648,14 @@
     "audio_path": null,
     "category": "sleep",
     "color": "lavender",
-    "created_at": "2026-11-20 22:32:39",
+    "created_at": "2026-11-21 14:58:20",
     "duration": 8,
-    "id": 15,
-    "narration": null,
+    "id": 13,
+    "narration": {
+      "kind": "ai",
+      "provider": "kokoro",
+      "voice": "ff_siwis"
+    },
     "protocol": {
       "evidence": "Texte original de bien-être inspiré de la pleine conscience. La référence apporte un contexte général ; cette séance n’a pas été validée cliniquement et ne remplace pas les soins professionnels.",
       "kind": "mindfulness",
@@ -626,22 +666,32 @@
       },
       "steps": [
         {
+          "audio_path": "/narration/fr/desacelerar-noite-01-586e93f9f1db.mp3",
+          "duration": 12.178,
           "seconds": 30,
           "text": "Asseyez-vous avec un appui et sentez les pieds. Laissez le souffle naturel. Ajustez votre posture si nécessaire. Pendant les silences de la voix, observez simplement."
         },
         {
+          "audio_path": "/narration/fr/desacelerar-noite-02-a3b83a22aa86.mp3",
+          "duration": 10.471,
           "seconds": 140,
           "text": "Sentez la surface qui vous porte. Observez pieds, mains et visage sans contracter. Il s’agit de poser l’attention, pas de s’obliger à dormir."
         },
         {
+          "audio_path": "/narration/fr/desacelerar-noite-03-23c4d9f85a60.mp3",
+          "duration": 10.04,
           "seconds": 140,
           "text": "Si une tâche revient, reconnaissez qu’elle peut attendre. Inutile d’organiser demain maintenant. Revenez au contact du corps avec son appui."
         },
         {
+          "audio_path": "/narration/fr/desacelerar-noite-04-5b1989765e29.mp3",
+          "duration": 11.108,
           "seconds": 140,
           "text": "Laissez venir les sons sans chercher le silence parfait. Le souffle continue seul. Le repos reste possible sans sommeil immédiat ; rien n’est à mesurer ici."
         },
         {
+          "audio_path": "/narration/fr/desacelerar-noite-05-216578f01570.mp3",
+          "duration": 9.183,
           "seconds": 30,
           "text": "La pratique se termine. Continuez à vous reposer sans regarder l’écran, ou bougez doucement. Choisissez ce qui vous convient maintenant."
         }
@@ -661,10 +711,14 @@
     "audio_path": null,
     "category": "focus",
     "color": "sage",
-    "created_at": "2026-11-20 22:32:39",
+    "created_at": "2026-11-21 14:58:20",
     "duration": 5,
-    "id": 16,
-    "narration": null,
+    "id": 14,
+    "narration": {
+      "kind": "ai",
+      "provider": "kokoro",
+      "voice": "ff_siwis"
+    },
     "protocol": {
       "evidence": "Texte original de bien-être inspiré de la pleine conscience. La référence apporte un contexte général ; cette séance n’a pas été validée cliniquement et ne remplace pas les soins professionnels.",
       "kind": "mindfulness",
@@ -675,22 +729,32 @@
       },
       "steps": [
         {
+          "audio_path": "/narration/fr/caminhada-consciente-01-79ffa8678f8f.mp3",
+          "duration": 12.145,
           "seconds": 30,
           "text": "Choisissez un trajet plat sans circulation ni obstacles. Gardez les yeux ouverts, le volume bas et l’attention au lieu. Vous pouvez aussi pratiquer assis en sentant les pieds."
         },
         {
+          "audio_path": "/narration/fr/caminhada-consciente-02-3183f3758339.mp3",
+          "duration": 11.508,
           "seconds": 80,
           "text": "Marchez à un rythme confortable. Sentez un pied toucher le sol, puis l’autre. Sans synchroniser souffle et pas ni modifier votre démarche naturelle."
         },
         {
+          "audio_path": "/narration/fr/caminhada-consciente-03-8fbae089fd97.mp3",
+          "duration": 10.921,
           "seconds": 80,
           "text": "Observez couleurs, sons et direction. L’environnement reste prioritaire. En présence d’obstacles ou de passants, suspendez la pratique et veillez au trajet."
         },
         {
+          "audio_path": "/narration/fr/caminhada-consciente-04-77c1e0215e9b.mp3",
+          "duration": 8.638,
           "seconds": 80,
           "text": "Quand l’esprit s’égare, revenez à un pas et à l’espace devant vous. Notez les bras ou les appuis si vous voulez. Marcher suffit."
         },
         {
+          "audio_path": "/narration/fr/caminhada-consciente-05-8e4d0396a067.mp3",
+          "duration": 9.461,
           "seconds": 30,
           "text": "Arrêtez-vous dans un lieu sûr. Sentez les pieds au repos et regardez autour. Reprenez ensuite la promenade ou votre activité."
         }
@@ -704,6 +768,146 @@
     "slug": "caminhada-consciente",
     "subtitle": "Marcher avec attention dans un lieu sûr",
     "title": "Un pas à la fois",
+    "video_path": null
+  },
+  {
+    "audio_path": null,
+    "category": "relaxation",
+    "color": "sage",
+    "created_at": "2026-11-21 14:58:20",
+    "duration": 4,
+    "id": 15,
+    "narration": {
+      "kind": "ai",
+      "provider": "kokoro",
+      "voice": "ff_siwis"
+    },
+    "protocol": {
+      "evidence": "Histoire originale inspirée de la visualisation guidée et de la relaxation utilisées en sophrologie. Ce n’est pas un protocole clinique validé.",
+      "kind": "story",
+      "safety": "Imaginez seulement ce qui vous convient. Vous pouvez garder les yeux ouverts. En cas de malaise, arrêtez et observez votre environnement.",
+      "sound": "ocean",
+      "source": {
+        "name": "NCCIH · Relaxation techniques",
+        "url": "https://www.nccih.nih.gov/health/relaxation-techniques-what-you-need-to-know"
+      },
+      "steps": [
+        {
+          "audio_path": "/narration/fr/historia-mar-01-471371878ab7.mp3",
+          "duration": 13.552,
+          "seconds": 40,
+          "text": "Installez-vous confortablement. Sentez les appuis du corps. Ne changez pas votre souffle. Imaginez que Lumi a trouvé un petit sentier près de la mer et vous invite à le découvrir, sans hâte."
+        },
+        {
+          "audio_path": "/narration/fr/historia-mar-02-daf934513b4f.mp3",
+          "duration": 12.585,
+          "seconds": 40,
+          "text": "Le sentier arrive dans une crique. Choisissez votre distance à l’eau. Le sable peut être tiède ou frais ; laissez la scène prendre vos couleurs. Vous pouvez aussi simplement écouter."
+        },
+        {
+          "audio_path": "/narration/fr/historia-mar-03-fde1a3173329.mp3",
+          "duration": 12.858,
+          "seconds": 40,
+          "text": "Une vague vient et repart. Inutile d’y accorder votre souffle. Observez le mouvement et l’espace entre les mouvements. Lumi s’assoit à côté de vous ; rien n’est à résoudre maintenant."
+        },
+        {
+          "audio_path": "/narration/fr/historia-mar-04-d55e1a27b1aa.mp3",
+          "duration": 12.179,
+          "seconds": 40,
+          "text": "Imaginez les épaules se poser un peu plus. Les mains reposent comme des galets lisses sur le sable. Une pensée peut venir. Laissez-la être et revenez à un détail du paysage."
+        },
+        {
+          "audio_path": "/narration/fr/historia-mar-05-dd0b8b543ef8.mp3",
+          "duration": 13.749,
+          "seconds": 40,
+          "text": "L’horizon reste là, sans rien demander. Choisissez un mot à emporter : espace, légèreté, pause, ou un autre. Aucune sensation particulière n’est nécessaire. Cet instant peut suffire."
+        },
+        {
+          "audio_path": "/narration/fr/historia-mar-06-019b4897d40b.mp3",
+          "duration": 13.301,
+          "seconds": 40,
+          "text": "Lumi se lève doucement. La crique peut rester en imagination tandis que vous retrouvez les appuis réels. Bougez les doigts, regardez autour de vous et revenez à votre journée à votre rythme."
+        }
+      ],
+      "subtitle": "Un voyage imaginé au son de la mer",
+      "title": "La crique paisible",
+      "total_seconds": 240
+    },
+    "published": 1,
+    "script": "Installez-vous confortablement. Sentez les appuis du corps. Ne changez pas votre souffle. Imaginez que Lumi a trouvé un petit sentier près de la mer et vous invite à le découvrir, sans hâte. Le sentier arrive dans une crique. Choisissez votre distance à l’eau. Le sable peut être tiède ou frais ; laissez la scène prendre vos couleurs. Vous pouvez aussi simplement écouter. Une vague vient et repart. Inutile d’y accorder votre souffle. Observez le mouvement et l’espace entre les mouvements. Lumi s’assoit à côté de vous ; rien n’est à résoudre maintenant. Imaginez les épaules se poser un peu plus. Les mains reposent comme des galets lisses sur le sable. Une pensée peut venir. Laissez-la être et revenez à un détail du paysage. L’horizon reste là, sans rien demander. Choisissez un mot à emporter : espace, légèreté, pause, ou un autre. Aucune sensation particulière n’est nécessaire. Cet instant peut suffire. Lumi se lève doucement. La crique peut rester en imagination tandis que vous retrouvez les appuis réels. Bougez les doigts, regardez autour de vous et revenez à votre journée à votre rythme.",
+    "slug": "historia-mar",
+    "subtitle": "Un voyage imaginé au son de la mer",
+    "title": "La crique paisible",
+    "video_path": null
+  },
+  {
+    "audio_path": null,
+    "category": "relaxation",
+    "color": "lavender",
+    "created_at": "2026-11-21 14:58:20",
+    "duration": 4,
+    "id": 16,
+    "narration": {
+      "kind": "ai",
+      "provider": "kokoro",
+      "voice": "ff_siwis"
+    },
+    "protocol": {
+      "evidence": "Histoire originale inspirée de la visualisation guidée et de la relaxation utilisées en sophrologie. Ce n’est pas un protocole clinique validé.",
+      "kind": "story",
+      "safety": "Imaginez seulement ce qui vous convient. Vous pouvez garder les yeux ouverts. En cas de malaise, arrêtez et observez votre environnement.",
+      "sound": "rain",
+      "source": {
+        "name": "NCCIH · Relaxation techniques",
+        "url": "https://www.nccih.nih.gov/health/relaxation-techniques-what-you-need-to-know"
+      },
+      "steps": [
+        {
+          "audio_path": "/narration/fr/historia-jardim-01-11725420efd2.mp3",
+          "duration": 13.403,
+          "seconds": 40,
+          "text": "Installez le corps et sentez les pieds. Imaginez un jardin depuis une terrasse couverte. Vous pouvez rester là. Lumi regarde les feuilles ; une pluie légère habite les espaces entre les sons."
+        },
+        {
+          "audio_path": "/narration/fr/historia-jardim-02-bde10383f2ed.mp3",
+          "duration": 10.636,
+          "seconds": 40,
+          "text": "Choisissez une feuille imaginée. Une goutte attend à sa pointe puis tombe. Il n’y a pas de bonne manière de voir : une idée, une couleur ou un son suffisent."
+        },
+        {
+          "audio_path": "/narration/fr/historia-jardim-03-3289feb66e7f.mp3",
+          "duration": 12.312,
+          "seconds": 40,
+          "text": "Sentez les mains posées. Si vous voulez, relâchez les doigts. Chaque plante garde sa place sans devoir grandir plus vite. Accordez-vous aussi quelques instants sans performance."
+        },
+        {
+          "audio_path": "/narration/fr/historia-jardim-04-3132bda1c82a.mp3",
+          "duration": 13.207,
+          "seconds": 40,
+          "text": "Lumi trouve un banc abrité. Imaginez la lumière sur les feuilles. Respirez naturellement. Quand vous remarquez une distraction, revenez à un son sans reprocher à l’esprit son voyage."
+        },
+        {
+          "audio_path": "/narration/fr/historia-jardim-05-1ee795cdf1f7.mp3",
+          "duration": 10.798,
+          "seconds": 40,
+          "text": "La pluie imaginée s’éloigne. Choisissez une petite douceur pour après : boire de l’eau, vous étirer confortablement ou garder un espace avant la prochaine tâche."
+        },
+        {
+          "audio_path": "/narration/fr/historia-jardim-06-15bd53fbf1b9.mp3",
+          "duration": 12.312,
+          "seconds": 40,
+          "text": "Le jardin attendra une autre visite. Sentez le poids réel du corps et les sons autour de vous. Bougez doucement mains et pieds. Emportez seulement ce qui vous convient aujourd’hui."
+        }
+      ],
+      "subtitle": "Une promenade attentive sous une pluie douce",
+      "title": "Le jardin après la pluie",
+      "total_seconds": 240
+    },
+    "published": 1,
+    "script": "Installez le corps et sentez les pieds. Imaginez un jardin depuis une terrasse couverte. Vous pouvez rester là. Lumi regarde les feuilles ; une pluie légère habite les espaces entre les sons. Choisissez une feuille imaginée. Une goutte attend à sa pointe puis tombe. Il n’y a pas de bonne manière de voir : une idée, une couleur ou un son suffisent. Sentez les mains posées. Si vous voulez, relâchez les doigts. Chaque plante garde sa place sans devoir grandir plus vite. Accordez-vous aussi quelques instants sans performance. Lumi trouve un banc abrité. Imaginez la lumière sur les feuilles. Respirez naturellement. Quand vous remarquez une distraction, revenez à un son sans reprocher à l’esprit son voyage. La pluie imaginée s’éloigne. Choisissez une petite douceur pour après : boire de l’eau, vous étirer confortablement ou garder un espace avant la prochaine tâche. Le jardin attendra une autre visite. Sentez le poids réel du corps et les sons autour de vous. Bougez doucement mains et pieds. Emportez seulement ce qui vous convient aujourd’hui.",
+    "slug": "historia-jardim",
+    "subtitle": "Une promenade attentive sous une pluie douce",
+    "title": "Le jardin après la pluie",
     "video_path": null
   }
 ]

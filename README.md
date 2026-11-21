@@ -93,7 +93,7 @@ APK de desenvolvimento atualizado: `dist/serein-calm-audio-debug.apk`. Mantém a
 
 ## Narração natural gratuita com Kokoro
 
-O catálogo original inclui narrações Kokoro pré-geradas; os idiomas incluídos estão descritos em `static/narration/catalog.json`. Elas são servidas como MP3 estáticos e funcionam assim que o site é instalado, sem geração na hospedagem nem ativação manual. O Android também as inclui na exportação. Uma narração personalizada ativada no admin tem prioridade. Se um texto original for editado, a gravação inicial não é aplicada ao texto novo: gere ou envie uma nova narração.
+As 16 sessões do catálogo original incluem narrações Kokoro pré-geradas em francês, português brasileiro, inglês, italiano e espanhol, descritas em `static/narration/catalog.json`. Elas são servidas como MP3 estáticos e funcionam assim que o site é instalado, sem geração na hospedagem nem ativação manual. O Android também as inclui na exportação. Uma narração personalizada ativada no admin tem prioridade. Se um texto original for editado, a gravação inicial não é aplicada ao texto novo: gere ou envie uma nova narração.
 
 O leitor usa **Narração natural gravada** por padrão: reproduz os MP3 incluídos no catálogo, ficheiros WAV gerados localmente com Kokoro ou uma narração enviada pelo admin (MP3, M4A, OGG ou WAV). Não muda automaticamente para a voz do navegador se faltar uma gravação. Nesse caso, o texto, o temporizador e os sons de fundo continuam disponíveis. A opção **Voz do aparelho** permanece facultativa e deve ser selecionada explicitamente.
 
@@ -123,7 +123,7 @@ Execute apenas um processo Gunicorn, conforme o Dockerfile (com quatro threads),
 
 ### Android offline e créditos
 
-Gere e ative os áudios no banco usado na exportação, execute `python3 scripts/export_android_assets.py` e recompile o APK. O exportador inclui os WAV de cada etapa e as informações de licença; o aplicativo instalado apenas reproduz ficheiros locais. O motor e os modelos Kokoro ficam no servidor e não aumentam o APK. Se os dados estiverem hospedados, transfira a base e os uploads para o ambiente de compilação antes de exportar. Os áudios gerados não são enviados automaticamente ao Git.
+Execute `python3 scripts/export_android_assets.py` e recompile o APK para incluir as narrações do catálogo original. Para conteúdos personalizados, gere e ative os áudios no banco usado na exportação. O exportador inclui os MP3 iniciais, os WAV publicados de cada etapa e as informações de licença; o aplicativo instalado apenas reproduz ficheiros locais. O motor e os modelos Kokoro ficam no servidor e não aumentam o APK. Se os dados personalizados estiverem hospedados, transfira a base e os uploads para o ambiente de compilação antes de exportar. Os áudios personalizados gerados não são enviados automaticamente ao Git.
 
 O modelo Kokoro-82M usa licença Apache 2.0 e o motor kokoro-onnx usa MIT. Os créditos incluem o conjunto SIWIS para a voz francesa. Consulte `licenses/kokoro/` e os créditos do leitor. Referências: [modelo e vozes](https://huggingface.co/hexgrad/Kokoro-82M), [motor ONNX](https://github.com/thewh1teagle/kokoro-onnx).
 
