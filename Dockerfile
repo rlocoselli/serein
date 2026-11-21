@@ -24,7 +24,8 @@ COPY web-meditation/scripts/prepare_kokoro.py ./scripts/
 COPY web-meditation/licenses/kokoro/ ./licenses/kokoro/
 RUN python scripts/prepare_kokoro.py
 
-COPY web-meditation/app.py web-meditation/natural_voice.py web-meditation/kokoro_engine.py web-meditation/exercise_seed.json web-meditation/story_seed.json ./
+COPY web-meditation/app.py web-meditation/seo.py web-meditation/natural_voice.py web-meditation/kokoro_engine.py web-meditation/exercise_seed.json web-meditation/story_seed.json ./
+COPY web-meditation/templates/ ./templates/
 COPY web-meditation/static/ ./static/
 
 USER serein

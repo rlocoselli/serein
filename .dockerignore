@@ -5,6 +5,9 @@
 !web-meditation/
 !web-meditation/requirements.txt
 !web-meditation/app.py
+!web-meditation/seo.py
+!web-meditation/templates/
+!web-meditation/templates/**
 !web-meditation/natural_voice.py
 !web-meditation/kokoro_engine.py
 !web-meditation/scripts/
