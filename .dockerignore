@@ -1,0 +1,10 @@
+# Only runtime sources and public media belong in the build context.
+**
+!Dockerfile
+!.dockerignore
+!requirements.txt
+!app.py
+!exercise_seed.json
+!story_seed.json
+!static/
+!static/**
