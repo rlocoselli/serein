@@ -14,7 +14,7 @@ class VoiceExportTests(unittest.TestCase):
     def test_published_step_audio_is_bundled_without_the_inference_engine(self):
         with tempfile.TemporaryDirectory(prefix='serein-voice-export-') as directory:
             root = Path(directory)
-            for name in ('app.py', 'natural_voice.py', 'kokoro_engine.py', 'exercise_seed.json', 'story_seed.json'):
+            for name in ('app.py', 'seo.py', 'natural_voice.py', 'kokoro_engine.py', 'exercise_seed.json', 'story_seed.json'):
                 shutil.copy2(ROOT / name, root / name)
             (root / 'scripts').mkdir()
             shutil.copy2(ROOT / 'scripts/export_android_assets.py', root / 'scripts/export_android_assets.py')

@@ -4,6 +4,9 @@
 !.dockerignore
 !requirements.txt
 !app.py
+!seo.py
+!templates/
+!templates/**
 !natural_voice.py
 !kokoro_engine.py
 !scripts/
