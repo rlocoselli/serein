@@ -103,6 +103,8 @@ def build(languages, workers, index_only=False):
             if Path(task[3]).is_file() and Path(task[4]).is_file():
                 with wave.open(task[4], 'rb') as audio:
                     clip['duration'] = round(audio.getnframes() / audio.getframerate() + .1, 3)
+                if task[5] is not None and clip['duration'] > task[5]:
+                    raise ValueError('Narration longer than step: ' + task[3])
         print('Languages ready:', ', '.join(sorted(write_ready(manifest, languages, output))), flush=True)
         return
     progress_file = ROOT / 'dist/narration-seed-progress.json'
@@ -139,11 +141,7 @@ def build(languages, workers, index_only=False):
             if ready != completed_languages:
                 completed_languages = write_ready(manifest, languages, output)
                 print('Languages ready:', ', '.join(sorted(ready)), flush=True)
-    output.mkdir(parents=True, exist_ok=True)
-    destination = output / 'catalog.json'
-    temporary = destination.with_suffix('.tmp')
-    temporary.write_text(json.dumps(manifest, ensure_ascii=False, indent=2))
-    temporary.replace(destination)
+    write_ready(manifest, languages, output)
     print('Complete:', len(manifest['sessions']), 'sessions,', len(languages), 'languages,', len(tasks), 'clips', flush=True)
 
 
