@@ -1,6 +1,8 @@
 /* Generation is admin-only, asynchronous, and requires review before activation. */
-let neuralJob=null,neuralPoll=null,neuralConfigured=false;
-const neuralErrorKeys={not_configured:'naturalSetup',provider_auth:'naturalAuth',provider_quota:'naturalQuota',voice_not_found:'naturalNoVoices',provider_unavailable:'naturalUnavailable',generation_busy:'naturalBusy',source_changed:'naturalChanged',audio_too_long:'naturalLong',interrupted:'naturalInterrupted'};
+let neuralJob=null,neuralPoll=null,neuralConfigured=false,neuralVoices=[];
+const neuralErrorKeys={not_configured:'naturalSetup',runtime_missing:'naturalSetup',models_missing:'naturalSetup',voice_not_found:'naturalNoVoices',model_unavailable:'naturalUnavailable',generation_busy:'naturalBusy',source_changed:'naturalChanged',audio_too_long:'naturalLong',interrupted:'naturalInterrupted'};
+function renderNeuralVoices(){const selected=$('neural-voice').value,locale=$('neural-language').value,voices=neuralVoices.filter(v=>v.lang===locale);$('neural-voice').innerHTML=voices.map(v=>`<option value="${esc(v.id)}">${esc(v.name)}</option>`).join('');if(voices.some(v=>v.id===selected))$('neural-voice').value=selected;$('neural-voice').disabled=!voices.length;$('neural-generate').disabled=!neuralConfigured||!voices.length||neuralJob?.status==='running'}
+$('neural-language').onchange=renderNeuralVoices;
 function neuralError(error){return t(neuralErrorKeys[error]||'naturalFailed')}
 function showNeuralJob(job){neuralJob=job;clearTimeout(neuralPoll);$('neural-previews').replaceChildren();$('neural-publish').classList.toggle('hidden',!['ready','published'].includes(job.status));$('neural-generate').disabled=!neuralConfigured||job.status==='running';
  const label=items.find(item=>item.id===job.session_id)?.title||'#'+job.session_id;$('neural-status').textContent=label+' · '+job.lang.toUpperCase()+' — '+(job.status==='failed'?neuralError(job.error):t({running:'naturalRunning',ready:'naturalReady',published:'naturalPublished'}[job.status]||'naturalFailed'));
@@ -10,7 +12,7 @@ function showNeuralJob(job){neuralJob=job;clearTimeout(neuralPoll);$('neural-pre
 async function pollNeuralJob(id){if(!csrf)return;try{showNeuralJob(await api('/api/admin/narration/'+encodeURIComponent(id)))}catch(error){$('neural-status').textContent=neuralError(error.message);$('neural-generate').disabled=!neuralConfigured}}
 const beforeNaturalAdmin=refreshAdmin;
 refreshAdmin=async function(){await beforeNaturalAdmin();$('neural-session').innerHTML=[...$('audio-session').options].map(option=>`<option value="${esc(option.value)}">${esc(items.find(item=>String(item.id)===option.value)?.title||option.textContent)}</option>`).join('');$('neural-language').value=lang;
- try{const options=await api('/api/admin/narration/options');neuralConfigured=options.configured&&options.voices.length>0;$('neural-voice').innerHTML=options.voices.map(v=>`<option value="${esc(v.id)}">${esc(v.name)}</option>`).join('');$('neural-config').textContent=t(neuralConfigured?'naturalConfigured':options.configured?'naturalNoVoices':'naturalSetup');$('neural-generate').disabled=!neuralConfigured||neuralJob?.status==='running';
+ try{const options=await api('/api/admin/narration/options');neuralConfigured=options.configured;neuralVoices=options.voices;renderNeuralVoices();$('neural-config').textContent=t(neuralConfigured?'naturalConfigured':'naturalSetup');
  const saved=localStorage.getItem('serein-narration-job');if(saved&&!neuralJob)pollNeuralJob(saved)
  }catch(error){neuralConfigured=false;$('neural-generate').disabled=true;$('neural-config').textContent=neuralError(error.message)}
 };

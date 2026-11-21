@@ -3,9 +3,15 @@ FROM python:3.12-slim
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     SEREIN_DB=/data/serein.db \
-    SEREIN_UPLOADS=/data/uploads
+    SEREIN_UPLOADS=/data/uploads \
+    KOKORO_MODEL_DIR=/opt/kokoro \
+    KOKORO_THREADS=2
 
 WORKDIR /app
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends libstdc++6 libgomp1 \
+    && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt "gunicorn>=23,<24" \
@@ -14,7 +20,11 @@ RUN pip install --no-cache-dir -r requirements.txt "gunicorn>=23,<24" \
     && mkdir -p /data/uploads \
     && chown -R serein:serein /data
 
-COPY app.py natural_voice.py exercise_seed.json story_seed.json ./
+COPY scripts/prepare_kokoro.py ./scripts/
+COPY licenses/kokoro/ ./licenses/kokoro/
+RUN python scripts/prepare_kokoro.py
+
+COPY app.py natural_voice.py kokoro_engine.py exercise_seed.json story_seed.json ./
 COPY static/ ./static/
 
 USER serein

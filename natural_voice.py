@@ -2,49 +2,15 @@
 import hashlib
 import json
 import math
-import os
 from pathlib import Path
-import re
 import secrets
 import sqlite3
 import threading
-import urllib.error
-import urllib.request
+import wave
 
 from flask import Blueprint, abort, jsonify, request
-from mutagen.mp3 import MP3
-
-MODEL = 'eleven_multilingual_v2'
-VOICE_SETTINGS = {'stability': .7, 'similarity_boost': .75, 'style': 0,
-                  'use_speaker_boost': True}
+from kokoro_engine import MODEL, VOICES, VOICE_SETTINGS, VoiceError, readiness, synthesize_to_wav
 LANGUAGES = {'pt', 'en', 'fr', 'it', 'es'}
-
-
-class VoiceError(Exception):
-    pass
-
-
-def provider_request(path, payload=None):
-    key = os.getenv('ELEVENLABS_API_KEY', '').strip()
-    if not key:
-        raise VoiceError('not_configured')
-    data = None if payload is None else json.dumps(payload).encode()
-    req = urllib.request.Request('https://api.elevenlabs.io' + path, data=data,
-        headers={'xi-api-key': key, 'Content-Type': 'application/json',
-                 'Accept': 'audio/mpeg' if data else 'application/json'})
-    try:
-        with urllib.request.urlopen(req, timeout=90) as response:
-            body = response.read(20 * 1024 * 1024 + 1)
-            if len(body) > 20 * 1024 * 1024:
-                raise VoiceError('invalid_audio')
-            return body
-    except urllib.error.HTTPError as error:
-        # Provider responses may include account details: never return them to clients.
-        code = {401: 'provider_auth', 403: 'provider_auth', 404: 'voice_not_found',
-                429: 'provider_quota'}.get(error.code, 'provider_unavailable')
-        raise VoiceError(code) from None
-    except (OSError, TimeoutError):
-        raise VoiceError('provider_unavailable') from None
 
 
 def source_for(db, sid, lang):
@@ -66,28 +32,27 @@ def digest(value):
 
 def cached_segment(uploads, text, lang, voice, speed):
     signature = {'text': text, 'lang': lang, 'voice': voice, 'speed': speed,
-                 'model': MODEL, 'settings': VOICE_SETTINGS, 'version': 1}
-    filename = 'voice-' + digest(signature) + '.mp3'
+                 'model': MODEL, 'settings': VOICE_SETTINGS, 'version': 2}
+    filename = 'voice-' + digest(signature) + '.wav'
     destination = uploads / filename
     if not destination.exists():
-        audio = provider_request('/v1/text-to-speech/' + voice + '?output_format=mp3_44100_128',
-            {'text': text, 'model_id': MODEL,
-             'voice_settings': {**VOICE_SETTINGS, 'speed': speed}})
         temporary = uploads / ('.voice-' + secrets.token_hex(12) + '.tmp')
         try:
-            temporary.write_bytes(audio)
-            length = MP3(temporary).info.length
+            synthesize_to_wav(temporary, text, lang, voice, speed)
+            with wave.open(str(temporary), 'rb') as audio:
+                length = audio.getnframes() / audio.getframerate()
             if not math.isfinite(length) or length <= 0:
                 raise VoiceError('invalid_audio')
             temporary.replace(destination)
         except VoiceError:
             raise
-        except Exception:
+        except (wave.Error, EOFError, ZeroDivisionError):
             raise VoiceError('invalid_audio') from None
         finally:
             temporary.unlink(missing_ok=True)
     try:
-        length = MP3(destination).info.length
+        with wave.open(str(destination), 'rb') as audio:
+            length = audio.getnframes() / audio.getframerate()
     except Exception:
         raise VoiceError('invalid_audio') from None
     return {'audio_path': '/media/' + filename, 'duration': round(length, 3)}
@@ -102,7 +67,8 @@ def enrich_narration(db, item, lang):
     if not row or row['source_hash'] != digest(source_for(db, item['id'], lang)):
         return item
     manifest = json.loads(row['manifest'])
-    item['narration'] = {'kind': 'ai', 'provider': 'elevenlabs', 'voice': manifest['voice']}
+    # Existing recordings survive migration; their original provenance stays accurate.
+    item['narration'] = {'kind': 'ai', 'provider': manifest.get('provider', 'elevenlabs'), 'voice': manifest['voice']}
     if item.get('protocol'):
         for step, segment in zip(item['protocol']['steps'], manifest['segments']):
             step.update(segment)
@@ -144,7 +110,7 @@ def setup_natural_voice(app, connect, uploads, admin_required, csrf_required):
                 if segment['seconds'] is not None and clip['duration'] > segment['seconds']:
                     raise VoiceError('audio_too_long')
                 generated.append(clip)
-            manifest = {'voice': voice, 'model': MODEL, 'speed': speed, 'segments': generated}
+            manifest = {'provider': 'kokoro', 'voice': voice, 'model': MODEL, 'speed': speed, 'segments': generated}
             with connect() as db:
                 db.execute("UPDATE narration_jobs SET status='ready', manifest=? WHERE id=?",
                            (json.dumps(manifest), job_id))
@@ -156,15 +122,9 @@ def setup_natural_voice(app, connect, uploads, admin_required, csrf_required):
     @bp.get('/api/admin/narration/options')
     @admin_required
     def options():
-        configured = bool(os.getenv('ELEVENLABS_API_KEY', '').strip())
-        voices = []
-        if configured:
-            try:
-                data = json.loads(provider_request('/v2/voices?page_size=100&voice_type=default'))
-                voices = [{'id': v['voice_id'], 'name': v['name']} for v in data.get('voices', [])]
-            except (VoiceError, ValueError) as error:
-                return jsonify(error=str(error) if isinstance(error, VoiceError) else 'provider_unavailable'), 502
-        return jsonify(configured=configured, provider='elevenlabs', model=MODEL, voices=voices)
+        status = readiness()
+        return jsonify(configured=status['ready'], error=status['error'], provider='kokoro',
+                       model=MODEL, voices=VOICES)
 
     @bp.post('/api/admin/narration')
     @admin_required
@@ -179,7 +139,7 @@ def setup_natural_voice(app, connect, uploads, admin_required, csrf_required):
         except (TypeError, ValueError):
             return jsonify(error='invalid_request'), 400
         lang, voice = data.get('lang'), data.get('voice')
-        if not isinstance(lang, str) or lang not in LANGUAGES or not isinstance(voice, str) or not re.fullmatch(r'[A-Za-z0-9_-]{1,80}', voice) or not .8 <= speed <= 1.05:
+        if not isinstance(lang, str) or lang not in LANGUAGES or not isinstance(voice, str) or not any(v['id'] == voice and v['lang'] == lang for v in VOICES) or not .8 <= speed <= 1.05:
             return jsonify(error='invalid_request'), 400
         with connect() as db:
             try:
@@ -197,8 +157,9 @@ def setup_natural_voice(app, connect, uploads, admin_required, csrf_required):
                     existing = None
             if existing:
                 return jsonify(job_data(existing)), 202 if existing['status'] == 'running' else 200
-            if not os.getenv('ELEVENLABS_API_KEY', '').strip():
-                return jsonify(error='not_configured'), 503
+            status = readiness()
+            if not status['ready']:
+                return jsonify(error=status['error']), 503
             job_id = secrets.token_hex(16)
             try:
                 db.execute("INSERT INTO narration_jobs(id,session_id,lang,signature,source_hash,status) VALUES(?,?,?,?,?,'running')",
