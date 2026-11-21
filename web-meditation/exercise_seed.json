@@ -1,0 +1,1734 @@
+{
+  "respiracao-suave": {
+    "category": "breathing",
+    "color": "sage",
+    "duration": 5,
+    "source": {
+      "name": "NHS · Breathing exercises for stress",
+      "url": "https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/breathing-exercises-for-stress/"
+    },
+    "kind": "breathing",
+    "locales": {
+      "pt": {
+        "title": "Respiração sem pressa",
+        "subtitle": "Um ritmo confortável, sem prender o ar",
+        "safety": "Respire sem forçar. Se sentir tontura ou desconforto, pare e volte ao seu ritmo natural.",
+        "evidence": "Adaptação da orientação do NHS para lidar com estresse. O ritmo visual é opcional; esta sessão não foi testada clinicamente.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Sente-se com apoio. Solte os ombros e deixe a respiração encontrar um ritmo confortável."
+          },
+          {
+            "seconds": 90,
+            "text": "Inspire suavemente pelo nariz e solte pela boca, se for confortável. O círculo sugere cinco segundos em cada direção, sem pausas. Pode respirar mais rápido."
+          },
+          {
+            "seconds": 150,
+            "text": "Continue sem encher os pulmões à força. Se a mente se distrair, perceba e volte à próxima respiração. Seu conforto guia o ritmo."
+          },
+          {
+            "seconds": 30,
+            "text": "Deixe a contagem. Respire naturalmente e perceba o apoio do corpo antes de terminar."
+          }
+        ]
+      },
+      "en": {
+        "title": "Unhurried breathing",
+        "subtitle": "A comfortable rhythm, without holding your breath",
+        "safety": "Never force your breath. If you feel dizzy or uncomfortable, stop and return to natural breathing.",
+        "evidence": "Adapted from NHS stress guidance. The visual pace is optional; this session has not been clinically tested.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Sit with support. Release your shoulders and find a comfortable breathing rhythm."
+          },
+          {
+            "seconds": 90,
+            "text": "Breathe gently in through your nose and out through your mouth if comfortable. The circle suggests five seconds each way, with no holds. A faster pace is fine."
+          },
+          {
+            "seconds": 150,
+            "text": "Continue without forcing a deep breath. When your mind wanders, notice and return to the next breath. Let comfort guide your pace."
+          },
+          {
+            "seconds": 30,
+            "text": "Let go of counting. Breathe naturally and notice your body’s support before finishing."
+          }
+        ]
+      },
+      "fr": {
+        "title": "Respirer sans hâte",
+        "subtitle": "Un rythme confortable, sans retenir le souffle",
+        "safety": "Ne forcez pas. En cas de vertige ou de gêne, arrêtez et retrouvez votre souffle naturel.",
+        "evidence": "Adaptation des conseils du NHS pour le stress. Le rythme visuel est facultatif ; cette séance n’a pas été testée cliniquement.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Asseyez-vous avec un appui. Relâchez les épaules et trouvez un souffle confortable."
+          },
+          {
+            "seconds": 90,
+            "text": "Inspirez doucement par le nez, expirez par la bouche si cela vous convient. Le cercle propose cinq secondes dans chaque sens, sans rétention. Un rythme plus rapide convient aussi."
+          },
+          {
+            "seconds": 150,
+            "text": "Continuez sans forcer une inspiration profonde. Si l’esprit s’égare, revenez au souffle suivant. Votre confort guide le rythme."
+          },
+          {
+            "seconds": 30,
+            "text": "Laissez le comptage. Respirez naturellement et sentez vos appuis avant de terminer."
+          }
+        ]
+      },
+      "it": {
+        "title": "Respiro senza fretta",
+        "subtitle": "Un ritmo comodo, senza trattenere il respiro",
+        "safety": "Non forzare. Se senti vertigini o disagio, fermati e torna al respiro naturale.",
+        "evidence": "Adattamento delle indicazioni NHS per lo stress. Il ritmo visivo è facoltativo; questa sessione non è stata testata clinicamente.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Siediti con un sostegno. Rilassa le spalle e trova un respiro comodo."
+          },
+          {
+            "seconds": 90,
+            "text": "Inspira piano dal naso ed espira dalla bocca, se comodo. Il cerchio propone cinque secondi per fase, senza pause. Puoi andare più veloce."
+          },
+          {
+            "seconds": 150,
+            "text": "Continua senza forzare respiri profondi. Se la mente vaga, torna al respiro successivo. Lascia che il comfort guidi il ritmo."
+          },
+          {
+            "seconds": 30,
+            "text": "Lascia il conteggio. Respira naturalmente e senti il sostegno del corpo prima di finire."
+          }
+        ]
+      },
+      "es": {
+        "title": "Respiración sin prisa",
+        "subtitle": "Un ritmo cómodo, sin retener el aire",
+        "safety": "No fuerces la respiración. Si notas mareo o malestar, para y vuelve a tu ritmo natural.",
+        "evidence": "Adaptación de las recomendaciones del NHS para el estrés. El ritmo visual es opcional; esta sesión no se ha probado clínicamente.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Siéntate con apoyo. Suelta los hombros y encuentra un ritmo cómodo."
+          },
+          {
+            "seconds": 90,
+            "text": "Inhala suavemente por la nariz y exhala por la boca si es cómodo. El círculo propone cinco segundos por fase, sin retenciones. Puedes ir más rápido."
+          },
+          {
+            "seconds": 150,
+            "text": "Continúa sin forzar respiraciones profundas. Si la mente se distrae, vuelve a la siguiente respiración. Tu comodidad guía el ritmo."
+          },
+          {
+            "seconds": 30,
+            "text": "Deja el conteo. Respira con naturalidad y nota el apoyo del cuerpo antes de terminar."
+          }
+        ]
+      }
+    }
+  },
+  "relaxamento-progressivo": {
+    "category": "relaxation",
+    "color": "peach",
+    "duration": 6,
+    "source": {
+      "name": "VA Whole Health · Progressive Muscle Relaxation",
+      "url": "https://www.va.gov/WHOLEHEALTHLIBRARY/docs/Progressive-Muscle-Relaxation.pdf"
+    },
+    "kind": "pmr",
+    "locales": {
+      "pt": {
+        "title": "Soltar a tensão do corpo",
+        "subtitle": "Relaxamento muscular progressivo, versão breve",
+        "safety": "Use pouca força e respire normalmente. Pule áreas doloridas ou lesionadas. Com lesões importantes, espasmos ou problemas nas costas, consulte um profissional antes de contrair os músculos.",
+        "evidence": "A VA descreve esta técnica e pesquisas sobre relaxamento. Aqui usamos uma adaptação breve com quatro grupos musculares; não é o protocolo completo nem uma sessão clinicamente validada.",
+        "steps": [
+          {
+            "seconds": 40,
+            "text": "Acomode-se sentado ou deitado. Você vai contrair suavemente e depois soltar, sem segurar a respiração. Pode apenas imaginar o relaxamento."
+          },
+          {
+            "seconds": 5,
+            "text": "Mãos: feche os dedos levemente."
+          },
+          {
+            "seconds": 60,
+            "text": "Abra as mãos. Note a diferença entre tensão e repouso."
+          },
+          {
+            "seconds": 5,
+            "text": "Braços: dobre os cotovelos e contraia suavemente."
+          },
+          {
+            "seconds": 60,
+            "text": "Solte os braços e deixe-os apoiados. Observe as sensações sem exigir relaxamento."
+          },
+          {
+            "seconds": 5,
+            "text": "Ombros: eleve-os um pouco, sem forçar o pescoço."
+          },
+          {
+            "seconds": 60,
+            "text": "Deixe os ombros descerem e perceba o apoio do corpo."
+          },
+          {
+            "seconds": 5,
+            "text": "Pés: aponte os dedos suavemente, somente se confortável."
+          },
+          {
+            "seconds": 60,
+            "text": "Solte os pés. Deixe as pernas repousarem. Respire naturalmente."
+          },
+          {
+            "seconds": 60,
+            "text": "Observe o corpo inteiro. Leve alguns instantes para se mover e voltar ao ambiente."
+          }
+        ]
+      },
+      "en": {
+        "title": "Release body tension",
+        "subtitle": "Progressive muscle relaxation, a brief adaptation",
+        "safety": "Use little effort and breathe normally. Skip painful or injured areas. With significant injuries, spasms or back problems, consult a clinician before tensing muscles.",
+        "evidence": "VA describes this technique and relaxation research. This brief four-group adaptation is neither the full protocol nor a clinically validated session.",
+        "steps": [
+          {
+            "seconds": 40,
+            "text": "Sit or lie comfortably. You will gently tense and release, without holding your breath. You may simply imagine the release instead."
+          },
+          {
+            "seconds": 5,
+            "text": "Hands: gently curl your fingers."
+          },
+          {
+            "seconds": 60,
+            "text": "Open your hands. Notice the difference between tension and rest."
+          },
+          {
+            "seconds": 5,
+            "text": "Arms: bend your elbows and tense gently."
+          },
+          {
+            "seconds": 60,
+            "text": "Release your arms and let them rest. Notice sensations without demanding relaxation."
+          },
+          {
+            "seconds": 5,
+            "text": "Shoulders: lift them a little without straining your neck."
+          },
+          {
+            "seconds": 60,
+            "text": "Let your shoulders lower and notice the support beneath you."
+          },
+          {
+            "seconds": 5,
+            "text": "Feet: gently point your toes, only if comfortable."
+          },
+          {
+            "seconds": 60,
+            "text": "Release your feet. Let your legs rest. Breathe naturally."
+          },
+          {
+            "seconds": 60,
+            "text": "Notice your whole body. Take a few moments to move and return to your surroundings."
+          }
+        ]
+      },
+      "fr": {
+        "title": "Relâcher les tensions",
+        "subtitle": "Relaxation musculaire progressive, version brève",
+        "safety": "Contractez peu et respirez normalement. Évitez les zones douloureuses ou blessées. En cas de blessure importante, spasmes ou problèmes de dos, consultez avant de contracter.",
+        "evidence": "La VA décrit cette technique et les recherches sur la relaxation. Cette adaptation à quatre groupes n’est ni le protocole complet ni une séance validée cliniquement.",
+        "steps": [
+          {
+            "seconds": 40,
+            "text": "Installez-vous assis ou allongé. Contractez doucement puis relâchez, sans retenir le souffle. Vous pouvez aussi imaginer le relâchement."
+          },
+          {
+            "seconds": 5,
+            "text": "Mains : repliez doucement les doigts."
+          },
+          {
+            "seconds": 60,
+            "text": "Ouvrez les mains. Notez la différence entre tension et repos."
+          },
+          {
+            "seconds": 5,
+            "text": "Bras : pliez les coudes et contractez doucement."
+          },
+          {
+            "seconds": 60,
+            "text": "Relâchez les bras sur leur appui. Observez sans exiger la détente."
+          },
+          {
+            "seconds": 5,
+            "text": "Épaules : soulevez-les un peu sans forcer le cou."
+          },
+          {
+            "seconds": 60,
+            "text": "Laissez descendre les épaules et sentez vos appuis."
+          },
+          {
+            "seconds": 5,
+            "text": "Pieds : pointez doucement les orteils, seulement si cela convient."
+          },
+          {
+            "seconds": 60,
+            "text": "Relâchez les pieds. Laissez reposer les jambes. Respirez naturellement."
+          },
+          {
+            "seconds": 60,
+            "text": "Observez tout le corps. Prenez le temps de bouger et de retrouver votre environnement."
+          }
+        ]
+      },
+      "it": {
+        "title": "Sciogliere le tensioni",
+        "subtitle": "Rilassamento muscolare progressivo, versione breve",
+        "safety": "Usa poca forza e respira normalmente. Salta zone dolenti o lesionate. Con lesioni importanti, spasmi o problemi alla schiena, consulta un professionista prima di contrarre.",
+        "evidence": "La VA descrive la tecnica e la ricerca sul rilassamento. Questo adattamento a quattro gruppi non è il protocollo completo né una sessione validata clinicamente.",
+        "steps": [
+          {
+            "seconds": 40,
+            "text": "Siediti o sdraiati comodamente. Contrai piano e poi rilascia, senza trattenere il respiro. Puoi anche solo immaginare il rilascio."
+          },
+          {
+            "seconds": 5,
+            "text": "Mani: chiudi delicatamente le dita."
+          },
+          {
+            "seconds": 60,
+            "text": "Apri le mani. Nota la differenza tra tensione e riposo."
+          },
+          {
+            "seconds": 5,
+            "text": "Braccia: piega i gomiti e contrai delicatamente."
+          },
+          {
+            "seconds": 60,
+            "text": "Rilascia le braccia e appoggiale. Osserva senza pretendere il rilassamento."
+          },
+          {
+            "seconds": 5,
+            "text": "Spalle: sollevale poco, senza sforzare il collo."
+          },
+          {
+            "seconds": 60,
+            "text": "Lascia scendere le spalle e senti il sostegno del corpo."
+          },
+          {
+            "seconds": 5,
+            "text": "Piedi: distendi piano le dita, solo se comodo."
+          },
+          {
+            "seconds": 60,
+            "text": "Rilascia i piedi. Lascia riposare le gambe. Respira naturalmente."
+          },
+          {
+            "seconds": 60,
+            "text": "Osserva tutto il corpo. Prenditi il tempo di muoverti e tornare all’ambiente."
+          }
+        ]
+      },
+      "es": {
+        "title": "Soltar la tensión del cuerpo",
+        "subtitle": "Relajación muscular progresiva, versión breve",
+        "safety": "Usa poca fuerza y respira normalmente. Evita zonas doloridas o lesionadas. Con lesiones importantes, espasmos o problemas de espalda, consulta antes de contraer.",
+        "evidence": "La VA describe la técnica y la investigación sobre relajación. Esta adaptación de cuatro grupos no es el protocolo completo ni una sesión validada clínicamente.",
+        "steps": [
+          {
+            "seconds": 40,
+            "text": "Siéntate o túmbate cómodamente. Contrae suavemente y suelta, sin retener el aire. También puedes imaginar la relajación."
+          },
+          {
+            "seconds": 5,
+            "text": "Manos: cierra suavemente los dedos."
+          },
+          {
+            "seconds": 60,
+            "text": "Abre las manos. Nota la diferencia entre tensión y reposo."
+          },
+          {
+            "seconds": 5,
+            "text": "Brazos: dobla los codos y contrae suavemente."
+          },
+          {
+            "seconds": 60,
+            "text": "Suelta los brazos y apóyalos. Observa sin exigir relajación."
+          },
+          {
+            "seconds": 5,
+            "text": "Hombros: súbelos un poco, sin forzar el cuello."
+          },
+          {
+            "seconds": 60,
+            "text": "Deja caer los hombros y siente el apoyo del cuerpo."
+          },
+          {
+            "seconds": 5,
+            "text": "Pies: apunta suavemente los dedos, solo si resulta cómodo."
+          },
+          {
+            "seconds": 60,
+            "text": "Suelta los pies. Deja descansar las piernas. Respira con naturalidad."
+          },
+          {
+            "seconds": 60,
+            "text": "Observa todo el cuerpo. Tómate un tiempo para moverte y volver al entorno."
+          }
+        ]
+      }
+    }
+  },
+  "atencao-presente": {
+    "category": "focus",
+    "color": "lavender",
+    "duration": 5,
+    "source": {
+      "name": "NCCIH · Meditation and Mindfulness",
+      "url": "https://www.nccih.nih.gov/health/meditation-and-mindfulness-effectiveness-and-safety"
+    },
+    "kind": "mindfulness",
+    "locales": {
+      "pt": {
+        "title": "Voltar ao presente",
+        "subtitle": "Atenção plena para quem está começando",
+        "safety": "Mantenha os olhos abertos se preferir. Se a prática aumentar o mal-estar, pare e observe o ambiente ao seu redor.",
+        "evidence": "Programas de mindfulness têm estudos com benefícios para alguns sintomas, mas resultados e qualidade variam. Esta introdução de cinco minutos não equivale aos programas estudados.",
+        "steps": [
+          {
+            "seconds": 40,
+            "text": "Sente-se com conforto. Perceba os pés e o contato com a cadeira. Não há uma sensação certa para encontrar."
+          },
+          {
+            "seconds": 80,
+            "text": "Observe a respiração como ela está. Escolha uma sensação: o ar no nariz ou o movimento do abdômen. Não precisa mudar o ritmo."
+          },
+          {
+            "seconds": 120,
+            "text": "Quando notar um pensamento, reconheça que estava pensando e volte à sensação escolhida. Cada retorno faz parte da prática."
+          },
+          {
+            "seconds": 60,
+            "text": "Amplie a atenção para os sons e o corpo. Olhe ao redor e escolha um próximo gesto com calma."
+          }
+        ]
+      },
+      "en": {
+        "title": "Return to the present",
+        "subtitle": "Mindfulness for a gentle beginning",
+        "safety": "Keep your eyes open if you prefer. If practice increases distress, stop and look around your surroundings.",
+        "evidence": "Mindfulness programs have research showing benefits for some symptoms, but results and study quality vary. This five-minute introduction is not equivalent to the studied programs.",
+        "steps": [
+          {
+            "seconds": 40,
+            "text": "Sit comfortably. Notice your feet and contact with the chair. There is no right feeling to find."
+          },
+          {
+            "seconds": 80,
+            "text": "Notice your breathing as it is. Choose one sensation: air at your nose or movement in your belly. No need to change the pace."
+          },
+          {
+            "seconds": 120,
+            "text": "When you notice a thought, acknowledge that you were thinking and return to your chosen sensation. Each return is part of practice."
+          },
+          {
+            "seconds": 60,
+            "text": "Widen your attention to sounds and your body. Look around and choose your next action calmly."
+          }
+        ]
+      },
+      "fr": {
+        "title": "Revenir au présent",
+        "subtitle": "La pleine conscience pour débuter",
+        "safety": "Gardez les yeux ouverts si vous préférez. Si la pratique augmente le malaise, arrêtez et regardez autour de vous.",
+        "evidence": "Des programmes de pleine conscience montrent des bénéfices pour certains symptômes, avec des résultats et une qualité variables. Cette introduction ne correspond pas aux programmes étudiés.",
+        "steps": [
+          {
+            "seconds": 40,
+            "text": "Asseyez-vous confortablement. Sentez les pieds et le contact de la chaise. Il n’y a pas de sensation à réussir."
+          },
+          {
+            "seconds": 80,
+            "text": "Observez le souffle tel qu’il est. Choisissez l’air au nez ou le mouvement du ventre. Ne changez pas le rythme."
+          },
+          {
+            "seconds": 120,
+            "text": "Quand vous remarquez une pensée, reconnaissez-la puis revenez à la sensation choisie. Chaque retour fait partie de la pratique."
+          },
+          {
+            "seconds": 60,
+            "text": "Élargissez l’attention aux sons et au corps. Regardez autour de vous et choisissez votre prochain geste calmement."
+          }
+        ]
+      },
+      "it": {
+        "title": "Tornare al presente",
+        "subtitle": "Mindfulness per iniziare con dolcezza",
+        "safety": "Tieni gli occhi aperti se preferisci. Se la pratica aumenta il disagio, fermati e osserva ciò che ti circonda.",
+        "evidence": "Programmi di mindfulness mostrano benefici per alcuni sintomi, ma risultati e qualità variano. Questa introduzione non equivale ai programmi studiati.",
+        "steps": [
+          {
+            "seconds": 40,
+            "text": "Siediti comodamente. Nota i piedi e il contatto con la sedia. Non c’è una sensazione giusta da trovare."
+          },
+          {
+            "seconds": 80,
+            "text": "Osserva il respiro così com’è. Scegli l’aria nel naso o il movimento dell’addome. Non cambiare il ritmo."
+          },
+          {
+            "seconds": 120,
+            "text": "Quando noti un pensiero, riconoscilo e torna alla sensazione scelta. Ogni ritorno fa parte della pratica."
+          },
+          {
+            "seconds": 60,
+            "text": "Allarga l’attenzione ai suoni e al corpo. Guarda intorno e scegli con calma il prossimo gesto."
+          }
+        ]
+      },
+      "es": {
+        "title": "Volver al presente",
+        "subtitle": "Atención plena para empezar",
+        "safety": "Mantén los ojos abiertos si prefieres. Si la práctica aumenta el malestar, para y observa tu entorno.",
+        "evidence": "Hay estudios de programas de mindfulness con beneficios para algunos síntomas, pero los resultados y la calidad varían. Esta introducción no equivale a los programas estudiados.",
+        "steps": [
+          {
+            "seconds": 40,
+            "text": "Siéntate cómodamente. Nota los pies y el contacto con la silla. No hay una sensación correcta que encontrar."
+          },
+          {
+            "seconds": 80,
+            "text": "Observa la respiración tal como es. Elige el aire en la nariz o el movimiento del abdomen. No cambies el ritmo."
+          },
+          {
+            "seconds": 120,
+            "text": "Cuando notes un pensamiento, reconócelo y vuelve a la sensación elegida. Cada regreso forma parte de la práctica."
+          },
+          {
+            "seconds": 60,
+            "text": "Amplía la atención a los sonidos y al cuerpo. Mira alrededor y elige con calma tu siguiente acción."
+          }
+        ]
+      }
+    }
+  },
+  "comecar-dia": {
+    "category": "focus",
+    "color": "peach",
+    "duration": 3,
+    "kind": "mindfulness",
+    "source": {
+      "name": "NHS · Mindfulness (contexto geral / general context)",
+      "url": "https://www.nhs.uk/mental-health/self-help/tips-and-support/mindfulness/"
+    },
+    "locales": {
+      "pt": {
+        "title": "Um começo mais presente",
+        "subtitle": "Uma intenção gentil para a manhã",
+        "safety": "Você pode manter os olhos abertos e mudar de posição. Se houver desconforto, pare e observe o ambiente.",
+        "evidence": "Roteiro autoral de bem-estar inspirado em atenção plena. A referência oferece contexto geral; esta sessão específica não foi validada clinicamente e não substitui cuidados profissionais.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Sente-se com apoio e perceba os pés. Deixe a respiração seguir naturalmente. Você pode ajustar a postura sempre que precisar. Durante as pausas da voz, apenas observe."
+          },
+          {
+            "seconds": 40,
+            "text": "Note três detalhes do lugar: uma cor, uma forma e um som. Você já está aqui, antes de qualquer tarefa. Deixe cada detalhe chegar sem procurar algo bonito."
+          },
+          {
+            "seconds": 40,
+            "text": "Pergunte a si: qual qualidade quero levar para as próximas horas? Talvez paciência, atenção ou gentileza. Escolha uma palavra possível, sem transformá-la em uma obrigação."
+          },
+          {
+            "seconds": 40,
+            "text": "Imagine um gesto pequeno que combine com essa intenção: ouvir até o fim, beber água ou fazer uma pausa antes de responder. Só um gesto basta para começar."
+          },
+          {
+            "seconds": 30,
+            "text": "Perceba novamente o lugar onde está. Mova as mãos devagar e escolha como voltar à próxima atividade. Não precisa ter alcançado uma sensação especial."
+          }
+        ]
+      },
+      "en": {
+        "title": "A more present beginning",
+        "subtitle": "A gentle intention for the morning",
+        "safety": "You may keep your eyes open and change position. If uncomfortable, stop and notice your surroundings.",
+        "evidence": "An original wellbeing script inspired by mindfulness. The reference provides general context; this specific session has not been clinically validated and does not replace professional care.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Sit with support and notice your feet. Let breathing stay natural. Adjust your posture whenever needed. During the pauses in narration, simply observe."
+          },
+          {
+            "seconds": 40,
+            "text": "Notice three details around you: a color, a shape and a sound. You are already here, before any task. Let each detail arrive without searching for something beautiful."
+          },
+          {
+            "seconds": 40,
+            "text": "Ask yourself what quality you wish to bring to the next few hours. Perhaps patience, attention or kindness. Choose a possible word without making it an obligation."
+          },
+          {
+            "seconds": 40,
+            "text": "Imagine a small action matching that intention: listening fully, drinking water or pausing before replying. One action is enough to begin."
+          },
+          {
+            "seconds": 30,
+            "text": "Notice your surroundings again. Move your hands slowly and choose how to return to your next activity. There is no special feeling you need to have reached."
+          }
+        ]
+      },
+      "fr": {
+        "title": "Commencer en présence",
+        "subtitle": "Une intention douce pour le matin",
+        "safety": "Vous pouvez garder les yeux ouverts et changer de position. En cas de gêne, arrêtez et observez votre environnement.",
+        "evidence": "Texte original de bien-être inspiré de la pleine conscience. La référence apporte un contexte général ; cette séance n’a pas été validée cliniquement et ne remplace pas les soins professionnels.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Asseyez-vous avec un appui et sentez les pieds. Laissez le souffle naturel. Ajustez votre posture si nécessaire. Pendant les silences de la voix, observez simplement."
+          },
+          {
+            "seconds": 40,
+            "text": "Remarquez une couleur, une forme et un son. Vous êtes déjà ici, avant toute tâche. Laissez venir les détails sans chercher quelque chose de beau."
+          },
+          {
+            "seconds": 40,
+            "text": "Quelle qualité souhaitez-vous apporter aux prochaines heures ? Patience, attention ou douceur, peut-être. Choisissez un mot possible, sans en faire une obligation."
+          },
+          {
+            "seconds": 40,
+            "text": "Imaginez un petit geste : écouter jusqu’au bout, boire de l’eau ou marquer une pause avant de répondre. Un geste suffit pour commencer."
+          },
+          {
+            "seconds": 30,
+            "text": "Retrouvez votre environnement. Bougez doucement les mains et choisissez comment reprendre votre activité. Aucune sensation particulière n’est à atteindre."
+          }
+        ]
+      },
+      "it": {
+        "title": "Un inizio più presente",
+        "subtitle": "Un’intenzione gentile per il mattino",
+        "safety": "Puoi tenere gli occhi aperti e cambiare posizione. Se provi disagio, fermati e osserva l’ambiente.",
+        "evidence": "Testo originale di benessere ispirato alla mindfulness. Il riferimento offre un contesto generale; questa sessione non è stata validata clinicamente e non sostituisce le cure professionali.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Siediti con un appoggio e senti i piedi. Lascia il respiro naturale. Cambia postura quando serve. Nelle pause della voce, osserva semplicemente."
+          },
+          {
+            "seconds": 40,
+            "text": "Nota un colore, una forma e un suono. Sei già qui, prima di ogni compito. Lascia arrivare i dettagli senza cercare qualcosa di bello."
+          },
+          {
+            "seconds": 40,
+            "text": "Quale qualità vuoi portare nelle prossime ore? Forse pazienza, attenzione o gentilezza. Scegli una parola possibile, senza farne un obbligo."
+          },
+          {
+            "seconds": 40,
+            "text": "Immagina un piccolo gesto: ascoltare fino alla fine, bere acqua o fare una pausa prima di rispondere. Un gesto basta per iniziare."
+          },
+          {
+            "seconds": 30,
+            "text": "Ritrova l’ambiente intorno a te. Muovi piano le mani e scegli come riprendere l’attività. Non serve aver raggiunto una sensazione speciale."
+          }
+        ]
+      },
+      "es": {
+        "title": "Un comienzo más presente",
+        "subtitle": "Una intención amable para la mañana",
+        "safety": "Puedes mantener los ojos abiertos y cambiar de postura. Si sientes malestar, para y observa tu entorno.",
+        "evidence": "Guion original de bienestar inspirado en atención plena. La referencia aporta contexto general; esta sesión no se ha validado clínicamente ni sustituye la atención profesional.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Siéntate con apoyo y nota los pies. Deja que la respiración sea natural. Ajusta la postura cuando lo necesites. Durante las pausas de la voz, simplemente observa."
+          },
+          {
+            "seconds": 40,
+            "text": "Nota un color, una forma y un sonido. Ya estás aquí, antes de cualquier tarea. Deja llegar los detalles sin buscar algo bonito."
+          },
+          {
+            "seconds": 40,
+            "text": "¿Qué cualidad quieres llevar a las próximas horas? Quizá paciencia, atención o amabilidad. Elige una palabra posible, sin convertirla en obligación."
+          },
+          {
+            "seconds": 40,
+            "text": "Imagina un pequeño gesto: escuchar hasta el final, beber agua o pausar antes de responder. Un gesto basta para empezar."
+          },
+          {
+            "seconds": 30,
+            "text": "Vuelve a notar tu entorno. Mueve las manos despacio y elige cómo retomar la actividad. No necesitas haber alcanzado una sensación especial."
+          }
+        ]
+      }
+    }
+  },
+  "pausa-trabalho": {
+    "category": "relaxation",
+    "color": "sage",
+    "duration": 3,
+    "kind": "mindfulness",
+    "source": {
+      "name": "NHS · Mindfulness (contexto geral / general context)",
+      "url": "https://www.nhs.uk/mental-health/self-help/tips-and-support/mindfulness/"
+    },
+    "locales": {
+      "pt": {
+        "title": "Entre uma tarefa e outra",
+        "subtitle": "Uma pausa breve longe do piloto automático",
+        "safety": "Você pode manter os olhos abertos e mudar de posição. Se houver desconforto, pare e observe o ambiente.",
+        "evidence": "Roteiro autoral de bem-estar inspirado em atenção plena. A referência oferece contexto geral; esta sessão específica não foi validada clinicamente e não substitui cuidados profissionais.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Sente-se com apoio e perceba os pés. Deixe a respiração seguir naturalmente. Você pode ajustar a postura sempre que precisar. Durante as pausas da voz, apenas observe."
+          },
+          {
+            "seconds": 40,
+            "text": "Afaste as mãos do teclado ou do telefone, se puder. Perceba o contato dos dedos e a posição dos ombros. Permita um pequeno ajuste, sem alongar à força."
+          },
+          {
+            "seconds": 40,
+            "text": "Olhe para um ponto confortável mais distante da tela. Observe a luz e as formas. Deixe a respiração acontecer; esta pausa não precisa resolver o restante do dia."
+          },
+          {
+            "seconds": 40,
+            "text": "Escolha apenas a próxima tarefa. Perceba a vontade de fazer várias coisas ao mesmo tempo e volte ao primeiro passo concreto. Você pode começar de maneira simples."
+          },
+          {
+            "seconds": 30,
+            "text": "Perceba novamente o lugar onde está. Mova as mãos devagar e escolha como voltar à próxima atividade. Não precisa ter alcançado uma sensação especial."
+          }
+        ]
+      },
+      "en": {
+        "title": "Between one task and the next",
+        "subtitle": "A short pause away from autopilot",
+        "safety": "You may keep your eyes open and change position. If uncomfortable, stop and notice your surroundings.",
+        "evidence": "An original wellbeing script inspired by mindfulness. The reference provides general context; this specific session has not been clinically validated and does not replace professional care.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Sit with support and notice your feet. Let breathing stay natural. Adjust your posture whenever needed. During the pauses in narration, simply observe."
+          },
+          {
+            "seconds": 40,
+            "text": "Move your hands away from the keyboard or phone if possible. Notice your fingers and shoulders. Allow a small adjustment without forcing a stretch."
+          },
+          {
+            "seconds": 40,
+            "text": "Look at a comfortable point away from the screen. Notice light and shapes. Let breathing happen; this pause need not solve the rest of the day."
+          },
+          {
+            "seconds": 40,
+            "text": "Choose only the next task. Notice the urge to do many things at once and return to the first concrete step. You can begin simply."
+          },
+          {
+            "seconds": 30,
+            "text": "Notice your surroundings again. Move your hands slowly and choose how to return to your next activity. There is no special feeling you need to have reached."
+          }
+        ]
+      },
+      "fr": {
+        "title": "Entre deux tâches",
+        "subtitle": "Une pause hors du pilote automatique",
+        "safety": "Vous pouvez garder les yeux ouverts et changer de position. En cas de gêne, arrêtez et observez votre environnement.",
+        "evidence": "Texte original de bien-être inspiré de la pleine conscience. La référence apporte un contexte général ; cette séance n’a pas été validée cliniquement et ne remplace pas les soins professionnels.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Asseyez-vous avec un appui et sentez les pieds. Laissez le souffle naturel. Ajustez votre posture si nécessaire. Pendant les silences de la voix, observez simplement."
+          },
+          {
+            "seconds": 40,
+            "text": "Éloignez les mains du clavier ou du téléphone si possible. Sentez les doigts et les épaules. Ajustez doucement, sans étirement forcé."
+          },
+          {
+            "seconds": 40,
+            "text": "Regardez un point confortable loin de l’écran. Observez lumière et formes. Laissez le souffle venir ; cette pause n’a pas à résoudre toute la journée."
+          },
+          {
+            "seconds": 40,
+            "text": "Choisissez seulement la tâche suivante. Remarquez l’envie de tout faire et revenez au premier geste concret. Commencez simplement."
+          },
+          {
+            "seconds": 30,
+            "text": "Retrouvez votre environnement. Bougez doucement les mains et choisissez comment reprendre votre activité. Aucune sensation particulière n’est à atteindre."
+          }
+        ]
+      },
+      "it": {
+        "title": "Tra un compito e l’altro",
+        "subtitle": "Una pausa dal pilota automatico",
+        "safety": "Puoi tenere gli occhi aperti e cambiare posizione. Se provi disagio, fermati e osserva l’ambiente.",
+        "evidence": "Testo originale di benessere ispirato alla mindfulness. Il riferimento offre un contesto generale; questa sessione non è stata validata clinicamente e non sostituisce le cure professionali.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Siediti con un appoggio e senti i piedi. Lascia il respiro naturale. Cambia postura quando serve. Nelle pause della voce, osserva semplicemente."
+          },
+          {
+            "seconds": 40,
+            "text": "Allontana le mani dalla tastiera o dal telefono, se puoi. Nota dita e spalle. Fai un piccolo aggiustamento senza forzare un allungamento."
+          },
+          {
+            "seconds": 40,
+            "text": "Guarda un punto comodo lontano dallo schermo. Nota luce e forme. Lascia respirare il corpo; questa pausa non deve risolvere tutta la giornata."
+          },
+          {
+            "seconds": 40,
+            "text": "Scegli solo il prossimo compito. Nota la voglia di fare tutto insieme e torna al primo passo concreto. Puoi iniziare semplicemente."
+          },
+          {
+            "seconds": 30,
+            "text": "Ritrova l’ambiente intorno a te. Muovi piano le mani e scegli come riprendere l’attività. Non serve aver raggiunto una sensazione speciale."
+          }
+        ]
+      },
+      "es": {
+        "title": "Entre una tarea y otra",
+        "subtitle": "Una pausa del piloto automático",
+        "safety": "Puedes mantener los ojos abiertos y cambiar de postura. Si sientes malestar, para y observa tu entorno.",
+        "evidence": "Guion original de bienestar inspirado en atención plena. La referencia aporta contexto general; esta sesión no se ha validado clínicamente ni sustituye la atención profesional.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Siéntate con apoyo y nota los pies. Deja que la respiración sea natural. Ajusta la postura cuando lo necesites. Durante las pausas de la voz, simplemente observa."
+          },
+          {
+            "seconds": 40,
+            "text": "Aparta las manos del teclado o teléfono si puedes. Nota los dedos y los hombros. Permite un pequeño ajuste sin forzar un estiramiento."
+          },
+          {
+            "seconds": 40,
+            "text": "Mira un punto cómodo lejos de la pantalla. Observa luz y formas. Deja que llegue la respiración; esta pausa no tiene que resolver el día."
+          },
+          {
+            "seconds": 40,
+            "text": "Elige solo la próxima tarea. Nota las ganas de hacer muchas cosas a la vez y vuelve al primer paso concreto. Puedes empezar de forma sencilla."
+          },
+          {
+            "seconds": 30,
+            "text": "Vuelve a notar tu entorno. Mueve las manos despacio y elige cómo retomar la actividad. No necesitas haber alcanzado una sensación especial."
+          }
+        ]
+      }
+    }
+  },
+  "escuta-atenta": {
+    "category": "focus",
+    "color": "sage",
+    "duration": 5,
+    "kind": "mindfulness",
+    "source": {
+      "name": "NHS · Mindfulness (contexto geral / general context)",
+      "url": "https://www.nhs.uk/mental-health/self-help/tips-and-support/mindfulness/"
+    },
+    "locales": {
+      "pt": {
+        "title": "O espaço entre os sons",
+        "subtitle": "Uma prática de atenção pela escuta",
+        "safety": "Você pode manter os olhos abertos e mudar de posição. Se houver desconforto, pare e observe o ambiente.",
+        "evidence": "Roteiro autoral de bem-estar inspirado em atenção plena. A referência oferece contexto geral; esta sessão específica não foi validada clinicamente e não substitui cuidados profissionais.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Sente-se com apoio e perceba os pés. Deixe a respiração seguir naturalmente. Você pode ajustar a postura sempre que precisar. Durante as pausas da voz, apenas observe."
+          },
+          {
+            "seconds": 80,
+            "text": "Escute o som mais próximo que conseguir perceber. Pode ser o tecido da roupa ou algo no ambiente. Não precisa nomear a origem; apenas note sua textura e duração."
+          },
+          {
+            "seconds": 80,
+            "text": "Amplie a escuta para sons mais distantes. Perceba como aparecem e desaparecem. Se um som não agradar, note essa reação sem precisar mudar o som ou gostar dele."
+          },
+          {
+            "seconds": 80,
+            "text": "Agora escute o conjunto. Sons, pausas e silêncio podem dividir o mesmo espaço. Quando um pensamento chamar a atenção, reconheça e volte a um som disponível."
+          },
+          {
+            "seconds": 30,
+            "text": "Perceba novamente o lugar onde está. Mova as mãos devagar e escolha como voltar à próxima atividade. Não precisa ter alcançado uma sensação especial."
+          }
+        ]
+      },
+      "en": {
+        "title": "The space between sounds",
+        "subtitle": "An attention practice through listening",
+        "safety": "You may keep your eyes open and change position. If uncomfortable, stop and notice your surroundings.",
+        "evidence": "An original wellbeing script inspired by mindfulness. The reference provides general context; this specific session has not been clinically validated and does not replace professional care.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Sit with support and notice your feet. Let breathing stay natural. Adjust your posture whenever needed. During the pauses in narration, simply observe."
+          },
+          {
+            "seconds": 80,
+            "text": "Listen for the nearest sound you can notice. It may be clothing or something around you. No need to name its source; notice its texture and duration."
+          },
+          {
+            "seconds": 80,
+            "text": "Widen your listening to farther sounds. Notice them appearing and fading. If you dislike one, notice that reaction without needing to change or enjoy the sound."
+          },
+          {
+            "seconds": 80,
+            "text": "Now hear the whole soundscape. Sounds, pauses and silence can share a space. When a thought draws attention, acknowledge it and return to an available sound."
+          },
+          {
+            "seconds": 30,
+            "text": "Notice your surroundings again. Move your hands slowly and choose how to return to your next activity. There is no special feeling you need to have reached."
+          }
+        ]
+      },
+      "fr": {
+        "title": "L’espace entre les sons",
+        "subtitle": "Une pratique d’attention par l’écoute",
+        "safety": "Vous pouvez garder les yeux ouverts et changer de position. En cas de gêne, arrêtez et observez votre environnement.",
+        "evidence": "Texte original de bien-être inspiré de la pleine conscience. La référence apporte un contexte général ; cette séance n’a pas été validée cliniquement et ne remplace pas les soins professionnels.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Asseyez-vous avec un appui et sentez les pieds. Laissez le souffle naturel. Ajustez votre posture si nécessaire. Pendant les silences de la voix, observez simplement."
+          },
+          {
+            "seconds": 80,
+            "text": "Écoutez le son le plus proche : un vêtement ou un bruit alentour. Sans chercher sa source, notez sa texture et sa durée."
+          },
+          {
+            "seconds": 80,
+            "text": "Élargissez l’écoute aux sons lointains. Ils viennent et repartent. Si un son déplaît, notez la réaction sans devoir le modifier ni l’apprécier."
+          },
+          {
+            "seconds": 80,
+            "text": "Écoutez maintenant l’ensemble. Sons, pauses et silence partagent un espace. Quand une pensée vous attire, reconnaissez-la et revenez à un son."
+          },
+          {
+            "seconds": 30,
+            "text": "Retrouvez votre environnement. Bougez doucement les mains et choisissez comment reprendre votre activité. Aucune sensation particulière n’est à atteindre."
+          }
+        ]
+      },
+      "it": {
+        "title": "Lo spazio tra i suoni",
+        "subtitle": "Una pratica di attenzione con l’ascolto",
+        "safety": "Puoi tenere gli occhi aperti e cambiare posizione. Se provi disagio, fermati e osserva l’ambiente.",
+        "evidence": "Testo originale di benessere ispirato alla mindfulness. Il riferimento offre un contesto generale; questa sessione non è stata validata clinicamente e non sostituisce le cure professionali.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Siediti con un appoggio e senti i piedi. Lascia il respiro naturale. Cambia postura quando serve. Nelle pause della voce, osserva semplicemente."
+          },
+          {
+            "seconds": 80,
+            "text": "Ascolta il suono più vicino: un vestito o qualcosa intorno. Non serve identificarne la fonte; nota consistenza e durata."
+          },
+          {
+            "seconds": 80,
+            "text": "Allarga l’ascolto ai suoni lontani. Arrivano e svaniscono. Se un suono non piace, nota la reazione senza doverlo cambiare o apprezzare."
+          },
+          {
+            "seconds": 80,
+            "text": "Ascolta ora l’insieme. Suoni, pause e silenzio condividono lo spazio. Quando un pensiero ti attira, riconoscilo e torna a un suono disponibile."
+          },
+          {
+            "seconds": 30,
+            "text": "Ritrova l’ambiente intorno a te. Muovi piano le mani e scegli come riprendere l’attività. Non serve aver raggiunto una sensazione speciale."
+          }
+        ]
+      },
+      "es": {
+        "title": "El espacio entre los sonidos",
+        "subtitle": "Una práctica de atención mediante la escucha",
+        "safety": "Puedes mantener los ojos abiertos y cambiar de postura. Si sientes malestar, para y observa tu entorno.",
+        "evidence": "Guion original de bienestar inspirado en atención plena. La referencia aporta contexto general; esta sesión no se ha validado clínicamente ni sustituye la atención profesional.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Siéntate con apoyo y nota los pies. Deja que la respiración sea natural. Ajusta la postura cuando lo necesites. Durante las pausas de la voz, simplemente observa."
+          },
+          {
+            "seconds": 80,
+            "text": "Escucha el sonido más cercano: la ropa o algo del entorno. No necesitas identificar su origen; nota su textura y duración."
+          },
+          {
+            "seconds": 80,
+            "text": "Amplía la escucha a sonidos lejanos. Aparecen y desaparecen. Si alguno te desagrada, nota la reacción sin tener que cambiarlo ni disfrutarlo."
+          },
+          {
+            "seconds": 80,
+            "text": "Escucha ahora el conjunto. Sonidos, pausas y silencio comparten espacio. Cuando un pensamiento te atraiga, reconócelo y vuelve a un sonido disponible."
+          },
+          {
+            "seconds": 30,
+            "text": "Vuelve a notar tu entorno. Mueve las manos despacio y elige cómo retomar la actividad. No necesitas haber alcanzado una sensación especial."
+          }
+        ]
+      }
+    }
+  },
+  "varredura-corporal": {
+    "category": "relaxation",
+    "color": "peach",
+    "duration": 8,
+    "kind": "mindfulness",
+    "source": {
+      "name": "NHS · Mindfulness (contexto geral / general context)",
+      "url": "https://www.nhs.uk/mental-health/self-help/tips-and-support/mindfulness/"
+    },
+    "locales": {
+      "pt": {
+        "title": "Percorrer o corpo com atenção",
+        "subtitle": "Observar sensações sem contrair músculos",
+        "safety": "Você pode manter os olhos abertos e mudar de posição. Se houver desconforto, pare e observe o ambiente.",
+        "evidence": "Roteiro autoral de bem-estar inspirado em atenção plena. A referência oferece contexto geral; esta sessão específica não foi validada clinicamente e não substitui cuidados profissionais.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Sente-se com apoio e perceba os pés. Deixe a respiração seguir naturalmente. Você pode ajustar a postura sempre que precisar. Durante as pausas da voz, apenas observe."
+          },
+          {
+            "seconds": 140,
+            "text": "Leve a atenção aos pés e às pernas. Note pressão, temperatura ou o contato com a superfície. Se não perceber nada claro, isso também faz parte. Não precisa mudar a sensação."
+          },
+          {
+            "seconds": 140,
+            "text": "Suba a atenção ao tronco, depois às mãos e aos braços. Observe uma região por vez. Deixe a respiração natural, sem tentar produzir relaxamento ou procurar sinais de algo errado."
+          },
+          {
+            "seconds": 140,
+            "text": "Perceba ombros, rosto e o corpo como um conjunto apoiado. Se olhar para dentro não for confortável, escolha um som do ambiente como ponto de atenção."
+          },
+          {
+            "seconds": 30,
+            "text": "Perceba novamente o lugar onde está. Mova as mãos devagar e escolha como voltar à próxima atividade. Não precisa ter alcançado uma sensação especial."
+          }
+        ]
+      },
+      "en": {
+        "title": "A gentle body scan",
+        "subtitle": "Notice sensations without tensing muscles",
+        "safety": "You may keep your eyes open and change position. If uncomfortable, stop and notice your surroundings.",
+        "evidence": "An original wellbeing script inspired by mindfulness. The reference provides general context; this specific session has not been clinically validated and does not replace professional care.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Sit with support and notice your feet. Let breathing stay natural. Adjust your posture whenever needed. During the pauses in narration, simply observe."
+          },
+          {
+            "seconds": 140,
+            "text": "Bring attention to your feet and legs. Notice pressure, temperature or contact with support. If nothing feels clear, that is part of it too. No need to change sensations."
+          },
+          {
+            "seconds": 140,
+            "text": "Move attention to your torso, then hands and arms. Notice one area at a time. Keep breathing natural without trying to produce relaxation or searching for something wrong."
+          },
+          {
+            "seconds": 140,
+            "text": "Notice shoulders, face and your whole supported body. If looking inward feels uncomfortable, choose an outside sound as your point of attention."
+          },
+          {
+            "seconds": 30,
+            "text": "Notice your surroundings again. Move your hands slowly and choose how to return to your next activity. There is no special feeling you need to have reached."
+          }
+        ]
+      },
+      "fr": {
+        "title": "Parcourir le corps avec attention",
+        "subtitle": "Observer sans contracter les muscles",
+        "safety": "Vous pouvez garder les yeux ouverts et changer de position. En cas de gêne, arrêtez et observez votre environnement.",
+        "evidence": "Texte original de bien-être inspiré de la pleine conscience. La référence apporte un contexte général ; cette séance n’a pas été validée cliniquement et ne remplace pas les soins professionnels.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Asseyez-vous avec un appui et sentez les pieds. Laissez le souffle naturel. Ajustez votre posture si nécessaire. Pendant les silences de la voix, observez simplement."
+          },
+          {
+            "seconds": 140,
+            "text": "Portez l’attention aux pieds et aux jambes. Notez pression, température ou appuis. Ne rien sentir clairement fait aussi partie de l’expérience. Ne changez rien."
+          },
+          {
+            "seconds": 140,
+            "text": "Passez au tronc, puis aux mains et aux bras, une région à la fois. Gardez le souffle naturel, sans chercher la détente ni un signe de problème."
+          },
+          {
+            "seconds": 140,
+            "text": "Sentez épaules, visage et corps soutenu. Si l’attention intérieure gêne, choisissez plutôt un son de l’environnement."
+          },
+          {
+            "seconds": 30,
+            "text": "Retrouvez votre environnement. Bougez doucement les mains et choisissez comment reprendre votre activité. Aucune sensation particulière n’est à atteindre."
+          }
+        ]
+      },
+      "it": {
+        "title": "Esplorare il corpo con attenzione",
+        "subtitle": "Osservare senza contrarre i muscoli",
+        "safety": "Puoi tenere gli occhi aperti e cambiare posizione. Se provi disagio, fermati e osserva l’ambiente.",
+        "evidence": "Testo originale di benessere ispirato alla mindfulness. Il riferimento offre un contesto generale; questa sessione non è stata validata clinicamente e non sostituisce le cure professionali.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Siediti con un appoggio e senti i piedi. Lascia il respiro naturale. Cambia postura quando serve. Nelle pause della voce, osserva semplicemente."
+          },
+          {
+            "seconds": 140,
+            "text": "Porta l’attenzione a piedi e gambe. Nota pressione, temperatura o appoggi. Anche non sentire nulla di chiaro fa parte dell’esperienza. Non cambiare le sensazioni."
+          },
+          {
+            "seconds": 140,
+            "text": "Passa al tronco, poi a mani e braccia, una zona alla volta. Lascia il respiro naturale senza cercare rilassamento o segni di un problema."
+          },
+          {
+            "seconds": 140,
+            "text": "Nota spalle, viso e tutto il corpo sostenuto. Se l’attenzione interna è scomoda, scegli un suono dell’ambiente come riferimento."
+          },
+          {
+            "seconds": 30,
+            "text": "Ritrova l’ambiente intorno a te. Muovi piano le mani e scegli come riprendere l’attività. Non serve aver raggiunto una sensazione speciale."
+          }
+        ]
+      },
+      "es": {
+        "title": "Recorrer el cuerpo con atención",
+        "subtitle": "Observar sin contraer los músculos",
+        "safety": "Puedes mantener los ojos abiertos y cambiar de postura. Si sientes malestar, para y observa tu entorno.",
+        "evidence": "Guion original de bienestar inspirado en atención plena. La referencia aporta contexto general; esta sesión no se ha validado clínicamente ni sustituye la atención profesional.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Siéntate con apoyo y nota los pies. Deja que la respiración sea natural. Ajusta la postura cuando lo necesites. Durante las pausas de la voz, simplemente observa."
+          },
+          {
+            "seconds": 140,
+            "text": "Lleva la atención a pies y piernas. Nota presión, temperatura o apoyo. No sentir nada claro también forma parte de la experiencia. No cambies las sensaciones."
+          },
+          {
+            "seconds": 140,
+            "text": "Pasa al tronco, luego a manos y brazos, una zona a la vez. Respira con naturalidad sin buscar relajación ni señales de algo malo."
+          },
+          {
+            "seconds": 140,
+            "text": "Nota hombros, rostro y todo el cuerpo apoyado. Si mirar hacia dentro incomoda, elige un sonido del entorno como punto de atención."
+          },
+          {
+            "seconds": 30,
+            "text": "Vuelve a notar tu entorno. Mueve las manos despacio y elige cómo retomar la actividad. No necesitas haber alcanzado una sensación especial."
+          }
+        ]
+      }
+    }
+  },
+  "gentileza-consigo": {
+    "category": "relaxation",
+    "color": "peach",
+    "duration": 6,
+    "kind": "mindfulness",
+    "source": {
+      "name": "NHS · Mindfulness (contexto geral / general context)",
+      "url": "https://www.nhs.uk/mental-health/self-help/tips-and-support/mindfulness/"
+    },
+    "locales": {
+      "pt": {
+        "title": "Um pouco de gentileza consigo",
+        "subtitle": "Autocompaixão sem exigir pensamentos positivos",
+        "safety": "Você pode manter os olhos abertos e mudar de posição. Se houver desconforto, pare e observe o ambiente.",
+        "evidence": "Roteiro autoral de bem-estar inspirado em atenção plena. A referência oferece contexto geral; esta sessão específica não foi validada clinicamente e não substitui cuidados profissionais.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Sente-se com apoio e perceba os pés. Deixe a respiração seguir naturalmente. Você pode ajustar a postura sempre que precisar. Durante as pausas da voz, apenas observe."
+          },
+          {
+            "seconds": 100,
+            "text": "Perceba o tom com que fala consigo hoje. Não precisa procurar uma lembrança difícil. Apenas note se há cobrança, pressa ou cansaço no momento."
+          },
+          {
+            "seconds": 100,
+            "text": "Experimente uma frase que pareça honesta: posso tratar este momento com um pouco mais de cuidado. Se as palavras não ajudarem, fique apenas com o apoio dos pés."
+          },
+          {
+            "seconds": 100,
+            "text": "Pense em um cuidado pequeno e possível: descansar, pedir ajuda ou respeitar um limite. Não é uma promessa. Só permita que uma opção gentil tenha lugar ao lado das exigências."
+          },
+          {
+            "seconds": 30,
+            "text": "Perceba novamente o lugar onde está. Mova as mãos devagar e escolha como voltar à próxima atividade. Não precisa ter alcançado uma sensação especial."
+          }
+        ]
+      },
+      "en": {
+        "title": "A little kindness for yourself",
+        "subtitle": "Self-kindness without forced positivity",
+        "safety": "You may keep your eyes open and change position. If uncomfortable, stop and notice your surroundings.",
+        "evidence": "An original wellbeing script inspired by mindfulness. The reference provides general context; this specific session has not been clinically validated and does not replace professional care.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Sit with support and notice your feet. Let breathing stay natural. Adjust your posture whenever needed. During the pauses in narration, simply observe."
+          },
+          {
+            "seconds": 100,
+            "text": "Notice the tone you use toward yourself today. No need to seek a difficult memory. Simply notice pressure, haste or tiredness in this moment."
+          },
+          {
+            "seconds": 100,
+            "text": "Try an honest phrase: I can meet this moment with a little more care. If words do not help, stay with the support beneath your feet."
+          },
+          {
+            "seconds": 100,
+            "text": "Consider one small possible act of care: rest, ask for help or respect a limit. It is not a promise. Let a kind option sit beside the demands."
+          },
+          {
+            "seconds": 30,
+            "text": "Notice your surroundings again. Move your hands slowly and choose how to return to your next activity. There is no special feeling you need to have reached."
+          }
+        ]
+      },
+      "fr": {
+        "title": "Un peu de douceur pour soi",
+        "subtitle": "De la douceur sans positivité imposée",
+        "safety": "Vous pouvez garder les yeux ouverts et changer de position. En cas de gêne, arrêtez et observez votre environnement.",
+        "evidence": "Texte original de bien-être inspiré de la pleine conscience. La référence apporte un contexte général ; cette séance n’a pas été validée cliniquement et ne remplace pas les soins professionnels.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Asseyez-vous avec un appui et sentez les pieds. Laissez le souffle naturel. Ajustez votre posture si nécessaire. Pendant les silences de la voix, observez simplement."
+          },
+          {
+            "seconds": 100,
+            "text": "Remarquez votre ton envers vous-même aujourd’hui. Ne cherchez pas de souvenir difficile. Notez simplement exigence, hâte ou fatigue dans l’instant."
+          },
+          {
+            "seconds": 100,
+            "text": "Essayez une phrase sincère : je peux accueillir cet instant avec un peu plus de soin. Si les mots n’aident pas, retrouvez l’appui des pieds."
+          },
+          {
+            "seconds": 100,
+            "text": "Pensez à un soin simple : se reposer, demander de l’aide ou respecter une limite. Sans promesse, laissez cette option côtoyer les exigences."
+          },
+          {
+            "seconds": 30,
+            "text": "Retrouvez votre environnement. Bougez doucement les mains et choisissez comment reprendre votre activité. Aucune sensation particulière n’est à atteindre."
+          }
+        ]
+      },
+      "it": {
+        "title": "Un po’ di gentilezza per te",
+        "subtitle": "Gentilezza senza positività forzata",
+        "safety": "Puoi tenere gli occhi aperti e cambiare posizione. Se provi disagio, fermati e osserva l’ambiente.",
+        "evidence": "Testo originale di benessere ispirato alla mindfulness. Il riferimento offre un contesto generale; questa sessione non è stata validata clinicamente e non sostituisce le cure professionali.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Siediti con un appoggio e senti i piedi. Lascia il respiro naturale. Cambia postura quando serve. Nelle pause della voce, osserva semplicemente."
+          },
+          {
+            "seconds": 100,
+            "text": "Nota il tono con cui ti parli oggi. Non cercare ricordi difficili. Nota soltanto pressione, fretta o stanchezza nel momento."
+          },
+          {
+            "seconds": 100,
+            "text": "Prova una frase sincera: posso affrontare questo momento con un po’ più di cura. Se le parole non aiutano, resta con l’appoggio dei piedi."
+          },
+          {
+            "seconds": 100,
+            "text": "Pensa a una cura semplice: riposare, chiedere aiuto o rispettare un limite. Non è una promessa. Lascia spazio a un’opzione gentile accanto alle richieste."
+          },
+          {
+            "seconds": 30,
+            "text": "Ritrova l’ambiente intorno a te. Muovi piano le mani e scegli come riprendere l’attività. Non serve aver raggiunto una sensazione speciale."
+          }
+        ]
+      },
+      "es": {
+        "title": "Un poco de amabilidad contigo",
+        "subtitle": "Amabilidad sin exigir pensamientos positivos",
+        "safety": "Puedes mantener los ojos abiertos y cambiar de postura. Si sientes malestar, para y observa tu entorno.",
+        "evidence": "Guion original de bienestar inspirado en atención plena. La referencia aporta contexto general; esta sesión no se ha validado clínicamente ni sustituye la atención profesional.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Siéntate con apoyo y nota los pies. Deja que la respiración sea natural. Ajusta la postura cuando lo necesites. Durante las pausas de la voz, simplemente observa."
+          },
+          {
+            "seconds": 100,
+            "text": "Nota el tono con que te hablas hoy. No busques recuerdos difíciles. Observa simplemente exigencia, prisa o cansancio en este momento."
+          },
+          {
+            "seconds": 100,
+            "text": "Prueba una frase honesta: puedo vivir este momento con un poco más de cuidado. Si las palabras no ayudan, vuelve al apoyo de los pies."
+          },
+          {
+            "seconds": 100,
+            "text": "Piensa en un cuidado pequeño: descansar, pedir ayuda o respetar un límite. No es una promesa. Deja espacio a una opción amable junto a las exigencias."
+          },
+          {
+            "seconds": 30,
+            "text": "Vuelve a notar tu entorno. Mueve las manos despacio y elige cómo retomar la actividad. No necesitas haber alcanzado una sensación especial."
+          }
+        ]
+      }
+    }
+  },
+  "acolher-emocoes": {
+    "category": "focus",
+    "color": "lavender",
+    "duration": 5,
+    "kind": "mindfulness",
+    "source": {
+      "name": "NHS · Mindfulness (contexto geral / general context)",
+      "url": "https://www.nhs.uk/mental-health/self-help/tips-and-support/mindfulness/"
+    },
+    "locales": {
+      "pt": {
+        "title": "Dar espaço ao que sente",
+        "subtitle": "Reconhecer o momento sem reviver experiências",
+        "safety": "Você pode manter os olhos abertos e mudar de posição. Se houver desconforto, pare e observe o ambiente.",
+        "evidence": "Roteiro autoral de bem-estar inspirado em atenção plena. A referência oferece contexto geral; esta sessão específica não foi validada clinicamente e não substitui cuidados profissionais.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Sente-se com apoio e perceba os pés. Deixe a respiração seguir naturalmente. Você pode ajustar a postura sempre que precisar. Durante as pausas da voz, apenas observe."
+          },
+          {
+            "seconds": 80,
+            "text": "Escolha uma palavra simples para o estado presente: tranquilo, inquieto, cansado ou indefinido. Não é necessário explicar por quê nem voltar à história que trouxe você até aqui."
+          },
+          {
+            "seconds": 80,
+            "text": "Mantenha parte da atenção nos pés e em algo que possa ver. Seu estado pode estar presente sem ocupar toda a atenção. Se preferir, deixe a palavra de lado e observe só o ambiente."
+          },
+          {
+            "seconds": 80,
+            "text": "Pergunte: do que preciso nos próximos minutos? Talvez espaço, companhia ou uma pausa. Não precisa mudar o sentimento agora. Escolha um próximo cuidado possível."
+          },
+          {
+            "seconds": 30,
+            "text": "Perceba novamente o lugar onde está. Mova as mãos devagar e escolha como voltar à próxima atividade. Não precisa ter alcançado uma sensação especial."
+          }
+        ]
+      },
+      "en": {
+        "title": "Make room for what you feel",
+        "subtitle": "Notice this moment without revisiting experiences",
+        "safety": "You may keep your eyes open and change position. If uncomfortable, stop and notice your surroundings.",
+        "evidence": "An original wellbeing script inspired by mindfulness. The reference provides general context; this specific session has not been clinically validated and does not replace professional care.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Sit with support and notice your feet. Let breathing stay natural. Adjust your posture whenever needed. During the pauses in narration, simply observe."
+          },
+          {
+            "seconds": 80,
+            "text": "Choose a simple word for your present state: calm, restless, tired or unclear. No need to explain why or revisit the story that brought you here."
+          },
+          {
+            "seconds": 80,
+            "text": "Keep some attention on your feet and something you can see. Your state can be present without taking all your attention. You can leave the word aside and notice only your surroundings."
+          },
+          {
+            "seconds": 80,
+            "text": "Ask what you need in the next few minutes. Perhaps space, company or a pause. No need to change the feeling now. Choose one possible act of care."
+          },
+          {
+            "seconds": 30,
+            "text": "Notice your surroundings again. Move your hands slowly and choose how to return to your next activity. There is no special feeling you need to have reached."
+          }
+        ]
+      },
+      "fr": {
+        "title": "Faire place à ce que l’on ressent",
+        "subtitle": "Reconnaître l’instant sans revivre des expériences",
+        "safety": "Vous pouvez garder les yeux ouverts et changer de position. En cas de gêne, arrêtez et observez votre environnement.",
+        "evidence": "Texte original de bien-être inspiré de la pleine conscience. La référence apporte un contexte général ; cette séance n’a pas été validée cliniquement et ne remplace pas les soins professionnels.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Asseyez-vous avec un appui et sentez les pieds. Laissez le souffle naturel. Ajustez votre posture si nécessaire. Pendant les silences de la voix, observez simplement."
+          },
+          {
+            "seconds": 80,
+            "text": "Choisissez un mot : calme, agité, fatigué ou indéfini. Sans expliquer pourquoi ni revenir à l’histoire qui vous a conduit ici."
+          },
+          {
+            "seconds": 80,
+            "text": "Gardez une part d’attention sur les pieds et un objet visible. Votre état n’a pas à prendre toute la place. Vous pouvez aussi laisser le mot et regarder autour."
+          },
+          {
+            "seconds": 80,
+            "text": "De quoi avez-vous besoin pour les prochaines minutes ? D’espace, de compagnie ou d’une pause ? Sans changer l’émotion, choisissez un soin possible."
+          },
+          {
+            "seconds": 30,
+            "text": "Retrouvez votre environnement. Bougez doucement les mains et choisissez comment reprendre votre activité. Aucune sensation particulière n’est à atteindre."
+          }
+        ]
+      },
+      "it": {
+        "title": "Dare spazio a ciò che senti",
+        "subtitle": "Riconoscere il momento senza rivivere esperienze",
+        "safety": "Puoi tenere gli occhi aperti e cambiare posizione. Se provi disagio, fermati e osserva l’ambiente.",
+        "evidence": "Testo originale di benessere ispirato alla mindfulness. Il riferimento offre un contesto generale; questa sessione non è stata validata clinicamente e non sostituisce le cure professionali.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Siediti con un appoggio e senti i piedi. Lascia il respiro naturale. Cambia postura quando serve. Nelle pause della voce, osserva semplicemente."
+          },
+          {
+            "seconds": 80,
+            "text": "Scegli una parola: calmo, inquieto, stanco o indefinito. Non serve spiegare perché o tornare alla storia che ti ha portato qui."
+          },
+          {
+            "seconds": 80,
+            "text": "Mantieni parte dell’attenzione sui piedi e su un oggetto visibile. Il tuo stato non deve occupare tutto lo spazio. Puoi anche lasciare la parola e osservare l’ambiente."
+          },
+          {
+            "seconds": 80,
+            "text": "Di cosa hai bisogno nei prossimi minuti? Forse spazio, compagnia o una pausa. Non devi cambiare l’emozione ora. Scegli una cura possibile."
+          },
+          {
+            "seconds": 30,
+            "text": "Ritrova l’ambiente intorno a te. Muovi piano le mani e scegli come riprendere l’attività. Non serve aver raggiunto una sensazione speciale."
+          }
+        ]
+      },
+      "es": {
+        "title": "Dar espacio a lo que sientes",
+        "subtitle": "Reconocer el momento sin revivir experiencias",
+        "safety": "Puedes mantener los ojos abiertos y cambiar de postura. Si sientes malestar, para y observa tu entorno.",
+        "evidence": "Guion original de bienestar inspirado en atención plena. La referencia aporta contexto general; esta sesión no se ha validado clínicamente ni sustituye la atención profesional.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Siéntate con apoyo y nota los pies. Deja que la respiración sea natural. Ajusta la postura cuando lo necesites. Durante las pausas de la voz, simplemente observa."
+          },
+          {
+            "seconds": 80,
+            "text": "Elige una palabra: calma, inquietud, cansancio o indefinido. No necesitas explicar por qué ni volver a la historia que te trajo aquí."
+          },
+          {
+            "seconds": 80,
+            "text": "Mantén parte de la atención en los pies y algo visible. Tu estado no tiene que ocupar toda la atención. Puedes dejar la palabra y observar solo el entorno."
+          },
+          {
+            "seconds": 80,
+            "text": "¿Qué necesitas en los próximos minutos? Quizá espacio, compañía o una pausa. No tienes que cambiar la emoción ahora. Elige un cuidado posible."
+          },
+          {
+            "seconds": 30,
+            "text": "Vuelve a notar tu entorno. Mueve las manos despacio y elige cómo retomar la actividad. No necesitas haber alcanzado una sensación especial."
+          }
+        ]
+      }
+    }
+  },
+  "desacelerar-noite": {
+    "category": "sleep",
+    "color": "lavender",
+    "duration": 8,
+    "kind": "mindfulness",
+    "source": {
+      "name": "NHS · Mindfulness (contexto geral / general context)",
+      "url": "https://www.nhs.uk/mental-health/self-help/tips-and-support/mindfulness/"
+    },
+    "locales": {
+      "pt": {
+        "title": "Deixar o dia repousar",
+        "subtitle": "Uma transição tranquila para o descanso",
+        "safety": "Você pode manter os olhos abertos e mudar de posição. Se houver desconforto, pare e observe o ambiente.",
+        "evidence": "Roteiro autoral de bem-estar inspirado em atenção plena. A referência oferece contexto geral; esta sessão específica não foi validada clinicamente e não substitui cuidados profissionais.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Sente-se com apoio e perceba os pés. Deixe a respiração seguir naturalmente. Você pode ajustar a postura sempre que precisar. Durante as pausas da voz, apenas observe."
+          },
+          {
+            "seconds": 140,
+            "text": "Perceba o apoio da superfície sob o corpo. Observe os pés, as mãos e o rosto sem contrair músculos. A ideia é repousar a atenção, não se obrigar a dormir."
+          },
+          {
+            "seconds": 140,
+            "text": "Se uma tarefa voltar à mente, reconheça: isto pode esperar por outro momento. Não precisa organizar o amanhã agora. Volte ao contato do corpo com o apoio."
+          },
+          {
+            "seconds": 140,
+            "text": "Deixe os sons chegarem sem procurar silêncio perfeito. A respiração segue sozinha. Você pode descansar mesmo que o sono ainda não venha; nada precisa ser medido nesta pausa."
+          },
+          {
+            "seconds": 30,
+            "text": "A prática está terminando. Você pode continuar repousando, sem olhar a tela, ou se mover devagar. Escolha o que for confortável para este momento."
+          }
+        ]
+      },
+      "en": {
+        "title": "Let the day rest",
+        "subtitle": "A gentle transition toward rest",
+        "safety": "You may keep your eyes open and change position. If uncomfortable, stop and notice your surroundings.",
+        "evidence": "An original wellbeing script inspired by mindfulness. The reference provides general context; this specific session has not been clinically validated and does not replace professional care.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Sit with support and notice your feet. Let breathing stay natural. Adjust your posture whenever needed. During the pauses in narration, simply observe."
+          },
+          {
+            "seconds": 140,
+            "text": "Notice the surface supporting your body. Observe feet, hands and face without tensing muscles. The aim is to rest attention, not force sleep."
+          },
+          {
+            "seconds": 140,
+            "text": "If a task returns to mind, acknowledge that it can wait for another time. No need to organize tomorrow now. Return to your body’s contact with its support."
+          },
+          {
+            "seconds": 140,
+            "text": "Let sounds arrive without seeking perfect silence. Breathing continues on its own. You can rest even if sleep does not come yet; nothing needs measuring in this pause."
+          },
+          {
+            "seconds": 30,
+            "text": "The practice is ending. You can keep resting without looking at the screen or move slowly. Choose what feels comfortable now."
+          }
+        ]
+      },
+      "fr": {
+        "title": "Laisser la journée se poser",
+        "subtitle": "Une transition douce vers le repos",
+        "safety": "Vous pouvez garder les yeux ouverts et changer de position. En cas de gêne, arrêtez et observez votre environnement.",
+        "evidence": "Texte original de bien-être inspiré de la pleine conscience. La référence apporte un contexte général ; cette séance n’a pas été validée cliniquement et ne remplace pas les soins professionnels.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Asseyez-vous avec un appui et sentez les pieds. Laissez le souffle naturel. Ajustez votre posture si nécessaire. Pendant les silences de la voix, observez simplement."
+          },
+          {
+            "seconds": 140,
+            "text": "Sentez la surface qui vous porte. Observez pieds, mains et visage sans contracter. Il s’agit de poser l’attention, pas de s’obliger à dormir."
+          },
+          {
+            "seconds": 140,
+            "text": "Si une tâche revient, reconnaissez qu’elle peut attendre. Inutile d’organiser demain maintenant. Revenez au contact du corps avec son appui."
+          },
+          {
+            "seconds": 140,
+            "text": "Laissez venir les sons sans chercher le silence parfait. Le souffle continue seul. Le repos reste possible sans sommeil immédiat ; rien n’est à mesurer ici."
+          },
+          {
+            "seconds": 30,
+            "text": "La pratique se termine. Continuez à vous reposer sans regarder l’écran, ou bougez doucement. Choisissez ce qui vous convient maintenant."
+          }
+        ]
+      },
+      "it": {
+        "title": "Lasciare riposare la giornata",
+        "subtitle": "Un passaggio dolce verso il riposo",
+        "safety": "Puoi tenere gli occhi aperti e cambiare posizione. Se provi disagio, fermati e osserva l’ambiente.",
+        "evidence": "Testo originale di benessere ispirato alla mindfulness. Il riferimento offre un contesto generale; questa sessione non è stata validata clinicamente e non sostituisce le cure professionali.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Siediti con un appoggio e senti i piedi. Lascia il respiro naturale. Cambia postura quando serve. Nelle pause della voce, osserva semplicemente."
+          },
+          {
+            "seconds": 140,
+            "text": "Senti la superficie che ti sostiene. Osserva piedi, mani e viso senza contrarre. Si tratta di riposare l’attenzione, non di obbligarti a dormire."
+          },
+          {
+            "seconds": 140,
+            "text": "Se torna un compito, riconosci che può aspettare. Non serve organizzare domani adesso. Torna al contatto del corpo con l’appoggio."
+          },
+          {
+            "seconds": 140,
+            "text": "Lascia arrivare i suoni senza cercare silenzio perfetto. Il respiro continua da sé. Puoi riposare anche senza addormentarti; qui non c’è nulla da misurare."
+          },
+          {
+            "seconds": 30,
+            "text": "La pratica sta finendo. Puoi restare a riposo senza guardare lo schermo o muoverti piano. Scegli ciò che senti comodo ora."
+          }
+        ]
+      },
+      "es": {
+        "title": "Dejar descansar el día",
+        "subtitle": "Una transición suave hacia el descanso",
+        "safety": "Puedes mantener los ojos abiertos y cambiar de postura. Si sientes malestar, para y observa tu entorno.",
+        "evidence": "Guion original de bienestar inspirado en atención plena. La referencia aporta contexto general; esta sesión no se ha validado clínicamente ni sustituye la atención profesional.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Siéntate con apoyo y nota los pies. Deja que la respiración sea natural. Ajusta la postura cuando lo necesites. Durante las pausas de la voz, simplemente observa."
+          },
+          {
+            "seconds": 140,
+            "text": "Siente la superficie que sostiene el cuerpo. Observa pies, manos y rostro sin contraer. Se trata de descansar la atención, no de obligarte a dormir."
+          },
+          {
+            "seconds": 140,
+            "text": "Si vuelve una tarea, reconoce que puede esperar. No hace falta organizar mañana ahora. Vuelve al contacto del cuerpo con el apoyo."
+          },
+          {
+            "seconds": 140,
+            "text": "Deja llegar los sonidos sin buscar silencio perfecto. La respiración sigue sola. Puedes descansar aunque no llegue el sueño; aquí no hay nada que medir."
+          },
+          {
+            "seconds": 30,
+            "text": "La práctica termina. Puedes seguir descansando sin mirar la pantalla o moverte despacio. Elige lo que sea cómodo ahora."
+          }
+        ]
+      }
+    }
+  },
+  "caminhada-consciente": {
+    "category": "focus",
+    "color": "sage",
+    "duration": 5,
+    "kind": "mindfulness",
+    "source": {
+      "name": "NHS · Mindfulness (contexto geral / general context)",
+      "url": "https://www.nhs.uk/mental-health/self-help/tips-and-support/mindfulness/"
+    },
+    "locales": {
+      "pt": {
+        "title": "Um passo de cada vez",
+        "subtitle": "Atenção ao caminhar em um lugar seguro",
+        "safety": "Olhos abertos e atenção ao trajeto. Não use ao dirigir, no trânsito, em escadas ou perto de obstáculos. Pode praticar sentado.",
+        "evidence": "Roteiro autoral de bem-estar inspirado em atenção plena. A referência oferece contexto geral; esta sessão específica não foi validada clinicamente e não substitui cuidados profissionais.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Escolha um trajeto plano, livre de trânsito e obstáculos. Mantenha os olhos abertos, o volume baixo e a atenção ao ambiente. Você também pode fazer a prática sentado, observando os pés."
+          },
+          {
+            "seconds": 80,
+            "text": "Comece a andar num ritmo confortável. Perceba um pé tocando o chão, depois o outro. Não precisa sincronizar passos e respiração nem mudar seu jeito natural de andar."
+          },
+          {
+            "seconds": 80,
+            "text": "Amplie a atenção para cores, sons e a direção do caminho. O ambiente tem prioridade. Se houver obstáculos ou pessoas passando, pare a prática e cuide do trajeto."
+          },
+          {
+            "seconds": 80,
+            "text": "Quando a mente se distrair, volte a um passo e ao espaço à frente. Pode perceber o movimento dos braços ou a mudança de apoio. Andar já é suficiente."
+          },
+          {
+            "seconds": 30,
+            "text": "Pare num lugar seguro. Perceba os pés em repouso e olhe ao redor. Depois, escolha continuar o passeio ou voltar à sua atividade."
+          }
+        ]
+      },
+      "en": {
+        "title": "One step at a time",
+        "subtitle": "Mindful walking in a safe place",
+        "safety": "Keep eyes open and watch your path. Do not use while driving, in traffic, on stairs or near obstacles. You may practice seated.",
+        "evidence": "An original wellbeing script inspired by mindfulness. The reference provides general context; this specific session has not been clinically validated and does not replace professional care.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Choose a level route without traffic or obstacles. Keep eyes open, volume low and attention on your surroundings. You may also practice seated, noticing your feet."
+          },
+          {
+            "seconds": 80,
+            "text": "Begin walking at a comfortable pace. Notice one foot touching the ground, then the other. No need to match steps with breathing or change your natural walk."
+          },
+          {
+            "seconds": 80,
+            "text": "Widen attention to colors, sounds and your direction. Your surroundings come first. If obstacles or people approach, pause the practice and attend to your path."
+          },
+          {
+            "seconds": 80,
+            "text": "When your mind wanders, return to one step and the space ahead. Notice arm movement or shifting support if you wish. Walking itself is enough."
+          },
+          {
+            "seconds": 30,
+            "text": "Stop in a safe place. Notice your resting feet and look around. Then choose to continue your walk or return to your activity."
+          }
+        ]
+      },
+      "fr": {
+        "title": "Un pas à la fois",
+        "subtitle": "Marcher avec attention dans un lieu sûr",
+        "safety": "Gardez les yeux ouverts et veillez au trajet. Pas au volant, dans la circulation, les escaliers ou près d’obstacles. Possible aussi assis.",
+        "evidence": "Texte original de bien-être inspiré de la pleine conscience. La référence apporte un contexte général ; cette séance n’a pas été validée cliniquement et ne remplace pas les soins professionnels.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Choisissez un trajet plat sans circulation ni obstacles. Gardez les yeux ouverts, le volume bas et l’attention au lieu. Vous pouvez aussi pratiquer assis en sentant les pieds."
+          },
+          {
+            "seconds": 80,
+            "text": "Marchez à un rythme confortable. Sentez un pied toucher le sol, puis l’autre. Sans synchroniser souffle et pas ni modifier votre démarche naturelle."
+          },
+          {
+            "seconds": 80,
+            "text": "Observez couleurs, sons et direction. L’environnement reste prioritaire. En présence d’obstacles ou de passants, suspendez la pratique et veillez au trajet."
+          },
+          {
+            "seconds": 80,
+            "text": "Quand l’esprit s’égare, revenez à un pas et à l’espace devant vous. Notez les bras ou les appuis si vous voulez. Marcher suffit."
+          },
+          {
+            "seconds": 30,
+            "text": "Arrêtez-vous dans un lieu sûr. Sentez les pieds au repos et regardez autour. Reprenez ensuite la promenade ou votre activité."
+          }
+        ]
+      },
+      "it": {
+        "title": "Un passo alla volta",
+        "subtitle": "Camminare con attenzione in un luogo sicuro",
+        "safety": "Tieni gli occhi aperti e cura il percorso. Non usare guidando, nel traffico, sulle scale o vicino a ostacoli. Puoi praticare seduto.",
+        "evidence": "Testo originale di benessere ispirato alla mindfulness. Il riferimento offre un contesto generale; questa sessione non è stata validata clinicamente e non sostituisce le cure professionali.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Scegli un percorso piano, senza traffico o ostacoli. Tieni occhi aperti, volume basso e attenzione all’ambiente. Puoi anche praticare seduto, notando i piedi."
+          },
+          {
+            "seconds": 80,
+            "text": "Cammina a un ritmo comodo. Senti un piede toccare terra, poi l’altro. Non serve sincronizzare passi e respiro o cambiare il modo naturale di camminare."
+          },
+          {
+            "seconds": 80,
+            "text": "Nota colori, suoni e direzione. L’ambiente ha priorità. Se ci sono ostacoli o persone in arrivo, sospendi la pratica e cura il percorso."
+          },
+          {
+            "seconds": 80,
+            "text": "Quando la mente vaga, torna a un passo e allo spazio davanti. Puoi notare braccia e appoggi. Camminare basta."
+          },
+          {
+            "seconds": 30,
+            "text": "Fermati in un luogo sicuro. Senti i piedi fermi e guarda intorno. Poi scegli se continuare la passeggiata o tornare all’attività."
+          }
+        ]
+      },
+      "es": {
+        "title": "Un paso a la vez",
+        "subtitle": "Caminar con atención en un lugar seguro",
+        "safety": "Mantén ojos abiertos y atención al camino. No usar conduciendo, en tráfico, escaleras o cerca de obstáculos. Puedes practicar sentado.",
+        "evidence": "Guion original de bienestar inspirado en atención plena. La referencia aporta contexto general; esta sesión no se ha validado clínicamente ni sustituye la atención profesional.",
+        "steps": [
+          {
+            "seconds": 30,
+            "text": "Elige un recorrido llano, sin tráfico ni obstáculos. Mantén ojos abiertos, volumen bajo y atención al entorno. También puedes practicar sentado, observando los pies."
+          },
+          {
+            "seconds": 80,
+            "text": "Camina a un ritmo cómodo. Nota un pie tocando el suelo y luego el otro. No sincronices pasos y respiración ni cambies tu forma natural de caminar."
+          },
+          {
+            "seconds": 80,
+            "text": "Observa colores, sonidos y dirección. El entorno tiene prioridad. Si aparecen obstáculos o personas, pausa la práctica y presta atención al camino."
+          },
+          {
+            "seconds": 80,
+            "text": "Cuando la mente se distraiga, vuelve a un paso y al espacio delante. Puedes notar brazos y apoyos. Caminar basta."
+          },
+          {
+            "seconds": 30,
+            "text": "Detente en un lugar seguro. Nota los pies en reposo y mira alrededor. Después elige seguir el paseo o volver a tu actividad."
+          }
+        ]
+      }
+    }
+  }
+}

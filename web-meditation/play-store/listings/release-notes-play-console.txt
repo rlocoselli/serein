@@ -1,0 +1,15 @@
+<pt-BR>
+Primeira versão do Serein: meditações guiadas, duas histórias com fundo sonoro, vídeos, cinco idiomas, música de Beethoven e vibrações opcionais. Conteúdo incluído no app; narração com voz offline instalada no Android.
+</pt-BR>
+<en-US>
+Welcome to Serein: guided practices, two stories with soundscapes, videos, five languages, Beethoven music and optional vibrations. Content is included in the app; narration requires an installed Android offline voice.
+</en-US>
+<fr-FR>
+Première version de Serein : pratiques guidées, deux histoires avec fond sonore, vidéos, cinq langues, musique de Beethoven et vibrations facultatives. Contenu inclus ; voix Android hors ligne installée nécessaire pour la narration.
+</fr-FR>
+<it-IT>
+Prima versione di Serein: pratiche guidate, due storie con suoni di fondo, video, cinque lingue, musica di Beethoven e vibrazioni facoltative. Contenuti inclusi; la narrazione richiede una voce offline Android installata.
+</it-IT>
+<es-ES>
+Primera versión de Serein: prácticas guiadas, dos historias con sonido de fondo, vídeos, cinco idiomas, música de Beethoven y vibraciones opcionales. Contenidos incluidos; la narración requiere una voz Android sin conexión instalada.
+</es-ES>

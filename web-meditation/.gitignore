@@ -1,0 +1,26 @@
+*.db
+uploads/*
+!uploads/.gitkeep
+__pycache__/
+.env
+
+.local-signing/
+
+# Local configuration and generated build outputs
+.env.*
+!.env.example
+*.db-*
+.venv/
+.pytest_cache/
+node_modules/
+dist/
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+*.jks
+*.keystore
+*.p12
+*.apk
+*.apk.idsig
+*.aab
