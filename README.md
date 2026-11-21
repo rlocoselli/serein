@@ -8,9 +8,9 @@ O `Dockerfile` na raiz constrói a aplicação Flask a partir de `web-meditation
 
 Configure `SEREIN_ADMIN_PASSWORD` e `SEREIN_SECRET_KEY` como segredos da plataforma. Monte um volume persistente em `/data` para guardar SQLite e uploads. A imagem cria o catálogo inicial automaticamente. Para construir localmente, execute `docker build -t serein .`; as instruções completas de execução estão em [web-meditation/README.md](web-meditation/README.md#docker).
 
-A narração natural usa **Kokoro local**, sem chave API nem créditos. Reconstrua a imagem Docker para incluir o motor CPU e os modelos, depois use **Áudios → Voz natural** no admin. A geração cria um rascunho por idioma para escutar antes de ativar. O leitor reproduz ficheiros WAV por padrão, sem fallback automático para a voz do navegador. Os áudios ativados podem ser incluídos no Android offline; o motor e os modelos ficam no servidor. O português usa vozes brasileiras.
+A narração natural usa **Kokoro**, sem chave API nem créditos. As narrações iniciais em `web-meditation/static/narration/` são reproduzidas imediatamente, sem geração ou ativação no admin. O manifesto indica os idiomas incluídos e verifica se o texto corresponde à gravação. O português usa vozes brasileiras.
 
-As narrações iniciais incluídas em `web-meditation/static/narration/` são reproduzidas diretamente, sem gerar ou ativar áudio no admin. O manifesto indica os idiomas disponíveis e verifica se o texto ainda corresponde à gravação. O admin permanece disponível para conteúdos personalizados.
+O admin **Áudios → Voz natural** permite gerar e revisar conteúdos personalizados. Estes usam CPU no servidor; os modelos são preparados na construção da imagem Docker. O leitor usa ficheiros de áudio por padrão, sem fallback automático para a voz do navegador. Os áudios também podem ser incluídos no Android offline; o motor e os modelos ficam no servidor.
 
 ## Versão web e Android com HTML local
 
