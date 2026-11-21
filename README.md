@@ -15,6 +15,28 @@ python app.py
 
 Aceda a `http://127.0.0.1:5000`. A base SQLite e os dados iniciais são criados automaticamente. Defina `SEREIN_DB` e `SEREIN_UPLOADS` para outros caminhos. O botão de engrenagem abre a administração.
 
+## Docker
+
+Construa a partir da raiz de qualquer branch: `main` tem um Dockerfile que usa as fontes em `web-meditation/`; a branch `web-meditation` usa as fontes na própria raiz. Também pode construir diretamente dentro de `web-meditation/` na branch `main`.
+
+```bash
+docker build --pull -t serein .
+read -rsp 'Senha de administração: ' SEREIN_ADMIN_PASSWORD; echo
+export SEREIN_ADMIN_PASSWORD
+export SEREIN_SECRET_KEY="$(python3 -c 'import secrets; print(secrets.token_hex(32))')"
+docker run -d --name serein --restart unless-stopped \
+  -p 127.0.0.1:5000:5000 \
+  --mount source=serein-data,target=/data \
+  -e SEREIN_ADMIN_PASSWORD -e SEREIN_SECRET_KEY \
+  serein
+```
+
+Abra `http://127.0.0.1:5000`. Se a porta local já estiver ocupada, use `-p 127.0.0.1:5001:5000`. O volume `serein-data` guarda a base SQLite e os uploads; o catálogo inicial é criado automaticamente no primeiro arranque. A imagem inclui os vídeos e sons do seed, usa Gunicorn na porta interna 5000 e executa como utilizador sem privilégios. Chaves, bases locais, uploads existentes e builds Android ficam fora do contexto de construção.
+
+Guarde os valores das duas variáveis num gestor de segredos ou ficheiro `.env` local protegido e reutilize-os ao recriar o contentor. Também pode fornecê-los com `--env-file .env`. Não inclua esse ficheiro na imagem ou no Git. Consulte o estado com `docker inspect --format '{{.State.Health.Status}}' serein` e os registos com `docker logs -f serein`.
+
+Para plataformas de hospedagem, selecione a branch `main`, contexto de construção `.` e Dockerfile `Dockerfile`, sem comando de arranque adicional. O servidor e o healthcheck respeitam a variável `PORT` fornecida pela plataforma (padrão: `5000`). Configure `SEREIN_ADMIN_PASSWORD` e `SEREIN_SECRET_KEY` como segredos e monte armazenamento persistente em `/data` para conservar os conteúdos após um novo deploy.
+
 ## API
 
 - `GET /api/sessions?lang=pt|en|fr|it|es` — sessões publicadas.
