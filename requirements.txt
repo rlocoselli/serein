@@ -1,2 +1,4 @@
 Flask>=3.0,<4
-mutagen>=1.47,<2
+kokoro-onnx==0.6.1
+onnxruntime==1.23.2
+numpy==2.2.6

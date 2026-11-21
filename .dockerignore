@@ -5,6 +5,12 @@
 !requirements.txt
 !app.py
 !natural_voice.py
+!kokoro_engine.py
+!scripts/
+!scripts/prepare_kokoro.py
+!licenses/
+!licenses/kokoro/
+!licenses/kokoro/**
 !exercise_seed.json
 !story_seed.json
 !static/
