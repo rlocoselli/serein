@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt "gunicorn>=23,<24" \
     && mkdir -p /data/uploads \
     && chown -R serein:serein /data
 
-COPY app.py exercise_seed.json story_seed.json ./
+COPY app.py natural_voice.py exercise_seed.json story_seed.json ./
 COPY static/ ./static/
 
 USER serein

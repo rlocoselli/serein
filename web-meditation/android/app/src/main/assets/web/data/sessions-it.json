@@ -6,6 +6,7 @@
     "created_at": "2026-11-14 21:46:27",
     "duration": 5,
     "id": 1,
+    "narration": null,
     "protocol": null,
     "published": 1,
     "script": "Trova una posizione comoda. Senti il sostegno sotto il corpo. Inspira lentamente dal naso. Nota l’aria che entra. Espira senza fretta. Se la mente vaga, accorgitene e torna al respiro successivo. Non c’è nulla da raggiungere adesso. C’è soltanto questo momento. Che cosa cambia quando ti concedi una pausa?",
@@ -21,6 +22,7 @@
     "created_at": "2026-11-14 21:46:27",
     "duration": 8,
     "id": 2,
+    "narration": null,
     "protocol": null,
     "published": 1,
     "script": "Chiudi gli occhi, se ti fa stare bene. Nota la fronte e lasciala distendere. Rilassa la mandibola. Lascia scendere le spalle. Senti le mani a riposo. A ogni espirazione, immagina di offrire un po’ più di spazio al corpo. Puoi essere esattamente come sei. Quale parte di te chiede più gentilezza oggi?",
@@ -36,6 +38,7 @@
     "created_at": "2026-11-14 21:46:27",
     "duration": 10,
     "id": 3,
+    "narration": null,
     "protocol": null,
     "published": 1,
     "script": "È arrivata la notte. Puoi lasciare alle spalle le cose da fare oggi. Senti la superficie che ti sostiene. Respira naturalmente. Espirando, lascia andare una piccola tensione. Lascia passare i pensieri come nuvole nel cielo scuro. Non devi seguirli. Ora il tuo unico invito è riposare. Come sarebbe affidarti a questo momento di riposo?",
@@ -51,6 +54,7 @@
     "created_at": "2026-11-14 22:04:54",
     "duration": 5,
     "id": 4,
+    "narration": null,
     "protocol": {
       "evidence": "Adattamento delle indicazioni NHS per lo stress. Il ritmo visivo è facoltativo; questa sessione non è stata testata clinicamente.",
       "kind": "breathing",
@@ -95,6 +99,7 @@
     "created_at": "2026-11-14 22:04:54",
     "duration": 6,
     "id": 5,
+    "narration": null,
     "protocol": {
       "evidence": "La VA descrive la tecnica e la ricerca sul rilassamento. Questo adattamento a quattro gruppi non è il protocollo completo né una sessione validata clinicamente.",
       "kind": "pmr",
@@ -163,6 +168,7 @@
     "created_at": "2026-11-14 22:04:54",
     "duration": 5,
     "id": 6,
+    "narration": null,
     "protocol": {
       "evidence": "Programmi di mindfulness mostrano benefici per alcuni sintomi, ma risultati e qualità variano. Questa introduzione non equivale ai programmi studiati.",
       "kind": "mindfulness",
@@ -207,6 +213,7 @@
     "created_at": "2026-11-17 15:50:19",
     "duration": 4,
     "id": 7,
+    "narration": null,
     "protocol": {
       "evidence": "Storia originale ispirata a visualizzazione guidata e rilassamento usati in sofrologia. Non è un protocollo clinico validato.",
       "kind": "story",
@@ -260,6 +267,7 @@
     "created_at": "2026-11-17 15:50:19",
     "duration": 4,
     "id": 8,
+    "narration": null,
     "protocol": {
       "evidence": "Storia originale ispirata a visualizzazione guidata e rilassamento usati in sofrologia. Non è un protocollo clinico validato.",
       "kind": "story",
@@ -313,6 +321,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 3,
     "id": 9,
+    "narration": null,
     "protocol": {
       "evidence": "Testo originale di benessere ispirato alla mindfulness. Il riferimento offre un contesto generale; questa sessione non è stata validata clinicamente e non sostituisce le cure professionali.",
       "kind": "mindfulness",
@@ -361,6 +370,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 3,
     "id": 10,
+    "narration": null,
     "protocol": {
       "evidence": "Testo originale di benessere ispirato alla mindfulness. Il riferimento offre un contesto generale; questa sessione non è stata validata clinicamente e non sostituisce le cure professionali.",
       "kind": "mindfulness",
@@ -409,6 +419,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 5,
     "id": 11,
+    "narration": null,
     "protocol": {
       "evidence": "Testo originale di benessere ispirato alla mindfulness. Il riferimento offre un contesto generale; questa sessione non è stata validata clinicamente e non sostituisce le cure professionali.",
       "kind": "mindfulness",
@@ -457,6 +468,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 8,
     "id": 12,
+    "narration": null,
     "protocol": {
       "evidence": "Testo originale di benessere ispirato alla mindfulness. Il riferimento offre un contesto generale; questa sessione non è stata validata clinicamente e non sostituisce le cure professionali.",
       "kind": "mindfulness",
@@ -505,6 +517,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 6,
     "id": 13,
+    "narration": null,
     "protocol": {
       "evidence": "Testo originale di benessere ispirato alla mindfulness. Il riferimento offre un contesto generale; questa sessione non è stata validata clinicamente e non sostituisce le cure professionali.",
       "kind": "mindfulness",
@@ -553,6 +566,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 5,
     "id": 14,
+    "narration": null,
     "protocol": {
       "evidence": "Testo originale di benessere ispirato alla mindfulness. Il riferimento offre un contesto generale; questa sessione non è stata validata clinicamente e non sostituisce le cure professionali.",
       "kind": "mindfulness",
@@ -601,6 +615,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 8,
     "id": 15,
+    "narration": null,
     "protocol": {
       "evidence": "Testo originale di benessere ispirato alla mindfulness. Il riferimento offre un contesto generale; questa sessione non è stata validata clinicamente e non sostituisce le cure professionali.",
       "kind": "mindfulness",
@@ -649,6 +664,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 5,
     "id": 16,
+    "narration": null,
     "protocol": {
       "evidence": "Testo originale di benessere ispirato alla mindfulness. Il riferimento offre un contesto generale; questa sessione non è stata validata clinicamente e non sostituisce le cure professionali.",
       "kind": "mindfulness",

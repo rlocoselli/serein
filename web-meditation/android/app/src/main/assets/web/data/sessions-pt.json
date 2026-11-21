@@ -6,6 +6,7 @@
     "created_at": "2026-11-14 21:46:27",
     "duration": 5,
     "id": 1,
+    "narration": null,
     "protocol": null,
     "published": 1,
     "script": "Encontre uma posição confortável. Sinta o apoio sob o seu corpo. Inspire lentamente pelo nariz. Perceba o ar entrando. Solte o ar sem pressa. Se a mente se afastar, apenas note e volte à próxima respiração. Não há nada para alcançar agora. Há apenas este momento. O que muda quando você permite uma pausa?",
@@ -21,6 +22,7 @@
     "created_at": "2026-11-14 21:46:27",
     "duration": 8,
     "id": 2,
+    "narration": null,
     "protocol": null,
     "published": 1,
     "script": "Feche os olhos, se for confortável. Observe a testa e deixe-a suavizar. Solte a mandíbula. Permita que os ombros desçam. Sinta as mãos repousarem. A cada expiração, imagine que oferece um pouco mais de espaço ao corpo. Você pode estar exatamente como está. Qual parte de você pede mais gentileza hoje?",
@@ -36,6 +38,7 @@
     "created_at": "2026-11-14 21:46:27",
     "duration": 10,
     "id": 3,
+    "narration": null,
     "protocol": null,
     "published": 1,
     "script": "A noite chegou. Você pode deixar as tarefas de hoje para trás. Perceba a superfície que o acolhe. Inspire de forma natural. Ao expirar, solte uma pequena tensão. Deixe os pensamentos passarem como nuvens no céu escuro. Não precisa segui-los. Seu único convite agora é descansar. Como seria confiar neste momento de repouso?",
@@ -51,6 +54,7 @@
     "created_at": "2026-11-14 22:04:54",
     "duration": 5,
     "id": 4,
+    "narration": null,
     "protocol": {
       "evidence": "Adaptação da orientação do NHS para lidar com estresse. O ritmo visual é opcional; esta sessão não foi testada clinicamente.",
       "kind": "breathing",
@@ -95,6 +99,7 @@
     "created_at": "2026-11-14 22:04:54",
     "duration": 6,
     "id": 5,
+    "narration": null,
     "protocol": {
       "evidence": "A VA descreve esta técnica e pesquisas sobre relaxamento. Aqui usamos uma adaptação breve com quatro grupos musculares; não é o protocolo completo nem uma sessão clinicamente validada.",
       "kind": "pmr",
@@ -163,6 +168,7 @@
     "created_at": "2026-11-14 22:04:54",
     "duration": 5,
     "id": 6,
+    "narration": null,
     "protocol": {
       "evidence": "Programas de mindfulness têm estudos com benefícios para alguns sintomas, mas resultados e qualidade variam. Esta introdução de cinco minutos não equivale aos programas estudados.",
       "kind": "mindfulness",
@@ -207,6 +213,7 @@
     "created_at": "2026-11-17 15:50:19",
     "duration": 4,
     "id": 7,
+    "narration": null,
     "protocol": {
       "evidence": "História original inspirada em visualização guiada e relaxamento, usados em práticas de sofrologia. Não é um protocolo clínico validado.",
       "kind": "story",
@@ -260,6 +267,7 @@
     "created_at": "2026-11-17 15:50:19",
     "duration": 4,
     "id": 8,
+    "narration": null,
     "protocol": {
       "evidence": "História original inspirada em visualização guiada e relaxamento, usados em práticas de sofrologia. Não é um protocolo clínico validado.",
       "kind": "story",
@@ -313,6 +321,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 3,
     "id": 9,
+    "narration": null,
     "protocol": {
       "evidence": "Roteiro autoral de bem-estar inspirado em atenção plena. A referência oferece contexto geral; esta sessão específica não foi validada clinicamente e não substitui cuidados profissionais.",
       "kind": "mindfulness",
@@ -361,6 +370,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 3,
     "id": 10,
+    "narration": null,
     "protocol": {
       "evidence": "Roteiro autoral de bem-estar inspirado em atenção plena. A referência oferece contexto geral; esta sessão específica não foi validada clinicamente e não substitui cuidados profissionais.",
       "kind": "mindfulness",
@@ -409,6 +419,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 5,
     "id": 11,
+    "narration": null,
     "protocol": {
       "evidence": "Roteiro autoral de bem-estar inspirado em atenção plena. A referência oferece contexto geral; esta sessão específica não foi validada clinicamente e não substitui cuidados profissionais.",
       "kind": "mindfulness",
@@ -457,6 +468,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 8,
     "id": 12,
+    "narration": null,
     "protocol": {
       "evidence": "Roteiro autoral de bem-estar inspirado em atenção plena. A referência oferece contexto geral; esta sessão específica não foi validada clinicamente e não substitui cuidados profissionais.",
       "kind": "mindfulness",
@@ -505,6 +517,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 6,
     "id": 13,
+    "narration": null,
     "protocol": {
       "evidence": "Roteiro autoral de bem-estar inspirado em atenção plena. A referência oferece contexto geral; esta sessão específica não foi validada clinicamente e não substitui cuidados profissionais.",
       "kind": "mindfulness",
@@ -553,6 +566,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 5,
     "id": 14,
+    "narration": null,
     "protocol": {
       "evidence": "Roteiro autoral de bem-estar inspirado em atenção plena. A referência oferece contexto geral; esta sessão específica não foi validada clinicamente e não substitui cuidados profissionais.",
       "kind": "mindfulness",
@@ -601,6 +615,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 8,
     "id": 15,
+    "narration": null,
     "protocol": {
       "evidence": "Roteiro autoral de bem-estar inspirado em atenção plena. A referência oferece contexto geral; esta sessão específica não foi validada clinicamente e não substitui cuidados profissionais.",
       "kind": "mindfulness",
@@ -649,6 +664,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 5,
     "id": 16,
+    "narration": null,
     "protocol": {
       "evidence": "Roteiro autoral de bem-estar inspirado em atenção plena. A referência oferece contexto geral; esta sessão específica não foi validada clinicamente e não substitui cuidados profissionais.",
       "kind": "mindfulness",

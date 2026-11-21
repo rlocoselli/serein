@@ -1,6 +1,6 @@
 # Serein
 
-Aplicação de meditação responsiva com Flask, SQLite, cinco idiomas, narração por voz do dispositivo, upload de áudio, vídeo e música licenciada. Inclui Lumi, um mascote SVG, e guias visuais animados para acompanhar a respiração.
+Aplicação de meditação responsiva com Flask, SQLite, cinco idiomas, narração natural em áudio, voz do dispositivo opcional, upload de áudio, vídeo e música licenciada. Inclui Lumi, um mascote SVG, e guias visuais animados para acompanhar a respiração.
 
 ## Iniciar
 
@@ -44,10 +44,12 @@ Para plataformas de hospedagem, selecione a branch `main`, contexto de construç
 - `POST /api/admin/login` — sessão administrativa. Envie o token devolvido em `X-CSRF-Token` nas alterações seguintes.
 - `GET /api/admin/sessions`, `POST /api/admin/sessions`, `PATCH /api/admin/sessions/<id>` — gerir meditações.
 - `POST /api/admin/upload` — upload de narração por sessão e idioma.
+- `GET /api/admin/narration/options`, `POST /api/admin/narration` — vozes disponíveis e geração de rascunho em segundo plano.
+- `GET /api/admin/narration/<id>`, `POST /api/admin/narration/<id>/publish` — acompanhar, escutar e ativar um rascunho.
 - `POST /api/admin/video` — upload de vídeo MP4, WebM ou MOV por sessão.
 - `GET /api/admin/music`, `POST /api/admin/music`, `PATCH /api/admin/music/<id>` — gerir música com proveniência.
 
-Novas meditações exigem os cinco textos e começam como rascunho. Novas faixas também começam como rascunho. Os textos iniciais são reflexões originais; não há citações atribuídas a filósofos nem gravações musicais sem licença. Sem áudio carregado, o player usa a síntese de voz local do navegador. O seed inclui três vídeos WebM originais de 12 segundos, reproduzidos em loop durante a sessão e sem áudio; a narração continua no idioma selecionado. Um vídeo enviado no admin substitui o vídeo do seed para aquela sessão. Para produção, use HTTPS, um proxy com limites de upload e uma chave de sessão persistente.
+Novas meditações exigem os cinco textos e começam como rascunho. Novas faixas também começam como rascunho. Os textos iniciais são reflexões originais; não há citações atribuídas a filósofos nem gravações musicais sem licença. Sem áudio gravado, o player mantém o texto e o fundo sonoro; a síntese de voz do aparelho é uma opção explícita. O seed inclui três vídeos WebM originais de 12 segundos, reproduzidos em loop durante a sessão e sem áudio; a narração continua no idioma selecionado. Um vídeo enviado no admin substitui o vídeo do seed para aquela sessão. Para produção, use HTTPS, um proxy com limites de upload e uma chave de sessão persistente.
 
 ## Vídeos do seed
 
@@ -81,10 +83,26 @@ Validação: `python3 -m unittest discover -s tests -v`. APK atualizado: `dist/s
 
 ## Voz calma e biblioteca sonora — versão 1.2.0
 
-O player permite escolher a voz local por idioma, ouvir uma frase de teste, selecionar os ritmos Bem calmo, Calmo ou Natural, e ajustar velocidade, tom, pausa entre frases e volume da narração. O padrão Bem calmo usa velocidade 0,74 e pausa de 1,4 segundo entre frases. A qualidade do timbre depende da voz instalada. A sequência de fala é cancelada ao pausar, avançar de etapa, sair de primeiro plano ou fechar o player. As preferências de voz e som ficam no aparelho.
+Na opção facultativa Voz do aparelho, o player permite escolher a voz local por idioma, ouvir uma frase de teste, selecionar os ritmos Bem calmo, Calmo ou Natural, e ajustar velocidade, tom, pausa entre frases e volume da narração. O padrão Bem calmo usa velocidade 0,74 e pausa de 1,4 segundo entre frases. A qualidade do timbre depende da voz instalada. A sequência de fala é cancelada ao pausar, avançar de etapa, sair de primeiro plano ou fechar o player. As preferências de voz e som ficam no aparelho.
 
 São dez fundos originais em estéreo: mar, chuva, floresta, riacho, lareira, noite, ruído marrom, piano, atmosfera musical e arranjo de Beethoven. Os sons de natureza são sintetizados, sem gravações de campo. Há filtro por tipo, amostra antes de escolher, botão Usar na sessão, volume separado e redução opcional do fundo durante a voz. Os arquivos têm 32 segundos, níveis equilibrados e junção suavizada para repetição. Créditos e métricas ficam em `static/audio/`. O gerador requer NumPy apenas para recriar os assets; o servidor Flask não depende de NumPy.
 
 Teste do sequenciador: `node --test tests/test_audio_core.cjs`. Testes de catálogo e arquivos: `python3 -m unittest discover -s tests -v`.
 
 APK de desenvolvimento atualizado: `dist/serein-calm-audio-debug.apk`. Mantém a chave debug persistida da versão 1.1.0 (catálogo ampliado), permitindo atualização sobre aquela compilação. Não há garantia de compatibilidade com o primeiro APK, que usou outra chave temporária.
+
+## Narração natural em áudio, sem voz do navegador
+
+O leitor usa **Narração natural gravada** por padrão: reproduz ficheiros MP3 gerados previamente ou uma narração enviada pelo admin. Não muda automaticamente para a voz do navegador se faltar uma gravação. Nesse caso, o texto, o temporizador e os sons de fundo continuam disponíveis. A opção **Voz do aparelho** permanece facultativa e deve ser selecionada explicitamente.
+
+Para gerar as vozes, configure `ELEVENLABS_API_KEY` nos segredos do servidor, juntamente com `SEREIN_ADMIN_PASSWORD` e `SEREIN_SECRET_KEY`, e reinicie. No Docker, adicione `-e ELEVENLABS_API_KEY` ao comando de execução depois de exportar a variável, ou use `--env-file .env`. A chave é usada exclusivamente no servidor; não vai para o HTML, catálogo ou APK.
+
+Na administração, abra **Áudios → Voz natural**, escolha a meditação, idioma, voz disponível e ritmo, e clique em **Gerar rascunho de voz**. A geração usa o modelo ElevenLabs Multilingual v2 e consome créditos da sua conta. Cada etapa ou capítulo recebe um MP3 separado, permitindo manter o ritmo do exercício. A tarefa decorre em segundo plano; pode voltar à página para retomar o último rascunho. Escute os trechos e clique em **Usar esta narração** para ativar apenas esse idioma. O upload de narração humana continua disponível como alternativa.
+
+Os MP3 ficam em `SEREIN_UPLOADS` e os rascunhos/metadados no SQLite. Repetir a mesma geração reutiliza os ficheiros guardados, inclusive os trechos concluídos antes de uma falha. Ouvir não faz pedidos ao serviço de voz. Uma geração com erro não substitui a voz ativa; textos alterados exigem nova geração. O sistema recusa gravações que ultrapassem o tempo de uma etapa. Ajuste o ritmo ou o texto e revise novamente. Qualidade, sotaque e naturalidade precisam de avaliação auditiva por idioma antes da publicação. A interface identifica as vozes de IA.
+
+Para o Android sem internet, gere e ative os áudios no banco usado na exportação, depois execute `python3 scripts/export_android_assets.py` e recompile o APK. O exportador inclui os MP3 de cada etapa; o aplicativo instalado só lê os ficheiros locais. Se os dados estiverem no servidor de hospedagem, transfira a base e os uploads para o ambiente de compilação antes de exportar. Os ficheiros gerados não são automaticamente enviados ao Git.
+
+Execute apenas um processo Gunicorn, conforme o Dockerfile (com quatro threads), para coordenar as tarefas e o seed SQLite. Reiniciar o servidor durante uma geração marca a tarefa como interrompida; ao tentar novamente, os trechos guardados são reutilizados. Sem uma chave válida, o admin apresenta instruções de configuração e não gera áudio. Os testes usam respostas simuladas, sem custos nem validação auditiva das vozes reais.
+
+Referências da integração: [API de geração](https://elevenlabs.io/docs/api-reference/text-to-speech/convert), [modelo e idiomas](https://elevenlabs.io/docs/overview/models#multilingual-v2).
