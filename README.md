@@ -2,6 +2,14 @@
 
 Aplicativo Flutter de meditação, sono e bem-estar. A versão inicial inclui sessões de respiração, textos guiados, vibrações suaves e uma biblioteca preparada para conteúdos privados.
 
+## Versão web e Android com HTML local
+
+A aplicação web com Flask e SQLite, meditações em cinco idiomas, vídeos, histórias, sons de fundo e administração fica em [web-meditation/](web-meditation/README.md). O projeto Android Studio em [web-meditation/android/](web-meditation/android/README.md) incorpora o HTML e os conteúdos locais para utilização offline.
+
+Consulte o README dessa versão para iniciar o servidor, configurar a administração e gerar o APK. O material de publicação fica em [web-meditation/play-store/](web-meditation/play-store/LEIA-ME.md). As chaves de assinatura, bases locais e compilações geradas não são versionadas.
+
+A branch `web-meditation` mantém estas fontes na raiz para o desenvolvimento independente. Para atualizar esta cópia em `main`, use `git subtree pull --prefix=web-meditation origin web-meditation --squash`.
+
 ## Idiomas
 
 Português, francês, italiano e inglês. A opção fica no perfil; o próximo passo editorial é cadastrar cada áudio e texto nos quatro idiomas.
