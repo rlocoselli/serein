@@ -4,6 +4,7 @@
 !.dockerignore
 !requirements.txt
 !app.py
+!natural_voice.py
 !exercise_seed.json
 !story_seed.json
 !static/

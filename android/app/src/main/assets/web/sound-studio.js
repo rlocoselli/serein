@@ -12,11 +12,13 @@ soundKey=audioPrefs.soundKey;
 const PRESETS={slow:{rate:.74,gap:1400},calm:{rate:.84,gap:900},natural:{rate:.96,gap:400}};
 function saveAudio(){audioPrefs.soundKey=soundKey;localStorage.setItem('serein-audio',JSON.stringify(audioPrefs))}
 function voiceLabel(v){return v.name+' · '+(v.lang||lang)}
-function refreshVoices(){let voices=[];try{voices=nativeApp?JSON.parse(SereinNative.getVoices(lang)):('speechSynthesis'in window?speechSynthesis.getVoices().filter(v=>v.localService&&v.lang.toLowerCase().split(/[-_]/)[0]===lang).map(v=>({id:v.voiceURI,name:v.name,lang:v.lang,voice:v})):[])}catch(e){}
+function refreshVoices(){const recorded=audioPrefs.source==='recorded';$('voice-source').value=audioPrefs.source;for(const id of ['tts-voice','tts-preset','tts-rate','tts-pitch','tts-gap']){$(id).disabled=recorded;$(id).closest('label').classList.toggle('hidden',recorded)}
+ if(recorded){availableVoices=[];const clip=SereinAudioCore.recording(current,activeStep,elapsed);$('tts-voice').innerHTML=`<option>${esc(t('recordedVoice'))}</option>`;$('tts-preview').disabled=!clip;$('tts-status').textContent=t(clip?(current.narration?.kind==='ai'?'aiVoiceHint':'recordedHint'):'recordedMissing');if(current&&!current.protocol)$('audio-note').textContent=$('tts-status').textContent;return}
+ let voices=[];try{voices=nativeApp?JSON.parse(SereinNative.getVoices(lang)):('speechSynthesis'in window?speechSynthesis.getVoices().filter(v=>v.localService&&v.lang.toLowerCase().split(/[-_]/)[0]===lang).map(v=>({id:v.voiceURI,name:v.name,lang:v.lang,voice:v})):[])}catch(e){}
  availableVoices=voices.sort((a,b)=>(b.quality||0)-(a.quality||0)||a.name.localeCompare(b.name));const select=$('tts-voice');select.innerHTML=availableVoices.map(v=>`<option value="${esc(v.id)}">${esc(voiceLabel(v))}</option>`).join('');
  if(!availableVoices.length)select.innerHTML=`<option value="">${esc(t('voiceMissing'))}</option>`;
  const chosen=audioPrefs.voices[lang];if(availableVoices.some(v=>v.id===chosen))select.value=chosen;else if(availableVoices.length){audioPrefs.voices[lang]=availableVoices[0].id;saveAudio()}
- select.disabled=!availableVoices.length;$('tts-preview').disabled=!availableVoices.length;$('tts-status').textContent=t(availableVoices.length?'voiceHint':'voiceMissing');
+ select.disabled=!availableVoices.length;$('tts-preview').disabled=!availableVoices.length;$('tts-status').textContent=t(availableVoices.length?'voiceHint':'voiceMissing');if(current&&!current.protocol)$('audio-note').textContent=$('tts-status').textContent;
 }
 function nativeConfigure(){return SereinNative.configureVoice(lang,audioPrefs.voices[lang]||'',audioPrefs.rate,audioPrefs.pitch,audioPrefs.voiceVolume)}
 const transport={cancel(){nativeCallbacks.clear();if(nativeApp)SereinNative.stopSpeech();else if('speechSynthesis'in window)speechSynthesis.cancel()},speak(text,id,done,error){
@@ -27,14 +29,19 @@ const transport={cancel(){nativeCallbacks.clear();if(nativeApp)SereinNative.stop
 const narrationQueue=new SereinAudioCore.NarrationQueue(transport);
 window.sereinSpeechEvent=(id,event)=>{const cb=nativeCallbacks.get(id);if(!cb)return;nativeCallbacks.delete(id);if(event==='done')cb.done();else cb.error(event)};
 function finishSpeech(){voiceActive=false;speechPreview=false;$('tts-preview').textContent=t('testVoice');duckSound(false)}
-function stopNarration(){narrationQueue.cancel();finishSpeech()}
+let recordingRequest=0;
+function stopNarration(){recordingRequest++;narration.onloadedmetadata=null;narration.pause();narrationQueue.cancel();finishSpeech()}
+function playRecording(preview=false){const clip=SereinAudioCore.recording(current,activeStep,preview?0:elapsed);stopNarration();refreshVoices();if(!clip)return;const request=recordingRequest;let intentionalSilence=false;speechPreview=preview;narration.volume=audioPrefs.voiceVolume;narration.playbackRate=1;
+ const position=()=>{if(request!==recordingRequest)return;const offset=preview?0:clip.offset;if(Number.isFinite(narration.duration)&&offset>=narration.duration){intentionalSilence=true;narration.pause();finishSpeech();return false}narration.currentTime=offset;return true};
+ if(narration.getAttribute('src')!==clip.path){narration.src=clip.path;narration.onloadedmetadata=()=>position()}else if(position()===false)return;
+ if(preview)$('tts-preview').textContent=t('stopVoice');narration.play().catch(()=>{if(request===recordingRequest&&!intentionalSilence){finishSpeech();$('tts-status').textContent=t('recordedError')}})
+}
 function runNarration(text,preview=false){speechPreview=preview;voiceActive=true;$('tts-preview').textContent=t(preview?'stopVoice':'testVoice');narrationQueue.start(text,{gap:audioPrefs.gap,onStart:()=>duckSound(true),onEnd:finishSpeech,onError:()=>{finishSpeech();$('tts-status').textContent=t('voiceMissing')}})}
-speak=function(text){if(!playing||!$('voice-toggle').checked)return;runNarration(text)};
-// Recorded narration remains a user-supplied alternative and receives the same volume/duck controls.
-setVoice=function(){if(!$('voice-toggle').checked||!current)return;if(current.audio_path){stopNarration();narration.volume=audioPrefs.voiceVolume;narration.play().catch(()=>$('tts-status').textContent=t('noVoice'));return}speak(current.protocol?current.protocol.steps[Math.max(activeStep,0)].text:current.script)};
+speak=function(text){if(!playing||!$('voice-toggle').checked)return;if(audioPrefs.source==='recorded'){if(!current?.audio_path)playRecording();return}runNarration(text)};
+setVoice=function(){if(!$('voice-toggle').checked||!current)return;if(audioPrefs.source==='recorded'){playRecording();return}speak(current.protocol?current.protocol.steps[Math.max(activeStep,0)].text:current.script)};
 function fadeVolume(target){cancelAnimationFrame(volumeFrame);const from=bg.volume,start=performance.now();const tick=now=>{const fraction=Math.min(1,(now-start)/550);bg.volume=Math.max(0,Math.min(.5,from+(target-from)*fraction));if(fraction<1)volumeFrame=requestAnimationFrame(tick)};volumeFrame=requestAnimationFrame(tick)}
 duckSound=function(duck){fadeVolume(audioPrefs.soundVolume*(duck&&audioPrefs.duck ? .28 : 1))};
-narration.onplay=()=>{voiceActive=true;duckSound(true)};narration.onpause=narration.onended=()=>{voiceActive=false;duckSound(false)};
+narration.onplay=()=>{voiceActive=true;duckSound(true)};narration.onpause=()=>{if(narration.paused)finishSpeech()};narration.onended=()=>{if(narration.ended)finishSpeech()};
 const beforeStudioReset=resetAudio;resetAudio=function(){stopNarration();cancelAnimationFrame(volumeFrame);soundRequest++;previewKey=null;beforeStudioReset();renderSounds()};
 const beforeStudioOpen=openPlayer;openPlayer=function(x){beforeStudioOpen(x);soundKey=audioPrefs.soundKey;$('sound-choice').value=soundKey;updateAudioControls();refreshVoices()};
 function soundTitle(track){return track.key?t(track.key):track.title}
@@ -51,12 +58,13 @@ setMusic=function(){if(!$('music-toggle').checked){soundRequest++;bg.pause();ret
 function updateAudioControls(){for(const [id,value] of [['tts-rate',audioPrefs.rate*100],['tts-pitch',audioPrefs.pitch*100],['tts-volume',audioPrefs.voiceVolume*100],['tts-gap',audioPrefs.gap],['sound-volume',audioPrefs.soundVolume*100],['library-volume',audioPrefs.soundVolume*100]])$(id).value=value;
  $('tts-rate-value').textContent=audioPrefs.rate.toFixed(2)+'×';$('tts-gap-value').textContent=(audioPrefs.gap/1000).toFixed(1)+' s';$('auto-duck').checked=audioPrefs.duck;const match=Object.keys(PRESETS).find(k=>PRESETS[k].rate===audioPrefs.rate&&PRESETS[k].gap===audioPrefs.gap);$('tts-preset').value=match||'custom';
 }
-function changeVoice(){saveAudio();updateAudioControls();if(speechPreview){stopNarration();runNarration(t('voiceTestText'),true)}else if(playing&&$('voice-toggle').checked)setVoice()}
+function changeVoice(){saveAudio();updateAudioControls();if(speechPreview){stopNarration();if(audioPrefs.source==='recorded')playRecording(true);else runNarration(t('voiceTestText'),true)}else if(playing&&$('voice-toggle').checked)setVoice()}
 $('tts-preset').onchange=e=>{if(PRESETS[e.target.value]){Object.assign(audioPrefs,PRESETS[e.target.value]);changeVoice()}};
 for(const [id,key,scale] of [['tts-rate','rate',100],['tts-pitch','pitch',100],['tts-volume','voiceVolume',100],['tts-gap','gap',1]])$(id).oninput=e=>{audioPrefs[key]=Number(e.target.value)/scale;saveAudio();updateAudioControls();if(key==='voiceVolume')narration.volume=audioPrefs.voiceVolume};
 for(const id of ['tts-rate','tts-pitch','tts-volume','tts-gap'])$(id).onchange=changeVoice;
 $('tts-voice').onchange=e=>{audioPrefs.voices[lang]=e.target.value;changeVoice()};
-$('tts-preview').onclick=()=>{if(speechPreview){stopNarration();return}if(playing)resetAudio();refreshVoices();if(!availableVoices.length)return;if(nativeApp&&!SereinNative.requestAudioFocus())return;runNarration(t('voiceTestText'),true)};
+$('tts-preview').onclick=()=>{if(speechPreview){stopNarration();return}if(playing)resetAudio();refreshVoices();if(nativeApp&&!SereinNative.requestAudioFocus())return;if(audioPrefs.source==='recorded'){playRecording(true);return}if(availableVoices.length)runNarration(t('voiceTestText'),true)};
+$('voice-source').onchange=e=>{stopNarration();audioPrefs.source=e.target.value;saveAudio();refreshVoices();if(playing&&$('voice-toggle').checked)setVoice()};
 $('voice-toggle').onchange=()=>{if($('voice-toggle').checked){if(playing)setVoice()}else{narration.pause();stopNarration()}};
 $('auto-duck').onchange=e=>{audioPrefs.duck=e.target.checked;saveAudio();duckSound(voiceActive)};
 for(const id of ['sound-volume','library-volume'])$(id).oninput=e=>{audioPrefs.soundVolume=Number(e.target.value)/100;saveAudio();updateAudioControls();duckSound(voiceActive)};
