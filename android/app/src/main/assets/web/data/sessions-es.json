@@ -6,6 +6,7 @@
     "created_at": "2026-11-14 21:46:27",
     "duration": 5,
     "id": 1,
+    "narration": null,
     "protocol": null,
     "published": 1,
     "script": "Busca una posición cómoda. Siente el apoyo bajo tu cuerpo. Inhala lentamente por la nariz. Nota cómo entra el aire. Exhala sin prisa. Si la mente se distrae, simplemente obsérvalo y vuelve a la siguiente respiración. No hay nada que lograr ahora. Solo existe este momento. ¿Qué cambia cuando te permites una pausa?",
@@ -21,6 +22,7 @@
     "created_at": "2026-11-14 21:46:27",
     "duration": 8,
     "id": 2,
+    "narration": null,
     "protocol": null,
     "published": 1,
     "script": "Cierra los ojos si te resulta cómodo. Nota la frente y deja que se suavice. Relaja la mandíbula. Permite que los hombros bajen. Siente las manos descansando. Con cada exhalación, imagina que das un poco más de espacio al cuerpo. Puedes estar exactamente como estás. ¿Qué parte de ti necesita más amabilidad hoy?",
@@ -36,6 +38,7 @@
     "created_at": "2026-11-14 21:46:27",
     "duration": 10,
     "id": 3,
+    "narration": null,
     "protocol": null,
     "published": 1,
     "script": "Ha llegado la noche. Puedes dejar atrás las tareas de hoy. Siente la superficie que te sostiene. Respira con naturalidad. Al exhalar, suelta una pequeña tensión. Deja pasar los pensamientos como nubes en el cielo oscuro. No tienes que seguirlos. Tu única invitación ahora es descansar. ¿Cómo sería confiar en este momento de reposo?",
@@ -51,6 +54,7 @@
     "created_at": "2026-11-14 22:04:54",
     "duration": 5,
     "id": 4,
+    "narration": null,
     "protocol": {
       "evidence": "Adaptación de las recomendaciones del NHS para el estrés. El ritmo visual es opcional; esta sesión no se ha probado clínicamente.",
       "kind": "breathing",
@@ -95,6 +99,7 @@
     "created_at": "2026-11-14 22:04:54",
     "duration": 6,
     "id": 5,
+    "narration": null,
     "protocol": {
       "evidence": "La VA describe la técnica y la investigación sobre relajación. Esta adaptación de cuatro grupos no es el protocolo completo ni una sesión validada clínicamente.",
       "kind": "pmr",
@@ -163,6 +168,7 @@
     "created_at": "2026-11-14 22:04:54",
     "duration": 5,
     "id": 6,
+    "narration": null,
     "protocol": {
       "evidence": "Hay estudios de programas de mindfulness con beneficios para algunos síntomas, pero los resultados y la calidad varían. Esta introducción no equivale a los programas estudiados.",
       "kind": "mindfulness",
@@ -207,6 +213,7 @@
     "created_at": "2026-11-17 15:50:19",
     "duration": 4,
     "id": 7,
+    "narration": null,
     "protocol": {
       "evidence": "Historia original inspirada en visualización guiada y relajación utilizadas en sofrología. No es un protocolo clínico validado.",
       "kind": "story",
@@ -260,6 +267,7 @@
     "created_at": "2026-11-17 15:50:19",
     "duration": 4,
     "id": 8,
+    "narration": null,
     "protocol": {
       "evidence": "Historia original inspirada en visualización guiada y relajación utilizadas en sofrología. No es un protocolo clínico validado.",
       "kind": "story",
@@ -313,6 +321,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 3,
     "id": 9,
+    "narration": null,
     "protocol": {
       "evidence": "Guion original de bienestar inspirado en atención plena. La referencia aporta contexto general; esta sesión no se ha validado clínicamente ni sustituye la atención profesional.",
       "kind": "mindfulness",
@@ -361,6 +370,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 3,
     "id": 10,
+    "narration": null,
     "protocol": {
       "evidence": "Guion original de bienestar inspirado en atención plena. La referencia aporta contexto general; esta sesión no se ha validado clínicamente ni sustituye la atención profesional.",
       "kind": "mindfulness",
@@ -409,6 +419,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 5,
     "id": 11,
+    "narration": null,
     "protocol": {
       "evidence": "Guion original de bienestar inspirado en atención plena. La referencia aporta contexto general; esta sesión no se ha validado clínicamente ni sustituye la atención profesional.",
       "kind": "mindfulness",
@@ -457,6 +468,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 8,
     "id": 12,
+    "narration": null,
     "protocol": {
       "evidence": "Guion original de bienestar inspirado en atención plena. La referencia aporta contexto general; esta sesión no se ha validado clínicamente ni sustituye la atención profesional.",
       "kind": "mindfulness",
@@ -505,6 +517,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 6,
     "id": 13,
+    "narration": null,
     "protocol": {
       "evidence": "Guion original de bienestar inspirado en atención plena. La referencia aporta contexto general; esta sesión no se ha validado clínicamente ni sustituye la atención profesional.",
       "kind": "mindfulness",
@@ -553,6 +566,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 5,
     "id": 14,
+    "narration": null,
     "protocol": {
       "evidence": "Guion original de bienestar inspirado en atención plena. La referencia aporta contexto general; esta sesión no se ha validado clínicamente ni sustituye la atención profesional.",
       "kind": "mindfulness",
@@ -601,6 +615,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 8,
     "id": 15,
+    "narration": null,
     "protocol": {
       "evidence": "Guion original de bienestar inspirado en atención plena. La referencia aporta contexto general; esta sesión no se ha validado clínicamente ni sustituye la atención profesional.",
       "kind": "mindfulness",
@@ -649,6 +664,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 5,
     "id": 16,
+    "narration": null,
     "protocol": {
       "evidence": "Guion original de bienestar inspirado en atención plena. La referencia aporta contexto general; esta sesión no se ha validado clínicamente ni sustituye la atención profesional.",
       "kind": "mindfulness",

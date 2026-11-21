@@ -3,6 +3,7 @@ from pathlib import Path
 from functools import wraps
 from flask import Flask, request, jsonify, send_from_directory, session, abort
 from werkzeug.utils import secure_filename
+from natural_voice import enrich_narration, setup_natural_voice
 
 ROOT=Path(__file__).parent
 DB=Path(os.getenv('SEREIN_DB', ROOT/'serein.db'))
@@ -72,7 +73,7 @@ def list_sessions():
    item=dict(row)
    protocol=c.execute('SELECT content FROM exercise_protocols WHERE session_id=? AND lang=?',(row['id'],lang)).fetchone()
    item['protocol']=json.loads(protocol['content']) if protocol else None
-   data.append(item)
+   data.append(enrich_narration(c,item,lang))
  return jsonify(data)
 
 @app.get('/api/music')
@@ -213,4 +214,5 @@ def seed_stories():
 init()
 seed_exercises()
 seed_stories()
+setup_natural_voice(app,conn,UPLOADS,admin_required,csrf_required)
 if __name__=='__main__':app.run(host='127.0.0.1',port=int(os.getenv('PORT',5000)),debug=False)

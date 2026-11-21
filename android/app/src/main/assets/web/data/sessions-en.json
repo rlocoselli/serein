@@ -6,6 +6,7 @@
     "created_at": "2026-11-14 21:46:27",
     "duration": 5,
     "id": 1,
+    "narration": null,
     "protocol": null,
     "published": 1,
     "script": "Find a comfortable position. Feel the support beneath your body. Breathe in slowly through your nose. Notice the air entering. Let it out without rushing. If your mind wanders, simply notice and return to the next breath. There is nothing to achieve right now. There is only this moment. What changes when you allow a pause?",
@@ -21,6 +22,7 @@
     "created_at": "2026-11-14 21:46:27",
     "duration": 8,
     "id": 2,
+    "narration": null,
     "protocol": null,
     "published": 1,
     "script": "Close your eyes if that feels comfortable. Notice your forehead and let it soften. Release your jaw. Allow your shoulders to lower. Feel your hands resting. With each exhale, imagine giving your body a little more space. You may be exactly as you are. Which part of you asks for more kindness today?",
@@ -36,6 +38,7 @@
     "created_at": "2026-11-14 21:46:27",
     "duration": 10,
     "id": 3,
+    "narration": null,
     "protocol": null,
     "published": 1,
     "script": "Night has arrived. You can leave today’s tasks behind. Notice the surface supporting you. Breathe naturally. As you exhale, release a little tension. Let thoughts pass like clouds in a dark sky. You do not need to follow them. Your only invitation now is to rest. What would it feel like to trust this moment of rest?",
@@ -51,6 +54,7 @@
     "created_at": "2026-11-14 22:04:54",
     "duration": 5,
     "id": 4,
+    "narration": null,
     "protocol": {
       "evidence": "Adapted from NHS stress guidance. The visual pace is optional; this session has not been clinically tested.",
       "kind": "breathing",
@@ -95,6 +99,7 @@
     "created_at": "2026-11-14 22:04:54",
     "duration": 6,
     "id": 5,
+    "narration": null,
     "protocol": {
       "evidence": "VA describes this technique and relaxation research. This brief four-group adaptation is neither the full protocol nor a clinically validated session.",
       "kind": "pmr",
@@ -163,6 +168,7 @@
     "created_at": "2026-11-14 22:04:54",
     "duration": 5,
     "id": 6,
+    "narration": null,
     "protocol": {
       "evidence": "Mindfulness programs have research showing benefits for some symptoms, but results and study quality vary. This five-minute introduction is not equivalent to the studied programs.",
       "kind": "mindfulness",
@@ -207,6 +213,7 @@
     "created_at": "2026-11-17 15:50:19",
     "duration": 4,
     "id": 7,
+    "narration": null,
     "protocol": {
       "evidence": "An original story inspired by guided imagery and relaxation used in sophrology practices. Not a validated clinical protocol.",
       "kind": "story",
@@ -260,6 +267,7 @@
     "created_at": "2026-11-17 15:50:19",
     "duration": 4,
     "id": 8,
+    "narration": null,
     "protocol": {
       "evidence": "An original story inspired by guided imagery and relaxation used in sophrology practices. Not a validated clinical protocol.",
       "kind": "story",
@@ -313,6 +321,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 3,
     "id": 9,
+    "narration": null,
     "protocol": {
       "evidence": "An original wellbeing script inspired by mindfulness. The reference provides general context; this specific session has not been clinically validated and does not replace professional care.",
       "kind": "mindfulness",
@@ -361,6 +370,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 3,
     "id": 10,
+    "narration": null,
     "protocol": {
       "evidence": "An original wellbeing script inspired by mindfulness. The reference provides general context; this specific session has not been clinically validated and does not replace professional care.",
       "kind": "mindfulness",
@@ -409,6 +419,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 5,
     "id": 11,
+    "narration": null,
     "protocol": {
       "evidence": "An original wellbeing script inspired by mindfulness. The reference provides general context; this specific session has not been clinically validated and does not replace professional care.",
       "kind": "mindfulness",
@@ -457,6 +468,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 8,
     "id": 12,
+    "narration": null,
     "protocol": {
       "evidence": "An original wellbeing script inspired by mindfulness. The reference provides general context; this specific session has not been clinically validated and does not replace professional care.",
       "kind": "mindfulness",
@@ -505,6 +517,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 6,
     "id": 13,
+    "narration": null,
     "protocol": {
       "evidence": "An original wellbeing script inspired by mindfulness. The reference provides general context; this specific session has not been clinically validated and does not replace professional care.",
       "kind": "mindfulness",
@@ -553,6 +566,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 5,
     "id": 14,
+    "narration": null,
     "protocol": {
       "evidence": "An original wellbeing script inspired by mindfulness. The reference provides general context; this specific session has not been clinically validated and does not replace professional care.",
       "kind": "mindfulness",
@@ -601,6 +615,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 8,
     "id": 15,
+    "narration": null,
     "protocol": {
       "evidence": "An original wellbeing script inspired by mindfulness. The reference provides general context; this specific session has not been clinically validated and does not replace professional care.",
       "kind": "mindfulness",
@@ -649,6 +664,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 5,
     "id": 16,
+    "narration": null,
     "protocol": {
       "evidence": "An original wellbeing script inspired by mindfulness. The reference provides general context; this specific session has not been clinically validated and does not replace professional care.",
       "kind": "mindfulness",

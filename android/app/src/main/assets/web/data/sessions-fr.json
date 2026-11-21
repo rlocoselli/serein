@@ -6,6 +6,7 @@
     "created_at": "2026-11-14 21:46:27",
     "duration": 5,
     "id": 1,
+    "narration": null,
     "protocol": null,
     "published": 1,
     "script": "Installez-vous confortablement. Sentez le soutien sous votre corps. Inspirez lentement par le nez. Remarquez l’air qui entre. Expirez sans vous presser. Si votre esprit s’égare, constatez-le simplement et revenez au souffle suivant. Il n’y a rien à accomplir maintenant. Il y a seulement cet instant. Que change une pause que vous vous accordez ?",
@@ -21,6 +22,7 @@
     "created_at": "2026-11-14 21:46:27",
     "duration": 8,
     "id": 2,
+    "narration": null,
     "protocol": null,
     "published": 1,
     "script": "Fermez les yeux si cela vous convient. Observez votre front et laissez-le se détendre. Relâchez la mâchoire. Laissez descendre les épaules. Sentez vos mains au repos. À chaque expiration, offrez un peu plus d’espace à votre corps. Vous pouvez être exactement comme vous êtes. Quelle part de vous a besoin de douceur aujourd’hui ?",
@@ -36,6 +38,7 @@
     "created_at": "2026-11-14 21:46:27",
     "duration": 10,
     "id": 3,
+    "narration": null,
     "protocol": null,
     "published": 1,
     "script": "La nuit est arrivée. Vous pouvez laisser les tâches du jour derrière vous. Sentez la surface qui vous soutient. Respirez naturellement. À l’expiration, relâchez une petite tension. Laissez passer les pensées comme des nuages dans le ciel sombre. Vous n’avez pas à les suivre. Votre seule invitation est de vous reposer. Que serait-ce de faire confiance à ce repos ?",
@@ -51,6 +54,7 @@
     "created_at": "2026-11-14 22:04:54",
     "duration": 5,
     "id": 4,
+    "narration": null,
     "protocol": {
       "evidence": "Adaptation des conseils du NHS pour le stress. Le rythme visuel est facultatif ; cette séance n’a pas été testée cliniquement.",
       "kind": "breathing",
@@ -95,6 +99,7 @@
     "created_at": "2026-11-14 22:04:54",
     "duration": 6,
     "id": 5,
+    "narration": null,
     "protocol": {
       "evidence": "La VA décrit cette technique et les recherches sur la relaxation. Cette adaptation à quatre groupes n’est ni le protocole complet ni une séance validée cliniquement.",
       "kind": "pmr",
@@ -163,6 +168,7 @@
     "created_at": "2026-11-14 22:04:54",
     "duration": 5,
     "id": 6,
+    "narration": null,
     "protocol": {
       "evidence": "Des programmes de pleine conscience montrent des bénéfices pour certains symptômes, avec des résultats et une qualité variables. Cette introduction ne correspond pas aux programmes étudiés.",
       "kind": "mindfulness",
@@ -207,6 +213,7 @@
     "created_at": "2026-11-17 15:50:19",
     "duration": 4,
     "id": 7,
+    "narration": null,
     "protocol": {
       "evidence": "Histoire originale inspirée de la visualisation guidée et de la relaxation utilisées en sophrologie. Ce n’est pas un protocole clinique validé.",
       "kind": "story",
@@ -260,6 +267,7 @@
     "created_at": "2026-11-17 15:50:19",
     "duration": 4,
     "id": 8,
+    "narration": null,
     "protocol": {
       "evidence": "Histoire originale inspirée de la visualisation guidée et de la relaxation utilisées en sophrologie. Ce n’est pas un protocole clinique validé.",
       "kind": "story",
@@ -313,6 +321,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 3,
     "id": 9,
+    "narration": null,
     "protocol": {
       "evidence": "Texte original de bien-être inspiré de la pleine conscience. La référence apporte un contexte général ; cette séance n’a pas été validée cliniquement et ne remplace pas les soins professionnels.",
       "kind": "mindfulness",
@@ -361,6 +370,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 3,
     "id": 10,
+    "narration": null,
     "protocol": {
       "evidence": "Texte original de bien-être inspiré de la pleine conscience. La référence apporte un contexte général ; cette séance n’a pas été validée cliniquement et ne remplace pas les soins professionnels.",
       "kind": "mindfulness",
@@ -409,6 +419,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 5,
     "id": 11,
+    "narration": null,
     "protocol": {
       "evidence": "Texte original de bien-être inspiré de la pleine conscience. La référence apporte un contexte général ; cette séance n’a pas été validée cliniquement et ne remplace pas les soins professionnels.",
       "kind": "mindfulness",
@@ -457,6 +468,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 8,
     "id": 12,
+    "narration": null,
     "protocol": {
       "evidence": "Texte original de bien-être inspiré de la pleine conscience. La référence apporte un contexte général ; cette séance n’a pas été validée cliniquement et ne remplace pas les soins professionnels.",
       "kind": "mindfulness",
@@ -505,6 +517,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 6,
     "id": 13,
+    "narration": null,
     "protocol": {
       "evidence": "Texte original de bien-être inspiré de la pleine conscience. La référence apporte un contexte général ; cette séance n’a pas été validée cliniquement et ne remplace pas les soins professionnels.",
       "kind": "mindfulness",
@@ -553,6 +566,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 5,
     "id": 14,
+    "narration": null,
     "protocol": {
       "evidence": "Texte original de bien-être inspiré de la pleine conscience. La référence apporte un contexte général ; cette séance n’a pas été validée cliniquement et ne remplace pas les soins professionnels.",
       "kind": "mindfulness",
@@ -601,6 +615,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 8,
     "id": 15,
+    "narration": null,
     "protocol": {
       "evidence": "Texte original de bien-être inspiré de la pleine conscience. La référence apporte un contexte général ; cette séance n’a pas été validée cliniquement et ne remplace pas les soins professionnels.",
       "kind": "mindfulness",
@@ -649,6 +664,7 @@
     "created_at": "2026-11-20 22:32:39",
     "duration": 5,
     "id": 16,
+    "narration": null,
     "protocol": {
       "evidence": "Texte original de bien-être inspiré de la pleine conscience. La référence apporte un contexte général ; cette séance n’a pas été validée cliniquement et ne remplace pas les soins professionnels.",
       "kind": "mindfulness",

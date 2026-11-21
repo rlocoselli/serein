@@ -16,14 +16,16 @@ for lang in ['pt','en','fr','it','es']:
  for item in sessions:
   for key in ['audio_path','video_path']:
    if item.get(key):media.add(item[key])
+  for step in (item.get('protocol') or {}).get('steps',[]):
+   if step.get('audio_path'):media.add(step['audio_path'])
 tracks=client.get('/api/music').json
 (data/'music.json').write_text(json.dumps(tracks,ensure_ascii=False,indent=2))
 for item in tracks:media.add(item['audio_path'])
 for path in media:
  if path.startswith('/media/'):
   name=Path(path).name;source=UPLOADS/name
-  if source.exists():
-   (OUT/'media').mkdir(exist_ok=True);shutil.copy2(source,OUT/'media'/name)
+  if not source.is_file():raise FileNotFoundError('Published media is missing: '+name)
+  (OUT/'media').mkdir(exist_ok=True);shutil.copy2(source,OUT/'media'/name)
  else:
   assert (OUT/path.lstrip('/')).is_file(),path
 # Generated bundle contains no external font requests or server endpoints beyond intercepted reads.
