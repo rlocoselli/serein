@@ -53,7 +53,8 @@ assert published['narration']['kind']=='ai'
 assert published['narration']['provider']=='kokoro'
 for step in published['protocol']['steps']:assert (out/step['audio_path'].lstrip('/')).read_bytes()==audio
 others=json.loads((out/'data/sessions-pt.json').read_text())
-assert next(x for x in others if x['id']==item['id'])['narration'] is None
+other=next(x for x in others if x['id']==item['id'])
+assert other['narration'] is None or all(s['audio_path'].startswith('/narration/') for s in other['protocol']['steps'])
 assert not (out/'models').exists()
 assert not (out/'kokoro_engine.py').exists()
 print('Published French step narration bundled; other locales unchanged; no inference engine bundled.')

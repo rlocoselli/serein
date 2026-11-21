@@ -7,10 +7,29 @@ import secrets
 import sqlite3
 import threading
 import wave
+from functools import lru_cache
 
 from flask import Blueprint, abort, jsonify, request
 from kokoro_engine import MODEL, VOICES, VOICE_SETTINGS, VoiceError, readiness, synthesize_to_wav
 LANGUAGES = {'pt', 'en', 'fr', 'it', 'es'}
+BUNDLED_CATALOG = Path(__file__).parent / 'static/narration/catalog.json'
+
+
+@lru_cache(maxsize=4)
+def bundled_catalog(path, modified):
+    return json.loads(path.read_text())['sessions']
+
+
+def bundled_narration(item, lang):
+    if not item.get('slug') or not BUNDLED_CATALOG.is_file():
+        return None
+    catalogue = bundled_catalog(BUNDLED_CATALOG, BUNDLED_CATALOG.stat().st_mtime_ns)
+    manifest = catalogue.get(item['slug'], {}).get(lang)
+    if manifest:
+        root = BUNDLED_CATALOG.parent.parent
+        if all((root / clip['audio_path'].lstrip('/')).is_file() for clip in manifest['segments']):
+            return manifest
+    return None
 
 
 def source_for(db, sid, lang):
@@ -64,9 +83,15 @@ def enrich_narration(db, item, lang):
         return item
     row = db.execute('SELECT source_hash, manifest FROM natural_narrations WHERE session_id=? AND lang=?',
                      (item['id'], lang)).fetchone()
-    if not row or row['source_hash'] != digest(source_for(db, item['id'], lang)):
+    source_hash = digest(source_for(db, item['id'], lang)) if row else None
+    if row and row['source_hash'] == source_hash:
+        manifest = json.loads(row['manifest'])
+    else:
+        manifest = bundled_narration(item, lang)
+        if manifest and manifest['source_hash'] != (source_hash or digest(source_for(db, item['id'], lang))):
+            manifest = None
+    if not manifest:
         return item
-    manifest = json.loads(row['manifest'])
     # Existing recordings survive migration; their original provenance stays accurate.
     item['narration'] = {'kind': 'ai', 'provider': manifest.get('provider', 'elevenlabs'), 'voice': manifest['voice']}
     if item.get('protocol'):
