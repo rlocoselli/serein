@@ -37,6 +37,14 @@ Guarde os valores das duas variáveis num gestor de segredos ou ficheiro `.env` 
 
 Para plataformas de hospedagem, selecione a branch `main`, contexto de construção `.` e Dockerfile `Dockerfile`, sem comando de arranque adicional. O servidor e o healthcheck respeitam a variável `PORT` fornecida pela plataforma (padrão: `5000`). Configure `SEREIN_ADMIN_PASSWORD` e `SEREIN_SECRET_KEY` como segredos e monte armazenamento persistente em `/data` para conservar os conteúdos após um novo deploy.
 
+## SEO e idiomas
+
+As páginas públicas são renderizadas no servidor, com títulos e descrições traduzidos, canonical, hreflang, dados estruturados e imagens Open Graph/Twitter. Português usa `/`; os outros idiomas usam `/en/`, `/fr/`, `/it/` e `/es/`. Cada sessão publicada tem uma página em `/<idioma>/meditations/<slug>/`, com roteiro, duração e referências, ligada ao leitor sem reprodução automática. Rascunhos não entram nas páginas nem no sitemap.
+
+O domínio canônico é `https://serein.audeladedonnees.fr`. Para outra instalação, configure `SEREIN_SITE_URL` com a origem pública, sem caminho (por exemplo, `https://exemplo.com`). `/robots.txt` aponta para `/sitemap.xml`, que acompanha automaticamente as sessões publicadas. Após o deploy, envie esse sitemap no Google Search Console da propriedade; o código não solicita indexação nem garante posições no Google.
+
+Ao alterar os dicionários da interface, execute `node scripts/build_seo_copy.cjs` para atualizar as traduções usadas no HTML do servidor. A navegação offline Android continua local, sem redirecionamentos para o site.
+
 ## API
 
 - `GET /api/sessions?lang=pt|en|fr|it|es` — sessões publicadas.
