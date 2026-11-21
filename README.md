@@ -10,6 +10,8 @@ Configure `SEREIN_ADMIN_PASSWORD` e `SEREIN_SECRET_KEY` como segredos da platafo
 
 A narração natural usa **Kokoro local**, sem chave API nem créditos. Reconstrua a imagem Docker para incluir o motor CPU e os modelos, depois use **Áudios → Voz natural** no admin. A geração cria um rascunho por idioma para escutar antes de ativar. O leitor reproduz ficheiros WAV por padrão, sem fallback automático para a voz do navegador. Os áudios ativados podem ser incluídos no Android offline; o motor e os modelos ficam no servidor. O português usa vozes brasileiras.
 
+As narrações iniciais incluídas em `web-meditation/static/narration/` são reproduzidas diretamente, sem gerar ou ativar áudio no admin. O manifesto indica os idiomas disponíveis e verifica se o texto ainda corresponde à gravação. O admin permanece disponível para conteúdos personalizados.
+
 ## Versão web e Android com HTML local
 
 A aplicação web com Flask e SQLite, meditações em cinco idiomas, vídeos, histórias, sons de fundo e administração fica em [web-meditation/](web-meditation/README.md). O projeto Android Studio em [web-meditation/android/](web-meditation/android/README.md) incorpora o HTML e os conteúdos locais para utilização offline.
